@@ -18,6 +18,7 @@
 @media(max-width:650px){body{font-size:14px}.site-header{padding:18px 21px}.brand{font-size:20px}.brand-mark{width:31px;height:31px;font-size:27px;border-radius:10px}.header-note{font-size:9px;gap:5px}.header-note .status-dot{width:5px;height:5px}main{margin:0 21px;padding-bottom:32px}.hero{grid-template-columns:1fr;gap:0;padding:32px 0 27px;position:relative}.hero h1{font-size:31px;letter-spacing:-1px;line-height:1.65;margin:10px 0 12px}.eyebrow{font-size:9px;letter-spacing:2px}.hero-copy{font-size:12px;max-width:88%;line-height:1.9}.hero-art{display:none}.section-top{margin-bottom:12px}.section-top h2{font-size:14px}.section-top span{font-size:10px}.mode-grid{grid-template-columns:1fr;gap:14px}.mode-card{padding:22px 23px;border-radius:20px}.mode-icon{height:40px;width:40px;border-radius:13px}.mode-card h3{font-size:22px;margin:15px 0 7px}.mode-card p{font-size:12px;max-width:100%}.mode-tags{margin:13px 0 19px}.mode-card .button{min-height:48px;font-size:13px}.habit-strip{gap:12px;margin-top:26px;padding-top:20px;grid-template-columns:1fr}.habit-step{gap:12px}.habit-step p{display:inline;margin-left:7px;font-size:10px}.habit-step strong{display:inline;font-size:11px}.step-num{padding-top:1px;font-size:10px}.site-footer{margin:0 21px;padding-top:18px;font-size:9px;gap:8px}.site-footer p{font-size:8px}.breadcrumb{margin-top:19px;font-size:12px}.page-heading h1{font-size:25px}.page-heading>p{font-size:12px}.setup-panel{padding:21px 18px;border-radius:19px;margin-top:22px}.category-button{font-size:12px;padding:10px;min-height:49px;gap:3px}.category-button small{font-size:9px}.audio-fields{grid-template-columns:1fr}.question-card{padding:22px 18px;border-radius:18px}.english-sentence{font-size:23px;line-height:1.75;margin-top:2px}.quiz-count strong{font-size:17px}.quiz-meta{margin-bottom:10px}.quiz-meta .tag{font-size:9px}.progress-track{margin-bottom:19px}.answer-button{font-size:15px;padding:12px;gap:11px;min-height:54px}.answer-feedback{font-size:13px}.explanation{font-size:12px}.translation{font-size:12px}.phrase-card strong{font-size:15px}.post-answer-actions{gap:7px}.post-answer-actions .button{font-size:11px;padding:10px}.next-row{gap:10px;align-items:stretch;flex-direction:column;margin-top:16px}.next-row .button{width:100%;min-height:50px}.mark-button{font-size:12px;min-height:43px}.listen-stage{padding:22px 15px;margin-bottom:21px}.listening-question{font-size:14px}.listening-options .answer-button{font-size:13px}.chunk-button span{font-size:13px}.transcript .english-sentence{font-size:22px}.result{margin-top:32px}.result h1{font-size:25px}.result-stats{margin-top:24px}.recap-list{padding:18px}.recap-item strong{font-size:13px}.result-actions .button{font-size:13px}.exit-panel>div{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 @media(max-width:650px){.hero h1{font-size:clamp(26px,8vw,31px)}}
+.explanation .learning-point{margin:0 0 20px;padding:12px 14px;background:#f4f7ed;border-left:3px solid #a4b679;border-radius:0 8px 8px 0;color:#50664f;font-size:12px;line-height:1.9}.choice-explanations{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}.choice-explanations .distractor-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:10px}.choice-explanations .distractor-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;background:#f8f9f4;border-radius:9px}.choice-explanations .distractor-list strong{font-size:14px;font-weight:600;color:var(--ink)}.choice-explanations .distractor-list p{margin:3px 0 0;font-size:12px;line-height:1.8}.reason-letter{display:grid;place-items:center;flex:0 0 23px;height:23px;margin-top:2px;border:1px solid var(--line);border-radius:6px;font-size:10px;color:var(--muted)}.voice-preview-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.voice-preview-row .small-button{min-height:41px;display:flex;gap:6px;align-items:center}.voice-summary{font-size:10px;color:var(--muted);overflow-wrap:anywhere;margin:9px 0 0}.audio-note a{text-underline-offset:3px}.question-card>.audio-settings{margin-top:20px;text-align:left}
 
 </style>
 </head>
@@ -41,7 +42,7 @@
   <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
   <noscript><p class="noscript">学習を始めるには、ブラウザのJavaScriptを有効にしてください。</p></noscript>
 <script>
-// Original practice exercises inspired by publicly available TOEIC formats.
+// Original English practice exercises.
 window.GRAMMAR_QUESTIONS = [
   {
     "id": "g001",
@@ -63,7 +64,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞の原形なので a と名詞の間には入りません。"
     ],
     "phrase": "a comprehensive analysis",
-    "phraseMeaning": "包括的な分析"
+    "phraseMeaning": "包括的な分析",
+    "learningPoint": "a ___ analysis をひとまとまりで見て、まず後ろの名詞を探します。語尾が -ly・-ion・-ive と分かれた選択肢は、意味より先に必要な品詞を絞りましょう。"
   },
   {
     "id": "g002",
@@ -85,7 +87,8 @@ window.GRAMMAR_QUESTIONS = [
       "「明瞭さ」という名詞です。動詞の話し方を説明できません。"
     ],
     "phrase": "speak clearly",
-    "phraseMeaning": "はっきり話す"
+    "phraseMeaning": "はっきり話す",
+    "learningPoint": "speak の直後に目的語はなく、so that 以下は「聞こえるように」という目的です。話す人の状態ではなく、話し方を説明する語を探します。"
   },
   {
     "id": "g003",
@@ -107,7 +110,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞の原形です。ここで主語となる名詞にはなりません。"
     ],
     "phrase": "customer satisfaction",
-    "phraseMeaning": "顧客満足"
+    "phraseMeaning": "顧客満足",
+    "learningPoint": "is より前で「何が最優先なのか」を示す主語を完成させます。Customer は後ろの名詞を説明しており、satisfied のような形容詞だけでは主語が完成しません。"
   },
   {
     "id": "g004",
@@ -129,7 +133,8 @@ window.GRAMMAR_QUESTIONS = [
       "make＋目的語＋形容詞の形です。payments の状態を表す convenient を選びます。"
     ],
     "phrase": "make payments more convenient",
-    "phraseMeaning": "決済をより便利にする"
+    "phraseMeaning": "決済をより便利にする",
+    "learningPoint": "more の後ろだから、と品詞を決め付けず makes payments まで戻ります。「決済が便利だ」という関係を作る語が必要か、動作の仕方を説明する語が必要か確認しましょう。"
   },
   {
     "id": "g005",
@@ -151,7 +156,8 @@ window.GRAMMAR_QUESTIONS = [
       "形容詞です。ここでは address を目的語に取る動詞が必要です。"
     ],
     "phrase": "verify the address",
-    "phraseMeaning": "住所を確認する"
+    "phraseMeaning": "住所を確認する",
+    "learningPoint": "to の後ろはすべて原形、と丸暗記しないことが大切です。ここは need to で行動を表し、さらに the address を目的語に取る動詞が必要です。"
   },
   {
     "id": "g006",
@@ -173,7 +179,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞・動詞です。「慎重に」という副詞にはなりません。"
     ],
     "phrase": "review applications carefully",
-    "phraseMeaning": "応募書類を慎重に審査する"
+    "phraseMeaning": "応募書類を慎重に審査する",
+    "learningPoint": "will be reviewed by the committee だけで述語と行為者はそろっています。空欄をいったん外して文が成り立つと分かれば、審査の仕方を加える修飾語を探せます。"
   },
   {
     "id": "g007",
@@ -195,7 +202,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞です。The の後ろで主語となる名詞にはなりません。"
     ],
     "phrase": "an inspection of the bridge",
-    "phraseMeaning": "橋の検査"
+    "phraseMeaning": "橋の検査",
+    "learningPoint": "is scheduled が述語なので、その前で主語のまとまりを作ります。of the new bridge は空欄の名詞を後ろから説明し、bridge を主語の中心とは数えません。"
   },
   {
     "id": "g008",
@@ -217,7 +225,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞 advice を修飾する形容詞 practical「実用的な」を選びます。"
     ],
     "phrase": "practical advice",
-    "phraseMeaning": "実用的な助言"
+    "phraseMeaning": "実用的な助言",
+    "learningPoint": "advice は数えられない名詞なので、a がなくても名詞として働きます。冠詞の有無だけで判断せず、まず advice の前にどんな説明を加える位置かを確認しましょう。"
   },
   {
     "id": "g009",
@@ -239,7 +248,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。所有格 her に続く名詞にはなりません。"
     ],
     "phrase": "express appreciation for",
-    "phraseMeaning": "〜に感謝の意を表す"
+    "phraseMeaning": "〜に感謝の意を表す",
+    "learningPoint": "her は形だけなら目的格にも所有格にもなります。今回は expressed の後ろに「彼女の感謝」というまとまりを置き、続く for 以下が感謝の対象を説明しています。"
   },
   {
     "id": "g010",
@@ -261,7 +271,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞です。located を説明する副詞が必要です。"
     ],
     "phrase": "conveniently located",
-    "phraseMeaning": "便利な場所にある"
+    "phraseMeaning": "便利な場所にある",
+    "learningPoint": "is の直後だから形容詞、と決めないようにします。すでに located が位置の状態を表しているので、空欄は located にどんな意味を加えるかで判断しましょう。"
   },
   {
     "id": "g011",
@@ -283,7 +294,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞です。Several の後ろは複数名詞にします。"
     ],
     "phrase": "attend a workshop",
-    "phraseMeaning": "講習会に参加する"
+    "phraseMeaning": "講習会に参加する",
+    "learningPoint": "attended より前に「参加した人たち」を表す主語が必要です。Several で人数を示してから名詞を選び、最後に複数形の -s まで確認すると取り違えを防げます。"
   },
   {
     "id": "g012",
@@ -305,7 +317,8 @@ window.GRAMMAR_QUESTIONS = [
       "be の後ろで instructions の状態を表す形容詞 clear が必要です。"
     ],
     "phrase": "clear enough to understand",
-    "phraseMeaning": "理解できるほど明確な"
+    "phraseMeaning": "理解できるほど明確な",
+    "learningPoint": "enough は形容詞や副詞を修飾するとき、その後ろに置かれます。ここは「指示が十分に明確だ」という関係なので、be と enough の両側から空欄の役割を確認します。"
   },
   {
     "id": "g013",
@@ -327,7 +340,8 @@ window.GRAMMAR_QUESTIONS = [
       "形容詞です。ここでは delivery times を目的語に取る動詞が必要です。"
     ],
     "phrase": "reduce delivery times",
-    "phraseMeaning": "配送時間を短縮する"
+    "phraseMeaning": "配送時間を短縮する",
+    "learningPoint": "delivery times は空欄の動詞の目的語です。後ろの by ten percent は削減幅を足す表現なので、まず to ___ delivery times という行動のまとまりを完成させましょう。"
   },
   {
     "id": "g014",
@@ -349,7 +363,8 @@ window.GRAMMAR_QUESTIONS = [
       "「重要性」という名詞です。increase を説明する形容詞が必要です。"
     ],
     "phrase": "a significant increase",
-    "phraseMeaning": "大幅な増加"
+    "phraseMeaning": "大幅な増加",
+    "learningPoint": "increase は動詞にも名詞にもなりますが、ここでは前の a と後ろの in revenue から名詞と分かります。単語の意味を知っていても、文中での役割を確認するのが先です。"
   },
   {
     "id": "g015",
@@ -371,7 +386,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞の原形です。名詞 skills を説明する形容詞ではありません。"
     ],
     "phrase": "organizational skills",
-    "phraseMeaning": "仕事を整理し段取りを組む能力"
+    "phraseMeaning": "仕事を整理し段取りを組む能力",
+    "learningPoint": "skills が名詞句の中心で、strong もそれを説明しています。形容詞がすでに1つあっても、さらに別の形容詞で「どんな能力か」を詳しくすることができます。"
   },
   {
     "id": "g016",
@@ -393,7 +409,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞 stopped を修飾する副詞 unexpectedly「予期せずに」を選びます。"
     ],
     "phrase": "stop unexpectedly",
-    "phraseMeaning": "予期せず停止する"
+    "phraseMeaning": "予期せず停止する",
+    "learningPoint": "stopped がすでに過去形の述語で、during 以下は時を示しています。空欄にもう一つ動詞を置かず、「どのように止まったか」を追加する位置か確認しましょう。"
   },
   {
     "id": "g017",
@@ -415,7 +432,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞の三人称単数形です。Your に続く主語の名詞にはなりません。"
     ],
     "phrase": "require approval",
-    "phraseMeaning": "承認を必要とする"
+    "phraseMeaning": "承認を必要とする",
+    "learningPoint": "is required の前で主語を完成させ、before 以下の節はひとまず外して考えます。Your の後ろに「必要とされるもの」の名前を置けるかを見ると判断しやすくなります。"
   },
   {
     "id": "g018",
@@ -437,7 +455,8 @@ window.GRAMMAR_QUESTIONS = [
       "「柔軟性」という名詞です。勤務時間の性質を示す形容詞が必要です。"
     ],
     "phrase": "flexible working hours",
-    "phraseMeaning": "柔軟な勤務時間"
+    "phraseMeaning": "柔軟な勤務時間",
+    "learningPoint": "working はここでは進行形の述語ではなく、hours を説明する語です。offers の目的語全体を確認し、勤務時間の性質を加える位置だと捉えましょう。"
   },
   {
     "id": "g019",
@@ -459,7 +478,8 @@ window.GRAMMAR_QUESTIONS = [
       "形容詞です。ここで work を修飾するには副詞が必要です。"
     ],
     "phrase": "work independently",
-    "phraseMeaning": "自主的に働く"
+    "phraseMeaning": "自主的に働く",
+    "learningPoint": "are encouraged が文の述語で、to work は勧められている行動です。空欄はその行動の仕方を説明するので、「独立した人」ではなく「自主的に働く」と結び付けます。"
   },
   {
     "id": "g020",
@@ -481,7 +501,8 @@ window.GRAMMAR_QUESTIONS = [
       "the と of の間には名詞 efficiency「効率」が必要です。"
     ],
     "phrase": "improve efficiency",
-    "phraseMeaning": "効率を改善する"
+    "phraseMeaning": "効率を改善する",
+    "learningPoint": "improve の後ろには「何を改善するか」という目的語が必要です。of our customer service は後ろからの説明なので、その直前に中心となる名詞があるか確認します。"
   },
   {
     "id": "g021",
@@ -503,7 +524,8 @@ window.GRAMMAR_QUESTIONS = [
       "未来の能動態です。yesterday と合わず、請求書は送られる側です。"
     ],
     "phrase": "send an invoice to a client",
-    "phraseMeaning": "顧客に請求書を送る"
+    "phraseMeaning": "顧客に請求書を送る",
+    "learningPoint": "sent は過去形と過去分詞が同じ形なので、形だけでは判断できません。まず invoice が送る側か送られる側かを確かめ、次に yesterday に合う時制を選びます。"
   },
   {
     "id": "g022",
@@ -525,7 +547,8 @@ window.GRAMMAR_QUESTIONS = [
       "原形です。主語 Our company は単数なので現在形としても一致しません。"
     ],
     "phrase": "expand into new markets",
-    "phraseMeaning": "新しい市場に進出する"
+    "phraseMeaning": "新しい市場に進出する",
+    "learningPoint": "since January は現在までを振り返る手掛かりですが、それだけで選び終えないようにします。主語 Our company は単数なので、完了形の助動詞も has に合わせます。"
   },
   {
     "id": "g023",
@@ -547,7 +570,8 @@ window.GRAMMAR_QUESTIONS = [
       "主語 Each は単数なので、現在形は receives にします。"
     ],
     "phrase": "receive a name badge",
-    "phraseMeaning": "名札を受け取る"
+    "phraseMeaning": "名札を受け取る",
+    "learningPoint": "of the participants をいったん括弧に入れ、Each ___ a name badge だけを読みます。動詞に近い participants につられず、主語の中心が一人一人であることを確かめます。"
   },
   {
     "id": "g024",
@@ -569,7 +593,8 @@ window.GRAMMAR_QUESTIONS = [
       "is＋現在分詞で現在進行形を作ります。at the moment「今」も手掛かりです。"
     ],
     "phrase": "repair the printer",
-    "phraseMeaning": "プリンターを修理する"
+    "phraseMeaning": "プリンターを修理する",
+    "learningPoint": "空欄の後ろに the printer という目的語がある点も手掛かりです。技術者が修理する側だと確認すれば、is repaired という受け身はこの語順に合わないと分かります。"
   },
   {
     "id": "g025",
@@ -591,7 +616,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞です。must の直後には置けません。"
     ],
     "phrase": "sign in at reception",
-    "phraseMeaning": "受付で記帳する"
+    "phraseMeaning": "受付で記帳する",
+    "learningPoint": "主語 visitors が複数かどうかより、まず直前の must を優先します。助動詞が動詞の形を決めるため、主語が変わってもこの位置に -s や -ed は付けません。"
   },
   {
     "id": "g026",
@@ -613,7 +639,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞です。提案が承認する側になり、by the board とも合いません。"
     ],
     "phrase": "approve a proposal",
-    "phraseMeaning": "提案を承認する"
+    "phraseMeaning": "提案を承認する",
+    "learningPoint": "has で完了形、been でその先の受け身を組み立てています。proposal と approve の関係を確認し、提案が承認する側になる approving は合わないと判断します。"
   },
   {
     "id": "g027",
@@ -635,7 +662,8 @@ window.GRAMMAR_QUESTIONS = [
       "この to は不定詞ではなく前置詞なので、原形は続けません。"
     ],
     "phrase": "look forward to doing",
-    "phraseMeaning": "〜することを楽しみにする"
+    "phraseMeaning": "〜することを楽しみにする",
+    "learningPoint": "look forward to を一続きの表現として見ます。to の後ろに名詞も置ける形なので、今回は「会うこと」を名詞の役割にした動名詞を入れる、と考えると整理できます。"
   },
   {
     "id": "g028",
@@ -657,7 +685,8 @@ window.GRAMMAR_QUESTIONS = [
       "avoid の後ろで行為を目的語にするときは動名詞 opening を使います。"
     ],
     "phrase": "avoid doing",
-    "phraseMeaning": "〜することを避ける"
+    "phraseMeaning": "〜することを避ける",
+    "learningPoint": "confidential files は「開く」という行為の目的語です。動名詞も目的語を取れるので、名詞が後ろにあるから動詞の原形、と短絡せず avoid の後ろの形を確認します。"
   },
   {
     "id": "g029",
@@ -679,7 +708,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞・動名詞です。ask＋人＋to do の形には合いません。"
     ],
     "phrase": "ask someone to do",
-    "phraseMeaning": "人に〜するよう頼む"
+    "phraseMeaning": "人に〜するよう頼む",
+    "learningPoint": "us は依頼されて確認を行う人、the figures は確認する対象です。ask の直後に人が置かれているかを先に見てから、その人に求める行動を続ける形を選びましょう。"
   },
   {
     "id": "g030",
@@ -701,7 +731,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在完了形です。明日の条件に対する未来の結果とは合いません。"
     ],
     "phrase": "proceed as planned",
-    "phraseMeaning": "予定どおり進む"
+    "phraseMeaning": "予定どおり進む",
+    "learningPoint": "If 節の is が現在形でも、tomorrow によって話題は未来です。条件を示す部分と結果を述べる主節を分け、両方の時制を機械的にそろえないようにします。"
   },
   {
     "id": "g031",
@@ -723,7 +754,8 @@ window.GRAMMAR_QUESTIONS = [
       "has started は現在完了です。過去の到着より前の開始には had を使います。"
     ],
     "phrase": "by the time",
-    "phraseMeaning": "〜する時までには"
+    "phraseMeaning": "〜する時までには",
+    "learningPoint": "arrived を過去の基準点とし、発表の開始とどちらが先かを並べて考えます。already があるだけで has を選ばず、基準が現在か過去かを確認するのが大切です。"
   },
   {
     "id": "g032",
@@ -745,7 +777,8 @@ window.GRAMMAR_QUESTIONS = [
       "suggest の後ろで行為を述べるときは動名詞を使います。"
     ],
     "phrase": "suggest doing",
-    "phraseMeaning": "〜することを提案する"
+    "phraseMeaning": "〜することを提案する",
+    "learningPoint": "the deadline は extend の目的語で、空欄以下全体が提案の内容です。suggest は that 節も取れますが、この文には新しい主語がないので、行為を表すまとまりを作ります。"
   },
   {
     "id": "g033",
@@ -767,7 +800,8 @@ window.GRAMMAR_QUESTIONS = [
       "being inspected だけでは述語になりません。be 動詞が必要です。"
     ],
     "phrase": "inspect equipment",
-    "phraseMeaning": "機器を検査する"
+    "phraseMeaning": "機器を検査する",
+    "learningPoint": "in these two rooms は equipment の場所を説明する部分です。every month で定期的な検査だと確認したうえで、rooms ではなく機器という主語に動詞を合わせます。"
   },
   {
     "id": "g034",
@@ -789,7 +823,8 @@ window.GRAMMAR_QUESTIONS = [
       "have attached は能動態です。単数の A list との数も合いません。"
     ],
     "phrase": "be attached to an email",
-    "phraseMeaning": "メールに添付されている"
+    "phraseMeaning": "メールに添付されている",
+    "learningPoint": "approved は suppliers を説明する語で、文の述語ではありません。of approved suppliers を外して A list ___ attached と読み、主語と述語の対応を先に確かめます。"
   },
   {
     "id": "g035",
@@ -811,7 +846,8 @@ window.GRAMMAR_QUESTIONS = [
       "expect＋目的語の後ろには to 不定詞が必要です。"
     ],
     "phrase": "expect something to arrive",
-    "phraseMeaning": "何かが到着すると見込む"
+    "phraseMeaning": "何かが到着すると見込む",
+    "learningPoint": "We expect / the shipment to arrive / by Friday と区切ります。期限の語だけで will を探さず、expect の後ろに必要な語順を先に確認しましょう。"
   },
   {
     "id": "g036",
@@ -833,7 +869,8 @@ window.GRAMMAR_QUESTIONS = [
       "will の後ろは原形です。take effect で「施行される・効力を生じる」です。"
     ],
     "phrase": "take effect",
-    "phraseMeaning": "施行される・効力を生じる"
+    "phraseMeaning": "施行される・効力を生じる",
+    "learningPoint": "effect はこの表現では動詞ではなく、take と組み合わせる名詞です。will から動詞の形を絞り、その後で take effect という意味のまとまりができるか確かめます。"
   },
   {
     "id": "g037",
@@ -855,7 +892,8 @@ window.GRAMMAR_QUESTIONS = [
       "未来形です。過去の退職より前の勤務という内容に合いません。"
     ],
     "phrase": "work at a company",
-    "phraseMeaning": "会社で働く"
+    "phraseMeaning": "会社で働く",
+    "learningPoint": "for ten years は期間の長さを示すだけで、必ず現在完了になるわけではありません。before she retired を読み、今ではなく過去の退職まで続いた勤務だと確認します。"
   },
   {
     "id": "g038",
@@ -877,7 +915,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞です。書類が何かを準備する意味になってしまいます。"
     ],
     "phrase": "have documents prepared",
-    "phraseMeaning": "書類を用意しておく"
+    "phraseMeaning": "書類を用意しておく",
+    "learningPoint": "have の直後に your travel documents という目的語がある点に注目します。have prepared という完了形と混同せず、書類を準備済みの状態にする語順として読みましょう。"
   },
   {
     "id": "g039",
@@ -899,7 +938,8 @@ window.GRAMMAR_QUESTIONS = [
       "原形です。過去を表す last month に合いません。"
     ],
     "phrase": "twice as many as",
-    "phraseMeaning": "〜の2倍の数の"
+    "phraseMeaning": "〜の2倍の数の",
+    "learningPoint": "twice as many units という長い比較部分より先に、主語 factory と時を示す last month を押さえます。後半の did は「生産した」を受けており、空欄も文の述語が必要です。"
   },
   {
     "id": "g040",
@@ -921,7 +961,8 @@ window.GRAMMAR_QUESTIONS = [
       "must の後ろは原形です。room は清掃される側なので be cleaned を選びます。"
     ],
     "phrase": "must be cleaned",
-    "phraseMeaning": "清掃されなければならない"
+    "phraseMeaning": "清掃されなければならない",
+    "learningPoint": "must の直後に必要な原形と、その後ろで受け身を作る語を分けて考えます。been は be の原形ではないため、過去分詞が続くからといって been cleaned を選ばないようにします。"
   },
   {
     "id": "g041",
@@ -943,7 +984,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞なので、Friday という名詞だけは続けられません。"
     ],
     "phrase": "by Friday at the latest",
-    "phraseMeaning": "遅くとも金曜日までに"
+    "phraseMeaning": "遅くとも金曜日までに",
+    "learningPoint": "submit は提出を完了する動作で、この文は肯定形の提出期限を示しています。「その日までに終える」のか「その日まで続ける」のかを区別して前置詞を選びましょう。"
   },
   {
     "id": "g042",
@@ -965,7 +1007,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞です。名詞句を続けるには because of が必要です。"
     ],
     "phrase": "during the renovation",
-    "phraseMeaning": "改装工事の間"
+    "phraseMeaning": "改装工事の間",
+    "learningPoint": "will be closed は閉鎖中の状態を示し、空欄以下がその継続期間を足しています。the renovation に主語と動詞があるかを確かめてから、期間をつなぐ語を選びます。"
   },
   {
     "id": "g043",
@@ -987,7 +1030,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞です。後ろには主語と動詞を含む節が必要です。"
     ],
     "phrase": "despite the rain",
-    "phraseMeaning": "雨にもかかわらず"
+    "phraseMeaning": "雨にもかかわらず",
+    "learningPoint": "heavy は rain を説明する形容詞で、the heavy rain 全体は名詞句です。形で候補を絞った後、「大雨でも続行した」という予想に反する関係になっているか確かめます。"
   },
   {
     "id": "g044",
@@ -1009,7 +1053,8 @@ window.GRAMMAR_QUESTIONS = [
       "後ろは it was raining という節です。理由を表す接続詞 because が必要です。"
     ],
     "phrase": "because it was raining",
-    "phraseMeaning": "雨が降っていたため"
+    "phraseMeaning": "雨が降っていたため",
+    "learningPoint": "it was raining には主語と動詞がそろっています。「雨のため」を名詞で言う because of the rain と形を混ぜず、空欄直後が名詞か節かを先に確認しましょう。"
   },
   {
     "id": "g045",
@@ -1031,7 +1076,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞句です。名詞句が必要で、後ろの節は直接続けられません。"
     ],
     "phrase": "wait until someone returns",
-    "phraseMeaning": "人が戻るまで待つ"
+    "phraseMeaning": "人が戻るまで待つ",
+    "learningPoint": "wait が続く時間の終点は、技術者が戻る時です。また、未来の話でもこの時間の節では通常 returns と現在形にし、will を機械的に足さない点も覚えましょう。"
   },
   {
     "id": "g046",
@@ -1053,7 +1099,8 @@ window.GRAMMAR_QUESTIONS = [
       "「〜を通り抜けて」という意味で、2つの建物の間という位置を示せません。"
     ],
     "phrase": "between A and B",
-    "phraseMeaning": "AとBの間に"
+    "phraseMeaning": "AとBの間に",
+    "learningPoint": "the bank と the post office が and で並んでいるのを先に見つけます。between は必ず2つだけ、と一般化するより、この文の A and B という組み合わせを押さえましょう。"
   },
   {
     "id": "g047",
@@ -1075,7 +1122,8 @@ window.GRAMMAR_QUESTIONS = [
       "apply at では割引の適用対象を示せません。"
     ],
     "phrase": "apply to an order",
-    "phraseMeaning": "注文に適用される"
+    "phraseMeaning": "注文に適用される",
+    "learningPoint": "placed this week は orders を後ろから説明する部分です。文の主語 discount と動詞 applies を先に押さえ、人が申し込む apply for とは意味を分けて考えます。"
   },
   {
     "id": "g048",
@@ -1097,7 +1145,8 @@ window.GRAMMAR_QUESTIONS = [
       "free of charge は「無料で」という決まった表現です。of まで含めて覚えます。"
     ],
     "phrase": "free of charge",
-    "phraseMeaning": "無料で"
+    "phraseMeaning": "無料で",
+    "learningPoint": "charge はここでは請求する動作ではなく「料金」という名詞です。free of charge 全体で利用の仕方を説明し、use the gym の後ろにそのまま付けることができます。"
   },
   {
     "id": "g049",
@@ -1119,7 +1168,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞句なので、後ろには名詞句が必要です。"
     ],
     "phrase": "if you have any questions",
-    "phraseMeaning": "ご質問がありましたら"
+    "phraseMeaning": "ご質問がありましたら",
+    "learningPoint": "you have any questions は疑問文ではなく、問い合わせる条件を示す節です。後半の please contact という依頼が主な文だと分けて読むと、文頭の語の役割が見えます。"
   },
   {
     "id": "g050",
@@ -1141,7 +1191,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞です。a mechanical problem という名詞句だけは続けられません。"
     ],
     "phrase": "because of a problem",
-    "phraseMeaning": "問題が原因で"
+    "phraseMeaning": "問題が原因で",
+    "learningPoint": "mechanical は problem を説明しており、その後ろには動詞がありません。遅延理由が名詞句で示されていると確認してから、理由をつなぐ形を選びましょう。"
   },
   {
     "id": "g051",
@@ -1163,7 +1214,8 @@ window.GRAMMAR_QUESTIONS = [
       "during は期間の中を示します。営業日の例外を示せません。"
     ],
     "phrase": "every day except Sundays",
-    "phraseMeaning": "日曜日を除いて毎日"
+    "phraseMeaning": "日曜日を除いて毎日",
+    "learningPoint": "Sundays は日曜日一般を指す複数形です。every day だけで営業日を確定せず、空欄の後ろに毎週の休業日を除外する情報が続いていないか確認します。"
   },
   {
     "id": "g052",
@@ -1185,7 +1237,8 @@ window.GRAMMAR_QUESTIONS = [
       "後ろには節が続きます。「〜の間」を表す接続詞 While が必要です。"
     ],
     "phrase": "while someone is away",
-    "phraseMeaning": "人が不在の間"
+    "phraseMeaning": "人が不在の間",
+    "learningPoint": "was away と handled の2つが、それぞれ別の主語に対応しています。コンマだけでなく節をつなぐ語が必要だと分けて読み、不在と電話対応が同じ期間の出来事だと確認します。"
   },
   {
     "id": "g053",
@@ -1207,7 +1260,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞句です。名詞句が必要で、後ろの節は直接続けられません。"
     ],
     "phrase": "before the seminar begins",
-    "phraseMeaning": "セミナーが始まる前に"
+    "phraseMeaning": "セミナーが始まる前に",
+    "learningPoint": "before の後ろには名詞句も節も置けるので、begins があるという理由で除外しないようにします。登録完了とセミナー開始を時間順に並べると関係がつかめます。"
   },
   {
     "id": "g054",
@@ -1229,7 +1283,8 @@ window.GRAMMAR_QUESTIONS = [
       "during 2012 は「2012年の間に」です。現在までの継続を表す現在完了とは合いません。"
     ],
     "phrase": "since 2012",
-    "phraseMeaning": "2012年から"
+    "phraseMeaning": "2012年から",
+    "learningPoint": "2012 は期間の長さではなく、事業を始めた時点を表しています。has operated が現在につながる形だと確認し、for ten years のような期間の表現と混同しないようにします。"
   },
   {
     "id": "g055",
@@ -1251,7 +1306,8 @@ window.GRAMMAR_QUESTIONS = [
       "for は目的などを示します。ホテルに着くための交通手段には by を使います。"
     ],
     "phrase": "by bus",
-    "phraseMeaning": "バスで"
+    "phraseMeaning": "バスで",
+    "learningPoint": "reach はこの文で the hotel を直接目的語に取っており、その後ろは交通手段の説明です。目的地を示す部分と bus number 12 の役割を分けて読んでみましょう。"
   },
   {
     "id": "g056",
@@ -1273,7 +1329,8 @@ window.GRAMMAR_QUESTIONS = [
       "in accordance with で「〜に従って・〜に応じて」という表現です。"
     ],
     "phrase": "in accordance with",
-    "phraseMeaning": "〜に従って"
+    "phraseMeaning": "〜に従って",
+    "learningPoint": "文頭の In accordance を見たら、後ろの your request までを一つの句として読みます。似た意味の according to と形を混ぜず、accordance には何が続くか確認しましょう。"
   },
   {
     "id": "g057",
@@ -1295,7 +1352,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞句なので、後ろには名詞句を続けます。"
     ],
     "phrase": "whereas",
-    "phraseMeaning": "〜である一方で"
+    "phraseMeaning": "〜である一方で",
+    "learningPoint": "is inexpensive と offers more features が、それぞれモデルの特徴を述べています。2つの節がそろっていることを確かめてから、価格と機能を対比する流れとして読みます。"
   },
   {
     "id": "g058",
@@ -1317,7 +1375,8 @@ window.GRAMMAR_QUESTIONS = [
       "on security reasons という表現にはなりません。"
     ],
     "phrase": "for security reasons",
-    "phraseMeaning": "安全上の理由から"
+    "phraseMeaning": "安全上の理由から",
+    "learningPoint": "must be changed で主な述語は完成しています。空欄以下の security reasons は変更の理由を足す名詞句なので、理由を示す語と組み合わせて読みましょう。"
   },
   {
     "id": "g059",
@@ -1339,7 +1398,8 @@ window.GRAMMAR_QUESTIONS = [
       "since は過去の起点を示します。今後の到着までの期間には使いません。"
     ],
     "phrase": "within three business days",
-    "phraseMeaning": "3営業日以内に"
+    "phraseMeaning": "3営業日以内に",
+    "learningPoint": "three business days は到着日そのものではなく、到着までの営業日数です。arrive という到着の一点が、その期間の内側に入るという関係をイメージします。"
   },
   {
     "id": "g060",
@@ -1361,7 +1421,8 @@ window.GRAMMAR_QUESTIONS = [
       "後ろは節です。接続詞 once は「いったん〜すると・〜し次第」です。"
     ],
     "phrase": "once payment is processed",
-    "phraseMeaning": "支払いの処理が完了すると"
+    "phraseMeaning": "支払いの処理が完了すると",
+    "learningPoint": "once には「一度」という副詞の用法もありますが、ここでは後ろに your payment is processed という節があります。回数ではなく、支払い処理とメール到着の順序をつないでいます。"
   },
   {
     "id": "g061",
@@ -1383,7 +1444,8 @@ window.GRAMMAR_QUESTIONS = [
       "set a decision とは通常言いません。make a decision を使います。"
     ],
     "phrase": "make a decision",
-    "phraseMeaning": "決定を下す"
+    "phraseMeaning": "決定を下す",
+    "learningPoint": "選択肢はどれも原形なので、need to だけでは区別できません。目的語 decision を見て、動詞と名詞を一組で「決定を下す」と結び付ける問題だと判断しましょう。"
   },
   {
     "id": "g062",
@@ -1405,7 +1467,8 @@ window.GRAMMAR_QUESTIONS = [
       "take attention to という形では「注意を払う」になりません。"
     ],
     "phrase": "pay attention to",
-    "phraseMeaning": "〜に注意を払う"
+    "phraseMeaning": "〜に注意を払う",
+    "learningPoint": "後ろの to the safety instructions が注意を向ける対象を示しています。attention はこの表現では数えられない名詞なので、an を挟まず pay attention と覚えます。"
   },
   {
     "id": "g063",
@@ -1427,7 +1490,8 @@ window.GRAMMAR_QUESTIONS = [
       "make place では「開催される」という意味になりません。"
     ],
     "phrase": "take place",
-    "phraseMeaning": "開催される・起こる"
+    "phraseMeaning": "開催される・起こる",
+    "learningPoint": "主語 conference は開催される出来事そのものです。日本語が「開催される」でも、take place は能動形で使うため、受け身にしようとしないのがポイントです。"
   },
   {
     "id": "g064",
@@ -1449,7 +1513,8 @@ window.GRAMMAR_QUESTIONS = [
       "be required to do で「〜することが求められる」です。to wear を選びます。"
     ],
     "phrase": "be required to do",
-    "phraseMeaning": "〜することが求められる"
+    "phraseMeaning": "〜することが求められる",
+    "learningPoint": "are required で義務付けられていることはすでに表せています。空欄からは職員が行う行動を続け、photo identification が wear の目的語になるか確かめます。"
   },
   {
     "id": "g065",
@@ -1471,7 +1536,8 @@ window.GRAMMAR_QUESTIONS = [
       "to charge of という形にはなりません。"
     ],
     "phrase": "be in charge of",
-    "phraseMeaning": "〜を担当している"
+    "phraseMeaning": "〜を担当している",
+    "learningPoint": "charge を「料金」とだけ覚えると、文の意味がつかみにくくなります。Ms. Patel の役割を説明しており、of the training program が担当対象だと読むのが手掛かりです。"
   },
   {
     "id": "g066",
@@ -1493,7 +1559,8 @@ window.GRAMMAR_QUESTIONS = [
       "apologize with では謝罪の理由を示せません。"
     ],
     "phrase": "apologize for the inconvenience",
-    "phraseMeaning": "不便について謝罪する"
+    "phraseMeaning": "不便について謝罪する",
+    "learningPoint": "inconvenience は謝る相手ではなく、謝罪の理由です。caused by the delay はその名詞を後ろから説明しているだけなので、理由を示す語の選択には影響しません。"
   },
   {
     "id": "g067",
@@ -1515,7 +1582,8 @@ window.GRAMMAR_QUESTIONS = [
       "since の後ろには期間の長さではなく開始時点を置きます。"
     ],
     "phrase": "be valid for one year",
-    "phraseMeaning": "1年間有効である"
+    "phraseMeaning": "1年間有効である",
+    "learningPoint": "one year は保証が続く長さ、from the purchase date は起点です。空欄のすぐ後ろがどちらの情報かを見て、文中に開始日があるだけで since を選ばないようにします。"
   },
   {
     "id": "g068",
@@ -1537,7 +1605,8 @@ window.GRAMMAR_QUESTIONS = [
       "fill out a form で「用紙に記入する」という意味です。"
     ],
     "phrase": "fill out a form",
-    "phraseMeaning": "用紙に記入する"
+    "phraseMeaning": "用紙に記入する",
+    "learningPoint": "後半の return it の it は this form を指し、用紙に記入して返す流れです。代名詞に置き換える場合は fill it out とし、fill out it にはしない点も覚えましょう。"
   },
   {
     "id": "g069",
@@ -1559,7 +1628,8 @@ window.GRAMMAR_QUESTIONS = [
       "responsible of という形にはなりません。"
     ],
     "phrase": "be responsible for doing",
-    "phraseMeaning": "〜する責任がある"
+    "phraseMeaning": "〜する責任がある",
+    "learningPoint": "maintaining が -ing 形だからといって、前置詞なら何でもよいわけではありません。まず responsible と結び付く語を選び、その後ろで担当業務が動名詞になっていると確認します。"
   },
   {
     "id": "g070",
@@ -1581,7 +1651,8 @@ window.GRAMMAR_QUESTIONS = [
       "access of では利用対象を示す表現になりません。"
     ],
     "phrase": "access to online materials",
-    "phraseMeaning": "オンライン教材の利用権"
+    "phraseMeaning": "オンライン教材の利用権",
+    "learningPoint": "includes の目的語なので、access はここでは名詞です。access materials のように動詞で使う形と混同せず、名詞の後ろで利用対象をつなぐ語が必要だと判断しましょう。"
   },
   {
     "id": "g071",
@@ -1603,7 +1674,8 @@ window.GRAMMAR_QUESTIONS = [
       "compatible の相手を示す前置詞には with を使います。"
     ],
     "phrase": "be compatible with",
-    "phraseMeaning": "〜と互換性がある"
+    "phraseMeaning": "〜と互換性がある",
+    "learningPoint": "existing system はスキャナーを使う目的ではなく、互換性を確かめる相手です。compatible という形容詞と、その相手を示す前置詞を一組にして覚えましょう。"
   },
   {
     "id": "g072",
@@ -1625,7 +1697,8 @@ window.GRAMMAR_QUESTIONS = [
       "be committed to doing で「〜することに力を注いでいる」です。to は前置詞なので動名詞が続きます。"
     ],
     "phrase": "be committed to doing",
-    "phraseMeaning": "〜することに力を注いでいる"
+    "phraseMeaning": "〜することに力を注いでいる",
+    "learningPoint": "空欄の後ろが reducing なので、不定詞の to＋原形ではありません。committed と前置詞 to を一続きで捉え、「削減すること」を表す動名詞につなげます。"
   },
   {
     "id": "g073",
@@ -1647,7 +1720,8 @@ window.GRAMMAR_QUESTIONS = [
       "to advance ではこの位置で「事前に」という副詞句になりません。"
     ],
     "phrase": "in advance",
-    "phraseMeaning": "事前に・前もって"
+    "phraseMeaning": "事前に・前もって",
+    "learningPoint": "if you need assistance は条件を足す部分なので、いったん外して読みます。let us know と advance をつなぐ時間の表現が必要で、人や物の場所を示す前置詞ではありません。"
   },
   {
     "id": "g074",
@@ -1669,7 +1743,8 @@ window.GRAMMAR_QUESTIONS = [
       "on top of schedule では予定より早いことを表せません。"
     ],
     "phrase": "ahead of schedule",
-    "phraseMeaning": "予定より早く"
+    "phraseMeaning": "予定より早く",
+    "learningPoint": "選択肢はいずれも句なので、形だけでなく schedule の意味も確認します。物理的な前後関係ではなく到着時刻と予定との関係なので、in front of はここでは合いません。"
   },
   {
     "id": "g075",
@@ -1691,7 +1766,8 @@ window.GRAMMAR_QUESTIONS = [
       "「在庫切れ」という表現では stock を複数形にしません。"
     ],
     "phrase": "out of stock",
-    "phraseMeaning": "在庫切れで"
+    "phraseMeaning": "在庫切れで",
+    "learningPoint": "items が複数でも、空欄まで複数形にする必要はありません。この stock は個々の商品ではなく在庫全体を表すので、out of stock という形を保って使います。"
   },
   {
     "id": "g076",
@@ -1713,7 +1789,8 @@ window.GRAMMAR_QUESTIONS = [
       "at no additional charge で「追加料金なしで」です。additional の後ろには名詞 charge を置きます。"
     ],
     "phrase": "at no additional charge",
-    "phraseMeaning": "追加料金なしで"
+    "phraseMeaning": "追加料金なしで",
+    "learningPoint": "provided の後ろで、交換品を提供する条件を足しています。no additional charge は追加の負担がないという意味で、元の商品代金まで無料という意味とは限りません。"
   },
   {
     "id": "g077",
@@ -1735,7 +1812,8 @@ window.GRAMMAR_QUESTIONS = [
       "up of fifty という形にはなりません。"
     ],
     "phrase": "up to fifty guests",
-    "phraseMeaning": "最大50名の客まで"
+    "phraseMeaning": "最大50名の客まで",
+    "learningPoint": "accommodate はここでは客を収容することを表します。fifty guests が人数なので、up と一緒に収容人数の上限を示すまとまりを作れるか確かめましょう。"
   },
   {
     "id": "g078",
@@ -1757,7 +1835,8 @@ window.GRAMMAR_QUESTIONS = [
       "available of purchase という形にはなりません。"
     ],
     "phrase": "available for purchase",
-    "phraseMeaning": "購入可能な"
+    "phraseMeaning": "購入可能な",
+    "learningPoint": "available の後ろで purchase を名詞として受ける形です。別の文では available to do も使えるため、available の後ろは必ず for と決め付けず語の役割を確認します。"
   },
   {
     "id": "g079",
@@ -1779,7 +1858,8 @@ window.GRAMMAR_QUESTIONS = [
       "get in touching with という表現にはなりません。"
     ],
     "phrase": "get in touch with",
-    "phraseMeaning": "〜と連絡を取る"
+    "phraseMeaning": "〜と連絡を取る",
+    "learningPoint": "with us が連絡する相手を示し、その前の get in ___ で動作の表現を完成させます。主語が変わっても、この決まった句の touch を touches などには変えません。"
   },
   {
     "id": "g080",
@@ -1801,7 +1881,8 @@ window.GRAMMAR_QUESTIONS = [
       "keep＋人＋過去分詞 informed で「人に情報を知らせ続ける」です。"
     ],
     "phrase": "keep someone informed",
-    "phraseMeaning": "人に随時情報を知らせる"
+    "phraseMeaning": "人に随時情報を知らせる",
+    "learningPoint": "you は情報を伝える側ではなく、知らせてもらう側です。about the delivery status が知らせる内容だと読み、keep の目的語がどんな状態になるかで空欄を判断します。"
   },
   {
     "id": "g081",
@@ -1823,7 +1904,8 @@ window.GRAMMAR_QUESTIONS = [
       "所有代名詞です。送り先の人を表す目的格が必要です。"
     ],
     "phrase": "send someone an estimate",
-    "phraseMeaning": "人に見積書を送る"
+    "phraseMeaning": "人に見積書を送る",
+    "learningPoint": "後ろの estimate が送る物なので、空欄は受け手の位置です。「物＋to＋人」の語順に変える場合も、to の後ろには目的格を使います。"
   },
   {
     "id": "g082",
@@ -1845,7 +1927,8 @@ window.GRAMMAR_QUESTIONS = [
       "再帰代名詞です。own contact details の前には所有格が必要です。"
     ],
     "phrase": "update contact details",
-    "phraseMeaning": "連絡先情報を更新する"
+    "phraseMeaning": "連絡先情報を更新する",
+    "learningPoint": "空欄だけを見ず、Each branch まで戻って所有者を確かめます。own の後ろに details があるので、「それ自身」ではなく「それ自身の」を示す形を選びます。"
   },
   {
     "id": "g083",
@@ -1867,7 +1950,8 @@ window.GRAMMAR_QUESTIONS = [
       "所有格なので後ろに名詞が必要です。"
     ],
     "phrase": "help yourself to",
-    "phraseMeaning": "〜を自由に取ってください"
+    "phraseMeaning": "〜を自由に取ってください",
+    "learningPoint": "to coffee までを読んで、飲み物を自由に取るよう勧めていると判断します。仕事を手伝う help you with ... とは、help の使い方が異なります。"
   },
   {
     "id": "g084",
@@ -1889,7 +1973,8 @@ window.GRAMMAR_QUESTIONS = [
       "Of the three printers tested が3つの比較対象を示します。the の後ろは最上級 quietest です。"
     ],
     "phrase": "the quietest model",
-    "phraseMeaning": "最も静かなモデル"
+    "phraseMeaning": "最も静かなモデル",
+    "learningPoint": "the だけで最上級と決めず、Of the three で比較の範囲を確認します。複数の候補の中の1番を選ぶ意味と、形の両方を照合しましょう。"
   },
   {
     "id": "g085",
@@ -1911,7 +1996,8 @@ window.GRAMMAR_QUESTIONS = [
       "「地位の低い」などの意味で、請求額がより低いことを示す比較級ではありません。"
     ],
     "phrase": "lower than last month's",
-    "phraseMeaning": "先月のものより低い"
+    "phraseMeaning": "先月のものより低い",
+    "learningPoint": "than の前後は今月と先月の bill の比較です。last month's の後ろでは bill が省略されており、異なる種類のものを比べているわけではありません。"
   },
   {
     "id": "g086",
@@ -1933,7 +2019,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞・動詞です。「快適な」という形容詞の原級ではありません。"
     ],
     "phrase": "as comfortable as",
-    "phraseMeaning": "〜と同じくらい快適な"
+    "phraseMeaning": "〜と同じくらい快適な",
+    "learningPoint": "後ろにも as があるため、than を伴う比較級の形と区別します。is に続いてキーボードの使い心地を述べるので、形容詞の原級を入れます。"
   },
   {
     "id": "g087",
@@ -1955,7 +2042,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。名詞 improvement を直接修飾できません。"
     ],
     "phrase": "a steady improvement",
-    "phraseMeaning": "着実な改善"
+    "phraseMeaning": "着実な改善",
+    "learningPoint": "a の直後だけでなく、後ろの improvement が名詞だと確かめます。改善が着実であることを説明する位置で、show の動作を説明する位置ではありません。"
   },
   {
     "id": "g088",
@@ -1977,7 +2065,8 @@ window.GRAMMAR_QUESTIONS = [
       "keep＋目的語＋形容詞で「目的語を〜の状態に保つ」です。confidential を使います。"
     ],
     "phrase": "keep information confidential",
-    "phraseMeaning": "情報を機密として扱う"
+    "phraseMeaning": "情報を機密として扱う",
+    "learningPoint": "information の後ろには、その情報をどんな状態に保つかが続きます。「秘密に保管する」という意味を、keep と目的語と状態の3つに分けて捉えましょう。"
   },
   {
     "id": "g089",
@@ -1999,7 +2088,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。受け身に必要な過去分詞ではありません。"
     ],
     "phrase": "an opening ceremony",
-    "phraseMeaning": "開会式"
+    "phraseMeaning": "開会式",
+    "learningPoint": "後ろの by everyone が、楽しんだ人を示しています。by は常に受け身の印ではなく、by Friday のように期限を示す場合もあるので、後ろの語を確認します。"
   },
   {
     "id": "g090",
@@ -2021,7 +2111,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞の原形です。were の後ろで感情を示す形にはなりません。"
     ],
     "phrase": "be pleased to learn",
-    "phraseMeaning": "知ってうれしく思う"
+    "phraseMeaning": "知ってうれしく思う",
+    "learningPoint": "We が知らせを聞いて喜びを感じる側です。人だから常に -ed と決めず、感情を抱く側か、与える側かを文の意味から判断しましょう。"
   },
   {
     "id": "g091",
@@ -2043,7 +2134,8 @@ window.GRAMMAR_QUESTIONS = [
       "形容詞です。比較級 more flexible を修飾するには副詞が必要です。"
     ],
     "phrase": "considerably more flexible",
-    "phraseMeaning": "かなり柔軟性が高い"
+    "phraseMeaning": "かなり柔軟性が高い",
+    "learningPoint": "more flexible はすでに比較の形なので、空欄は比較級そのものではありません。「どの程度柔軟か」を足す位置だと捉え、形容詞と副詞を区別します。"
   },
   {
     "id": "g092",
@@ -2065,7 +2157,8 @@ window.GRAMMAR_QUESTIONS = [
       "paper は材料を表す数えられない名詞です。量がより少ないことを less で示します。"
     ],
     "phrase": "use less paper",
-    "phraseMeaning": "より少ない紙を使う"
+    "phraseMeaning": "より少ない紙を使う",
+    "learningPoint": "前に copies があっても、量を表す語が直接かかるのは paper です。材料としての紙と、複数形 papers が表す書類などの意味を分けて考えます。"
   },
   {
     "id": "g093",
@@ -2087,7 +2180,8 @@ window.GRAMMAR_QUESTIONS = [
       "a less employees という形にはなりません。a few＋複数名詞が必要です。"
     ],
     "phrase": "a few employees",
-    "phraseMeaning": "数名の従業員"
+    "phraseMeaning": "数名の従業員",
+    "learningPoint": "空欄の前の a と後ろの employees を一緒に見ます。a few は少数でも存在することを表し、few 単独の「ほとんどいない」とは含みが違います。"
   },
   {
     "id": "g094",
@@ -2109,7 +2203,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。職場の安全という目的語にはなりません。"
     ],
     "phrase": "workplace safety",
-    "phraseMeaning": "職場の安全"
+    "phraseMeaning": "職場の安全",
+    "learningPoint": "workplace が名詞でも、その後ろが必ず形容詞になるわけではありません。「何を improve するのか」と問い、workplace safety 全体を目的語として捉えます。"
   },
   {
     "id": "g095",
@@ -2131,7 +2226,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。remain の後ろで状態を示すには形容詞が必要です。"
     ],
     "phrase": "remain vacant",
-    "phraseMeaning": "空いたままである"
+    "phraseMeaning": "空いたままである",
+    "learningPoint": "remain の後ろは行動ではなく、rooms がどういう状態のままかを述べています。空室である状態と、vacate が表す部屋を空ける行動を区別しましょう。"
   },
   {
     "id": "g096",
@@ -2153,7 +2249,8 @@ window.GRAMMAR_QUESTIONS = [
       "provide の目的語となる名詞 proof を使います。proof of membership で「会員であることの証明」です。"
     ],
     "phrase": "proof of membership",
-    "phraseMeaning": "会員であることの証明"
+    "phraseMeaning": "会員であることの証明",
+    "learningPoint": "provide の後ろに「何を提示するか」が必要です。of membership はその証明内容を説明するまとまりなので、先に proof までで名詞の中心を作ります。"
   },
   {
     "id": "g097",
@@ -2175,7 +2272,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。on の目的語となる名詞にはなりません。"
     ],
     "phrase": "be based on information",
-    "phraseMeaning": "情報に基づいている"
+    "phraseMeaning": "情報に基づいている",
+    "learningPoint": "文の述語はすでに was based です。collected 以下を「店から集められた」と後ろからかかる説明として捉えると、空欄に別の動詞を入れずに済みます。"
   },
   {
     "id": "g098",
@@ -2197,7 +2295,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞です。completed を修飾できません。"
     ],
     "phrase": "fully completed",
-    "phraseMeaning": "すべて記入済みの"
+    "phraseMeaning": "すべて記入済みの",
+    "learningPoint": "be の直後だから形容詞、と急がず、後ろの completed まで確認します。ここは受け身の完成度を補う位置であり、申請書の性質を単独で述べる位置ではありません。"
   },
   {
     "id": "g099",
@@ -2219,7 +2318,8 @@ window.GRAMMAR_QUESTIONS = [
       "この位置では案内人付きという意味の過去分詞 guided を使います。"
     ],
     "phrase": "guided tours",
-    "phraseMeaning": "ガイド付きツアー"
+    "phraseMeaning": "ガイド付きツアー",
+    "learningPoint": "tours の前で「ガイド付きの」と説明する形です。人を表す tour guide とは語順が異なるので、同じ guide でも修飾される語が何かを確認します。"
   },
   {
     "id": "g100",
@@ -2241,7 +2341,8 @@ window.GRAMMAR_QUESTIONS = [
       "its と名詞 performance の間なので、形容詞 exceptional「卓越した」を使います。"
     ],
     "phrase": "exceptional performance",
-    "phraseMeaning": "卓越した実績"
+    "phraseMeaning": "卓越した実績",
+    "learningPoint": "performance の内容を評価する語を選ぶ位置です。its があることだけで名詞を選ばず、performance を中心に「卓越した実績」という名詞句を作ります。"
   },
   {
     "id": "g101",
@@ -2263,7 +2364,8 @@ window.GRAMMAR_QUESTIONS = [
       "being attending だけでは文の述語になりません。"
     ],
     "phrase": "attend a trade fair",
-    "phraseMeaning": "見本市に出席する"
+    "phraseMeaning": "見本市に出席する",
+    "learningPoint": "カンマで挟まれた together with 以下を一度外すと、The director と述語の関係が見えます。with は主語を and で結ぶ場合とは区別します。"
   },
   {
     "id": "g102",
@@ -2285,7 +2387,8 @@ window.GRAMMAR_QUESTIONS = [
       "対象の tickets と数が一致しません。"
     ],
     "phrase": "tickets are available",
-    "phraseMeaning": "チケットが購入可能である"
+    "phraseMeaning": "チケットが購入可能である",
+    "learningPoint": "数字の Ten だけで単複を決めず、何の10％なのかを確認します。tickets なら複数扱いですが、水などの数えられない名詞の割合なら単数扱いになります。"
   },
   {
     "id": "g103",
@@ -2307,7 +2410,8 @@ window.GRAMMAR_QUESTIONS = [
       "all windows は複数なので is とは一致しません。"
     ],
     "phrase": "ensure that",
-    "phraseMeaning": "〜であることを確認する"
+    "phraseMeaning": "〜であることを確認する",
+    "learningPoint": "that の後ろを独立した文として読み、all windows を主語、空欄を述語の位置と見ます。窓は閉める人ではないため、単複の確認に加えて態も選びます。"
   },
   {
     "id": "g104",
@@ -2329,7 +2433,8 @@ window.GRAMMAR_QUESTIONS = [
       "By the end of next month が未来の完了期限です。will have＋過去分詞で未来完了にします。"
     ],
     "phrase": "by the end of next month",
-    "phraseMeaning": "来月末までには"
+    "phraseMeaning": "来月末までには",
+    "learningPoint": "next month が、完了を確かめる基準を未来に置いています。by があるだけで時制を決めず、その基準時が過去か未来かを先に確認しましょう。"
   },
   {
     "id": "g105",
@@ -2351,7 +2456,8 @@ window.GRAMMAR_QUESTIONS = [
       "未来形です。昨年のこの時期という内容に合いません。"
     ],
     "phrase": "hire new staff",
-    "phraseMeaning": "新しい職員を採用する"
+    "phraseMeaning": "新しい職員を採用する",
+    "learningPoint": "last year だけでなく at this time まで読むと、昨年のある時点での採用活動だと分かります。単なる過去の出来事と、その時点で進行中の動作を分けます。"
   },
   {
     "id": "g106",
@@ -2373,7 +2479,8 @@ window.GRAMMAR_QUESTIONS = [
       "能動態です。事務室が何かを使う意味になってしまいます。"
     ],
     "phrase": "be used as a storage area",
-    "phraseMeaning": "保管場所として使われる"
+    "phraseMeaning": "保管場所として使われる",
+    "learningPoint": "until it was converted が、使われていた期間を過去に限定しています。used as は用途を示し、昔の習慣を表す used to＋動詞とは別の形です。"
   },
   {
     "id": "g107",
@@ -2395,7 +2502,8 @@ window.GRAMMAR_QUESTIONS = [
       "能動態です。研修自体が何かを延期する意味になってしまいます。"
     ],
     "phrase": "postpone a training session",
-    "phraseMeaning": "研修を延期する"
+    "phraseMeaning": "研修を延期する",
+    "learningPoint": "主語の session は延期を決める人ではなく、延期の対象です。instructor became ill という理由の節も読み、出来事の時点と、する側・される側を別々に確認します。"
   },
   {
     "id": "g108",
@@ -2417,7 +2525,8 @@ window.GRAMMAR_QUESTIONS = [
       "decide to do で「〜することを決める」です。to hold を選びます。"
     ],
     "phrase": "decide to do",
-    "phraseMeaning": "〜することを決める"
+    "phraseMeaning": "〜することを決める",
+    "learningPoint": "a second meeting は hold の目的語です。decide の後ろに行動を続ける形か、decide on＋名詞で対象を選ぶ形かを区別して覚えましょう。"
   },
   {
     "id": "g109",
@@ -2439,7 +2548,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去形・過去分詞です。「開設すること」を表す動名詞ではありません。"
     ],
     "phrase": "consider doing",
-    "phraseMeaning": "〜することを検討する"
+    "phraseMeaning": "〜することを検討する",
+    "learningPoint": "are considering の -ing は文全体の進行形を作っています。その後ろの空欄は検討内容なので、-ing が続く見た目だけを理由に不正解としないようにします。"
   },
   {
     "id": "g110",
@@ -2461,7 +2571,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去形・過去分詞です。合意した行動を示す不定詞が必要です。"
     ],
     "phrase": "agree to do",
-    "phraseMeaning": "〜することに同意する"
+    "phraseMeaning": "〜することに同意する",
+    "learningPoint": "agreed の後ろには、何をすると同意したかが続きます。人や意見への賛成を表す agree with とは異なり、この文は replace という行動が対象です。"
   },
   {
     "id": "g111",
@@ -2483,7 +2594,8 @@ window.GRAMMAR_QUESTIONS = [
       "allow＋人の後ろには to 不定詞を続けます。"
     ],
     "phrase": "allow someone to do",
-    "phraseMeaning": "人が〜できるようにする"
+    "phraseMeaning": "人が〜できるようにする",
+    "learningPoint": "customers は compare する人です。allows の直後に人があっても別の文の主語とは捉えず、「誰に、何を可能にするか」をひとまとまりで読みます。"
   },
   {
     "id": "g112",
@@ -2505,7 +2617,8 @@ window.GRAMMAR_QUESTIONS = [
       "refrain from doing で「〜することを控える」です。from の後ろは making にします。"
     ],
     "phrase": "refrain from doing",
-    "phraseMeaning": "〜することを控える"
+    "phraseMeaning": "〜することを控える",
+    "learningPoint": "from は前置詞なので、空欄の動作を名詞として扱う形にします。会議中という during meetings は補足であり、make の形を直接決める部分ではありません。"
   },
   {
     "id": "g113",
@@ -2527,7 +2640,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去分詞です。作業員が手袋を着用する行動には to wear を使います。"
     ],
     "phrase": "require someone to do",
-    "phraseMeaning": "人に〜することを要求する"
+    "phraseMeaning": "人に〜することを要求する",
+    "learningPoint": "every operator は require の目的語で、その人が手袋を着用します。operator が単数でも wears にはせず、文の主語と動作を指示される人を区別します。"
   },
   {
     "id": "g114",
@@ -2549,7 +2663,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞です。受付自体が何かを塗り直す意味になってしまいます。"
     ],
     "phrase": "have an area repainted",
-    "phraseMeaning": "場所を塗り直してもらう"
+    "phraseMeaning": "場所を塗り直してもらう",
+    "learningPoint": "reception area は塗装する人ではなく、塗り直される場所です。had が文全体の過去を示しており、空欄は別の過去形ではなく、その場所との関係で選びます。"
   },
   {
     "id": "g115",
@@ -2571,7 +2686,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在形です。yesterday という過去の時点に合いません。"
     ],
     "phrase": "notice an error",
-    "phraseMeaning": "誤りに気付く"
+    "phraseMeaning": "誤りに気付く",
+    "learningPoint": "while reviewing は確認作業中という補足で、文の主な述語は空欄です。まず述語が1つ必要だと確認し、yesterday でその出来事を過去に置きます。"
   },
   {
     "id": "g116",
@@ -2593,7 +2709,8 @@ window.GRAMMAR_QUESTIONS = [
       "has been＋現在分詞で現在完了進行形です。since April から続く役割を leading で表します。"
     ],
     "phrase": "lead a sales team",
-    "phraseMeaning": "営業チームを率いる"
+    "phraseMeaning": "営業チームを率いる",
+    "learningPoint": "後ろの the regional sales team は、率いられる対象です。has been の形だけで受け身と決めず、Ms. Torres がチームを率いる側かどうかも読み取ります。"
   },
   {
     "id": "g117",
@@ -2615,7 +2732,8 @@ window.GRAMMAR_QUESTIONS = [
       "being included だけでは文の述語を作れません。"
     ],
     "phrase": "be included in the package",
-    "phraseMeaning": "荷物に同梱されている"
+    "phraseMeaning": "荷物に同梱されている",
+    "learningPoint": "for assembling 以下を外して、The instructions と空欄をつなげて読みます。前置詞句の中の語を主語に取り違えず、中心の instructions に数を合わせます。"
   },
   {
     "id": "g118",
@@ -2637,7 +2755,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞です。is expected attracting という形にはできません。"
     ],
     "phrase": "be expected to do",
-    "phraseMeaning": "〜すると見込まれる"
+    "phraseMeaning": "〜すると見込まれる",
+    "learningPoint": "venue が来場者を引き付けると予測されています。is expected で受け身はできているため、後ろには「会場が何をするか」という見込みの内容を続けます。"
   },
   {
     "id": "g119",
@@ -2659,7 +2778,8 @@ window.GRAMMAR_QUESTIONS = [
       "この to は前置詞です。後ろに原形ではなく動名詞を置きます。"
     ],
     "phrase": "be accustomed to doing",
-    "phraseMeaning": "〜することに慣れている"
+    "phraseMeaning": "〜することに慣れている",
+    "learningPoint": "accustomed to は慣れている対象を続けるまとまりです。to を見たら即座に原形とせず、電子請求書を受け取る行為全体が対象になっていると捉えます。"
   },
   {
     "id": "g120",
@@ -2681,7 +2801,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去のある出来事が起きたときに進行中だった動作は、過去進行形 was planning で表します。"
     ],
     "phrase": "plan a campaign",
-    "phraseMeaning": "キャンペーンを企画する"
+    "phraseMeaning": "キャンペーンを企画する",
+    "learningPoint": "when 節の was reduced が過去の基準点です。その時点で企画作業の途中だったと読み、予算が減った出来事と、企画中の動作を別々に捉えます。"
   },
   {
     "id": "g121",
@@ -2703,7 +2824,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞です。後ろには主語と動詞のある節が必要です。"
     ],
     "phrase": "upon receipt of",
-    "phraseMeaning": "〜を受領次第"
+    "phraseMeaning": "〜を受領次第",
+    "learningPoint": "receipt はここでは買い物のレシートではなく、注文の受領です。of your order までが名詞のまとまりであり、主語と動詞を持つ節ではありません。"
   },
   {
     "id": "g122",
@@ -2725,7 +2847,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞なので、後ろには節ではなく名詞句を続けます。"
     ],
     "phrase": "provided that",
-    "phraseMeaning": "〜という条件で"
+    "phraseMeaning": "〜という条件で",
+    "learningPoint": "present the original receipt が交換の条件です。provided を単なる provide の過去形と見ず、that までを条件を導く1つの表現として読みます。"
   },
   {
     "id": "g123",
@@ -2747,7 +2870,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞なので、the brochure states という節を直接続けられません。"
     ],
     "phrase": "as the brochure states",
-    "phraseMeaning": "パンフレットに記載されているとおり"
+    "phraseMeaning": "パンフレットに記載されているとおり",
+    "learningPoint": "the brochure states と breakfast is included に、それぞれ主語と動詞があります。as は比較の形だけでなく、ここでは記載内容を根拠として示しています。"
   },
   {
     "id": "g124",
@@ -2769,7 +2893,8 @@ window.GRAMMAR_QUESTIONS = [
       "be identical to で「〜と同一である」です。比較対象を to で示します。"
     ],
     "phrase": "be identical to",
-    "phraseMeaning": "〜と同一である"
+    "phraseMeaning": "〜と同一である",
+    "learningPoint": "同じという日本語訳だけで as を選ばず、identical が取る形を確認します。the same as と identical to は、似た意味でも続く前置詞が異なります。"
   },
   {
     "id": "g125",
@@ -2791,7 +2916,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞なので、日付 June 30 だけは続けられません。"
     ],
     "phrase": "remain valid until",
-    "phraseMeaning": "〜まで有効なままである"
+    "phraseMeaning": "〜まで有効なままである",
+    "learningPoint": "remain valid は有効な状態が続くことを表します。続く状態の終点には until、提出などを済ませる期限には by、と動作や状態の種類も見て区別します。"
   },
   {
     "id": "g126",
@@ -2813,7 +2939,8 @@ window.GRAMMAR_QUESTIONS = [
       "neither A nor B とは異なり、both の後ろには and を使います。"
     ],
     "phrase": "both A and B",
-    "phraseMeaning": "AとBの両方"
+    "phraseMeaning": "AとBの両方",
+    "learningPoint": "beginners と experienced users は、同じ役割の2つの名詞句です。離れていても both と and を対応させ、どちらか一方を選ぶ or と区別します。"
   },
   {
     "id": "g127",
@@ -2835,7 +2962,8 @@ window.GRAMMAR_QUESTIONS = [
       "集団の中を表します。A and B という2地点の間には between を使います。"
     ],
     "phrase": "a shuttle between A and B",
-    "phraseMeaning": "AとBの間の送迎サービス"
+    "phraseMeaning": "AとBの間の送迎サービス",
+    "learningPoint": "空欄の後ろにある airport と conference center が、送迎の両端です。単に場所の名詞を探すのでなく、どの2地点を結ぶ説明なのかを確認します。"
   },
   {
     "id": "g128",
@@ -2857,7 +2985,8 @@ window.GRAMMAR_QUESTIONS = [
       "後ろは節です。閉鎖が続く終点を示す接続詞 until「〜するまで」を使います。"
     ],
     "phrase": "remain closed until",
-    "phraseMeaning": "〜するまで閉鎖されたままである"
+    "phraseMeaning": "〜するまで閉鎖されたままである",
+    "learningPoint": "closed の状態が、修理完了を境に終わると読みます。未来の話でも until の時間節では現在形や現在完了を使い、主節と同じ will を機械的に入れません。"
   },
   {
     "id": "g129",
@@ -2879,7 +3008,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞句です。主語と動詞のある節は直接続けられません。"
     ],
     "phrase": "while",
-    "phraseMeaning": "〜する一方で"
+    "phraseMeaning": "〜する一方で",
+    "learningPoint": "increased と fell は、売上と費用の異なる動きを述べています。while を見たら必ず「〜の間」と訳すのではなく、文全体で対比が成り立つかも確かめます。"
   },
   {
     "id": "g130",
@@ -2901,7 +3031,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞なので、後ろには名詞句を続けます。"
     ],
     "phrase": "unless both parties agree",
-    "phraseMeaning": "両当事者が同意しない限り"
+    "phraseMeaning": "両当事者が同意しない限り",
+    "learningPoint": "cannot と unless を切り離さず、「署名がなければ更新不可」と整理します。署名は更新の必要条件であり、署名さえすれば必ず更新されるとまでは述べていません。"
   },
   {
     "id": "g131",
@@ -2923,7 +3054,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞です。her experience in retail という名詞句だけは続けられません。"
     ],
     "phrase": "because of her experience",
-    "phraseMeaning": "彼女の経験を理由に"
+    "phraseMeaning": "彼女の経験を理由に",
+    "learningPoint": "her experience が名詞の中心で、in retail は分野を補足しています。前置詞句を含む長いまとまりでも、experience の後ろに述語がないことを確認します。"
   },
   {
     "id": "g132",
@@ -2945,7 +3077,8 @@ window.GRAMMAR_QUESTIONS = [
       "for＋期間で、動作や状態が続いた長さを表します。for an hour で「1時間」です。"
     ],
     "phrase": "last for an hour",
-    "phraseMeaning": "1時間続く"
+    "phraseMeaning": "1時間続く",
+    "learningPoint": "lasted は「続いた」という動詞で、空欄の後ろは続いた長さです。an hour は期間であり、1時のような時計の時点や、開始日を示す語ではありません。"
   },
   {
     "id": "g133",
@@ -2967,7 +3100,8 @@ window.GRAMMAR_QUESTIONS = [
       "この文で返却時の機器の状態を示す表現は in the same condition です。"
     ],
     "phrase": "in the same condition",
-    "phraseMeaning": "同じ状態で"
+    "phraseMeaning": "同じ状態で",
+    "learningPoint": "condition はここでは契約の条件ではなく、機器の状態です。as when you received it が受け取り時との比較を補い、同じ状態で返すという意味を作ります。"
   },
   {
     "id": "g134",
@@ -2989,7 +3123,8 @@ window.GRAMMAR_QUESTIONS = [
       "next of という形にはなりません。"
     ],
     "phrase": "next to the entrance",
-    "phraseMeaning": "入口の隣に"
+    "phraseMeaning": "入口の隣に",
+    "learningPoint": "next の後ろに場所の名詞をつなぐ形です。to の後ろが the building's main entrance という名詞句なので、不定詞の to として読まないようにします。"
   },
   {
     "id": "g135",
@@ -3011,7 +3146,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞なので、you finish the form という節を直接続けられません。"
     ],
     "phrase": "after you finish",
-    "phraseMeaning": "終えた後に"
+    "phraseMeaning": "終えた後に",
+    "learningPoint": "finish と click の2つの動作の順序を確認します。これから操作するときの案内でも、After の時間節では finish の現在形を使います。"
   },
   {
     "id": "g136",
@@ -3033,7 +3169,8 @@ window.GRAMMAR_QUESTIONS = [
       "後ろは節です。if「もし〜なら」で、月曜日の開店に対する条件を示します。"
     ],
     "phrase": "if the renovation is finished",
-    "phraseMeaning": "改装が完了すれば"
+    "phraseMeaning": "改装が完了すれば",
+    "learningPoint": "Monday の開店は確定した事実ではなく、改装完了を条件とする予定です。if 節の is finished は未来の条件を現在形の受け身で述べています。"
   },
   {
     "id": "g137",
@@ -3055,7 +3192,8 @@ window.GRAMMAR_QUESTIONS = [
       "every a paper receipt という形にはなりません。"
     ],
     "phrase": "either A or B",
-    "phraseMeaning": "AかBのどちらか"
+    "phraseMeaning": "AかBのどちらか",
+    "learningPoint": "後ろの or を先に見つけ、対応する語を前に探します。an electronic one の one は receipt の代わりであり、2種類の領収書が並列されています。"
   },
   {
     "id": "g138",
@@ -3077,7 +3215,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞です。後ろには節ではなく名詞句を置きます。"
     ],
     "phrase": "as soon as",
-    "phraseMeaning": "〜するとすぐに"
+    "phraseMeaning": "〜するとすぐに",
+    "learningPoint": "空欄が導くのは到着する時点で、検品は主節の動作です。未来の到着でも時間節は arrives とし、主節の will inspect と役割を分けて読みます。"
   },
   {
     "id": "g139",
@@ -3099,7 +3238,8 @@ window.GRAMMAR_QUESTIONS = [
       "「〜の間」という期間を示し、教材の例外は表せません。"
     ],
     "phrase": "except the textbook",
-    "phraseMeaning": "教科書を除いて"
+    "phraseMeaning": "教科書を除いて",
+    "learningPoint": "which 以下から、教科書だけは別払いだと分かります。all materials を見ただけで全品込みと決めず、その後ろに付く例外や制限も最後まで読みます。"
   },
   {
     "id": "g140",
@@ -3121,7 +3261,8 @@ window.GRAMMAR_QUESTIONS = [
       "後ろは節です。so that＋主語＋動詞で「〜できるように」という目的を表します。"
     ],
     "phrase": "so that everyone can follow",
-    "phraseMeaning": "全員が理解できるように"
+    "phraseMeaning": "全員が理解できるように",
+    "learningPoint": "slowly の目的を、後ろの everyone could follow it が説明しています。follow はここでは人の後を追うことではなく、手順の説明を理解することです。"
   },
   {
     "id": "g141",
@@ -3143,7 +3284,8 @@ window.GRAMMAR_QUESTIONS = [
       "hold arrangements では「手配する」という表現になりません。"
     ],
     "phrase": "make arrangements for",
-    "phraseMeaning": "〜の手配をする"
+    "phraseMeaning": "〜の手配をする",
+    "learningPoint": "選択肢はすべて will の後ろに置ける原形なので、時制や品詞だけでは決まりません。arrangements と自然に組み合わさる動詞を選ぶ、連語の問題です。"
   },
   {
     "id": "g142",
@@ -3165,7 +3307,8 @@ window.GRAMMAR_QUESTIONS = [
       "座席の配置や収容能力などを指します。「座ってください」は take a seat です。"
     ],
     "phrase": "take a seat",
-    "phraseMeaning": "座る"
+    "phraseMeaning": "座る",
+    "learningPoint": "a があるので、数えられる単数名詞を探すと候補を絞れます。seating は座席の配置などを表し、take a seat の seat とそのまま交換できません。"
   },
   {
     "id": "g143",
@@ -3187,7 +3330,8 @@ window.GRAMMAR_QUESTIONS = [
       "三人称単数現在形です。will の後ろには原形を使います。"
     ],
     "phrase": "provide an overview",
-    "phraseMeaning": "概要を説明する"
+    "phraseMeaning": "概要を説明する",
+    "learningPoint": "will が動詞の形を先に決めてくれるため、全文を訳す前に選べます。overview は全体像の短い説明であり、細部をすべて示すという意味ではありません。"
   },
   {
     "id": "g144",
@@ -3209,7 +3353,8 @@ window.GRAMMAR_QUESTIONS = [
       "meet a deadline で「締め切りを守る」です。deadline と組み合わせる動詞を選びます。"
     ],
     "phrase": "meet a deadline",
-    "phraseMeaning": "締め切りを守る"
+    "phraseMeaning": "締め切りを守る",
+    "learningPoint": "need to の後ろに置く形は全選択肢で共通です。deadline を目的語に取る表現を確かめ、meet が人に会う以外にも使われることを覚えます。"
   },
   {
     "id": "g145",
@@ -3231,7 +3376,8 @@ window.GRAMMAR_QUESTIONS = [
       "「従う」という意味で、通常 comply with とします。costs を直接目的語に取りません。"
     ],
     "phrase": "compare costs",
-    "phraseMeaning": "費用を比較する"
+    "phraseMeaning": "費用を比較する",
+    "learningPoint": "各選択肢は原形なので、will の後ろという条件だけでは絞れません。costs of each proposal を見比べる行為かを確認し、似た綴りの compete と区別します。"
   },
   {
     "id": "g146",
@@ -3253,7 +3399,8 @@ window.GRAMMAR_QUESTIONS = [
       "「出席・存在」という名詞です。Please の後ろには動詞の原形が必要です。"
     ],
     "phrase": "present a boarding pass",
-    "phraseMeaning": "搭乗券を提示する"
+    "phraseMeaning": "搭乗券を提示する",
+    "learningPoint": "Please の後ろで原形を探した後、boarding pass をどうするかまで確認します。prevent も原形ですが、搭乗口で券を提示するという意味にはなりません。"
   },
   {
     "id": "g147",
@@ -3275,7 +3422,8 @@ window.GRAMMAR_QUESTIONS = [
       "provide 人 with 物が正しい形です。to ではこの語順で提供品を示せません。"
     ],
     "phrase": "provide someone with something",
-    "phraseMeaning": "人に物を提供する"
+    "phraseMeaning": "人に物を提供する",
+    "learningPoint": "guests が受け取る人、breakfast が提供される物です。provide breakfast for guests と語順を変える場合は、同じ意味でも前置詞が変わります。"
   },
   {
     "id": "g148",
@@ -3297,7 +3445,8 @@ window.GRAMMAR_QUESTIONS = [
       "notify＋人＋of＋事柄で「人に事柄を知らせる」です。後ろの us of が手掛かりです。"
     ],
     "phrase": "notify someone of something",
-    "phraseMeaning": "人に事柄を知らせる"
+    "phraseMeaning": "人に事柄を知らせる",
+    "learningPoint": "知らせる相手の us が先にあり、of の後ろが通知内容です。announce は通常、発表する事柄を先に置くため、意味が似ていても同じ語順に代入できません。"
   },
   {
     "id": "g149",
@@ -3319,7 +3468,8 @@ window.GRAMMAR_QUESTIONS = [
       "「表現された」という意味で、製品の種類を増やす文には合いません。"
     ],
     "phrase": "expand a product range",
-    "phraseMeaning": "製品の種類を増やす"
+    "phraseMeaning": "製品の種類を増やす",
+    "learningPoint": "12 models から20へ増えるので、製品群の拡大を表します。選択肢の -ed という形だけでは選べず、from と to の数値の動きまで読む必要があります。"
   },
   {
     "id": "g150",
@@ -3341,7 +3491,8 @@ window.GRAMMAR_QUESTIONS = [
       "take an eye on という表現にはなりません。"
     ],
     "phrase": "keep an eye on",
-    "phraseMeaning": "〜を注意して見ておく"
+    "phraseMeaning": "〜を注意して見ておく",
+    "learningPoint": "inventory levels は注意して見ておく対象です。an eye on まで含めた連語を使う位置で、目を物理的に持ったり動かしたりする場面ではありません。"
   },
   {
     "id": "g151",
@@ -3363,7 +3514,8 @@ window.GRAMMAR_QUESTIONS = [
       "within walking length of とは通常言いません。walking distance を使います。"
     ],
     "phrase": "within walking distance of",
-    "phraseMeaning": "〜から徒歩圏内に"
+    "phraseMeaning": "〜から徒歩圏内に",
+    "learningPoint": "選択肢はいずれも名詞なので、品詞の判断だけでは選べません。walking と of the station を含めて、駅から歩いて行ける範囲を表すまとまりを作ります。"
   },
   {
     "id": "g152",
@@ -3385,7 +3537,8 @@ window.GRAMMAR_QUESTIONS = [
       "at your earliest convenience は「ご都合が付き次第、なるべく早く」という丁寧な依頼表現です。"
     ],
     "phrase": "at your earliest convenience",
-    "phraseMeaning": "ご都合が付き次第、なるべく早く"
+    "phraseMeaning": "ご都合が付き次第、なるべく早く",
+    "learningPoint": "your earliest の後ろには名詞が必要ですが、convenience はここでは「都合」です。必ず今すぐという命令ではなく、都合が付き次第早めに、という丁寧な依頼です。"
   },
   {
     "id": "g153",
@@ -3407,7 +3560,8 @@ window.GRAMMAR_QUESTIONS = [
       "to track to do という形では、この意味を表せません。"
     ],
     "phrase": "be on track to do",
-    "phraseMeaning": "〜する予定どおりに進んでいる"
+    "phraseMeaning": "〜する予定どおりに進んでいる",
+    "learningPoint": "project の進み具合を説明する文なので、track は線路そのものではありません。on track は順調という現状評価で、July までの完了を保証する表現ではありません。"
   },
   {
     "id": "g154",
@@ -3429,7 +3583,8 @@ window.GRAMMAR_QUESTIONS = [
       "動名詞・現在分詞です。全額返金を表すこの名詞句は a full refund です。"
     ],
     "phrase": "obtain a full refund",
-    "phraseMeaning": "全額返金を受ける"
+    "phraseMeaning": "全額返金を受ける",
+    "learningPoint": "obtain の後ろで、受け取る対象を表す名詞句を作ります。refund は動詞にもなりますが、a full があるこの文では返金そのものを表す名詞です。"
   },
   {
     "id": "g155",
@@ -3451,7 +3606,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去形・過去分詞です。a money-back の後ろに名詞が必要です。"
     ],
     "phrase": "a money-back guarantee",
-    "phraseMeaning": "返金保証"
+    "phraseMeaning": "返金保証",
+    "learningPoint": "文の述語はすでに offers です。guarantee には動詞の用法もありますが、ここでは a money-back に続く単数名詞として返金保証を表しています。"
   },
   {
     "id": "g156",
@@ -3473,7 +3629,8 @@ window.GRAMMAR_QUESTIONS = [
       "be subject to change で「変更される場合がある」です。subject の後ろは to を使います。"
     ],
     "phrase": "be subject to change",
-    "phraseMeaning": "変更される場合がある"
+    "phraseMeaning": "変更される場合がある",
+    "learningPoint": "subject to の to は前置詞で、change は変更という名詞です。to の直後だから動詞の原形と決めるのではなく、前の語との結び付きを確認します。"
   },
   {
     "id": "g157",
@@ -3495,7 +3652,8 @@ window.GRAMMAR_QUESTIONS = [
       "動詞の原形です。is exclude という形にはできません。"
     ],
     "phrase": "exclusive of tax",
-    "phraseMeaning": "税金を含まない"
+    "phraseMeaning": "税金を含まない",
+    "learningPoint": "後ろで tax を total に加えるので、見積額には税がまだ含まれていません。見積もりを読む場面でも、exclusive of と inclusive of の違いに注意します。"
   },
   {
     "id": "g158",
@@ -3517,7 +3675,8 @@ window.GRAMMAR_QUESTIONS = [
       "at duty では勤務中という決まった表現になりません。"
     ],
     "phrase": "on duty around the clock",
-    "phraseMeaning": "24時間体制で勤務して"
+    "phraseMeaning": "24時間体制で勤務して",
+    "learningPoint": "duty を使って勤務中という状態を述べるため、on と組み合わせます。around the clock は24時間の対応体制であり、全員の連続24時間勤務を意味するとは限りません。"
   },
   {
     "id": "g159",
@@ -3539,7 +3698,8 @@ window.GRAMMAR_QUESTIONS = [
       "「振る舞う」という動詞です。on behalf of という表現にはなりません。"
     ],
     "phrase": "on behalf of",
-    "phraseMeaning": "〜を代表して・〜に代わって"
+    "phraseMeaning": "〜を代表して・〜に代わって",
+    "learningPoint": "signed the agreement から、会社を代表して署名した場面だと読み取れます。on と of の間の1語だけでなく、on behalf of 全体で代表の立場を表します。"
   },
   {
     "id": "g160",
@@ -3561,7 +3721,8 @@ window.GRAMMAR_QUESTIONS = [
       "in case＋主語＋動詞で「〜するといけないので・〜に備えて」です。case を選びます。"
     ],
     "phrase": "in case you need to",
-    "phraseMeaning": "〜する必要が生じたときに備えて"
+    "phraseMeaning": "〜する必要が生じたときに備えて",
+    "learningPoint": "返品が必要になる前からレシートを保管する指示です。in case は将来の可能性への備えを示し、必要になった後に初めて保管するという順序ではありません。"
   },
   {
     "id": "g161",
@@ -3583,7 +3744,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。ここでは Attendance の性質を示す形容詞が必要です。"
     ],
     "phrase": "mandatory attendance",
-    "phraseMeaning": "出席義務"
+    "phraseMeaning": "出席義務",
+    "learningPoint": "主語の中心はAttendanceで、at the fire safety briefingは出席先の説明です。まずisまでを骨組みに戻すと、出席がどんな状態かを述べる位置だと分かります。"
   },
   {
     "id": "g162",
@@ -3605,7 +3767,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞の複数形です。more と名詞を続けても handles の仕方を説明できません。"
     ],
     "phrase": "handle requests efficiently",
-    "phraseMeaning": "依頼を効率よく処理する"
+    "phraseMeaning": "依頼を効率よく処理する",
+    "learningPoint": "requestsまででhandlesの目的語は完成しています。空欄は処理の仕方を補う位置で、than the old oneは比較相手が旧システムであることを示します。"
   },
   {
     "id": "g163",
@@ -3627,7 +3790,8 @@ window.GRAMMAR_QUESTIONS = [
       "主語となる名詞 permission「許可」が必要です。written permission で「書面による許可」です。"
     ],
     "phrase": "written permission",
-    "phraseMeaning": "書面による許可"
+    "phraseMeaning": "書面による許可",
+    "learningPoint": "is neededの前までが「必要とされるもの」を示す主語です。Writtenはその名詞を説明する語なので、形の似た選択肢を入れる前に主語の中心を探しましょう。"
   },
   {
     "id": "g164",
@@ -3649,7 +3813,8 @@ window.GRAMMAR_QUESTIONS = [
       "「残りのものすべて」という代名詞です。copy を修飾する形ではありません。"
     ],
     "phrase": "another copy",
-    "phraseMeaning": "もう1部"
+    "phraseMeaning": "もう1部",
+    "learningPoint": "because以下のthis oneは今ある契約書を指します。ページが欠けているので追加の1部が必要だと読み、空欄直後のcopyが単数形であることも確かめます。"
   },
   {
     "id": "g165",
@@ -3671,7 +3836,8 @@ window.GRAMMAR_QUESTIONS = [
       "others は代名詞なので、直後に items を続けられません。"
     ],
     "phrase": "the other items",
-    "phraseMeaning": "ほかの商品"
+    "phraseMeaning": "ほかの商品",
+    "learningPoint": "keep these samples separate fromで「これらの見本を〜と分ける」という骨組みです。fromの後ろは比較する相手のまとまりで、itemsという名詞がすでに続いています。"
   },
   {
     "id": "g166",
@@ -3693,7 +3859,8 @@ window.GRAMMAR_QUESTIONS = [
       "紹介する人と紹介される人が同じなので、再帰代名詞 themselves を使います。"
     ],
     "phrase": "introduce oneself",
-    "phraseMeaning": "自己紹介する"
+    "phraseMeaning": "自己紹介する",
+    "learningPoint": "For their self-introductionsが意味の手掛かりです。introducedだけなら相手は決まらないため、主語participantsと自己紹介という文脈を合わせて判断します。"
   },
   {
     "id": "g167",
@@ -3715,7 +3882,8 @@ window.GRAMMAR_QUESTIONS = [
       "再帰代名詞です。「私たちのもの」という所有の意味にはなりません。"
     ],
     "phrase": "ours",
-    "phraseMeaning": "私たちのもの"
+    "phraseMeaning": "私たちのもの",
+    "learningPoint": "セミコロンの前ではYour team、後では私たちのチームの会議室を説明しています。the smaller oneが小さい方の部屋を指すため、空欄の後ろにroomを補う必要はありません。"
   },
   {
     "id": "g168",
@@ -3737,7 +3905,8 @@ window.GRAMMAR_QUESTIONS = [
       "TOEICで扱う標準的な用法では、複数の工程数には fewer を使います。less は主に量を比較します。"
     ],
     "phrase": "fewer steps than before",
-    "phraseMeaning": "以前より少ない工程"
+    "phraseMeaning": "以前より少ない工程",
+    "learningPoint": "than the previous oneで、今と以前の手続きの工程数を比べています。oneが指すのはprocessで、空欄直後のstepsは数えられる複数名詞だと切り分けます。"
   },
   {
     "id": "g169",
@@ -3759,7 +3928,8 @@ window.GRAMMAR_QUESTIONS = [
       "glue は数えられない名詞なので、a small amount of「少量の」を使います。"
     ],
     "phrase": "a small amount of glue",
-    "phraseMeaning": "少量の接着剤"
+    "phraseMeaning": "少量の接着剤",
+    "learningPoint": "glueは材料としての接着剤で、ここでは個数を数えていません。a smallからof glueまでを1つの量のまとまりとして捉えると、主語に単数のisが続くことも確認できます。"
   },
   {
     "id": "g170",
@@ -3781,7 +3951,8 @@ window.GRAMMAR_QUESTIONS = [
       "副詞です。ここで room の状態を説明する形容詞の比較級が必要です。"
     ],
     "phrase": "more spacious than",
-    "phraseMeaning": "〜より広々とした"
+    "phraseMeaning": "〜より広々とした",
+    "learningPoint": "主語は階下の会議室、thanの後ろは階上の部屋です。2つの部屋の広さを比べる文なので、空欄にはroomの状態を述べる形が必要で、動作の仕方を表す語は合いません。"
   },
   {
     "id": "g171",
@@ -3803,7 +3974,8 @@ window.GRAMMAR_QUESTIONS = [
       "単数名詞・形容詞です。several に続く代替案の複数形が必要です。"
     ],
     "phrase": "consider several alternatives",
-    "phraseMeaning": "いくつかの代替案を検討する"
+    "phraseMeaning": "いくつかの代替案を検討する",
+    "learningPoint": "consideredの後ろに「何を検討したか」を置く位置です。before choosing以下は選定の前という時の説明なので、まずseveralと空欄を一緒に読んで目的語を作ります。"
   },
   {
     "id": "g172",
@@ -3825,7 +3997,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞・動名詞です。この文で「功績」を表す自然な名詞は achievement です。"
     ],
     "phrase": "outstanding achievement",
-    "phraseMeaning": "優れた功績"
+    "phraseMeaning": "優れた功績",
+    "learningPoint": "honorsは「たたえる」という動詞で、その対象が空欄を含むまとまりです。in product designは功績の分野を示すので、まずoutstandingの直後に中心となる名詞を置きます。"
   },
   {
     "id": "g173",
@@ -3847,7 +4020,8 @@ window.GRAMMAR_QUESTIONS = [
       "「仕様・明細」という名詞です。具体的な状態を表すには specific を使います。"
     ],
     "phrase": "as specific as possible",
-    "phraseMeaning": "できる限り具体的に"
+    "phraseMeaning": "できる限り具体的に",
+    "learningPoint": "makeの目的語はthe delivery instructionsです。その指示をどんな状態にするかを、asからas possibleまでのまとまりで補い、空欄だけをmakeの動作説明と考えないようにします。"
   },
   {
     "id": "g174",
@@ -3869,7 +4043,8 @@ window.GRAMMAR_QUESTIONS = [
       "「準備ができていること」という名詞です。visible を修飾できません。"
     ],
     "phrase": "readily visible",
-    "phraseMeaning": "容易に見える"
+    "phraseMeaning": "容易に見える",
+    "learningPoint": "must be visibleだけで「見える必要がある」という骨組みは完成しています。空欄はvisibleの見えやすさを補う部分で、主語signsを直接説明する位置ではありません。"
   },
   {
     "id": "g175",
@@ -3891,7 +4066,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去形・過去分詞です。中心となる複数名詞が必要です。"
     ],
     "phrase": "one of the proposals",
-    "phraseMeaning": "提案の1つ"
+    "phraseMeaning": "提案の1つ",
+    "learningPoint": "主語の中心はOneで、of the proposalsはその1つを選ぶ範囲です。submitted by the design teamを挟んでも、文の動詞includesはOneに合わせた単数形のままです。"
   },
   {
     "id": "g176",
@@ -3913,7 +4089,8 @@ window.GRAMMAR_QUESTIONS = [
       "every は単数の数えられる名詞と組み合わせるので、applicant を使います。"
     ],
     "phrase": "every applicant",
-    "phraseMeaning": "すべての応募者"
+    "phraseMeaning": "すべての応募者",
+    "learningPoint": "Everyの直後で「応募する人」を表す名詞を探します。mustの後ろのprovideは主語によらず原形なので、動詞の形ではなくEveryと空欄の組み合わせが判断の手掛かりです。"
   },
   {
     "id": "g177",
@@ -3935,7 +4112,8 @@ window.GRAMMAR_QUESTIONS = [
       "「近さ」という名詞です。年数の前で「約」を表せません。"
     ],
     "phrase": "nearly twenty years",
-    "phraseMeaning": "ほぼ20年"
+    "phraseMeaning": "ほぼ20年",
+    "learningPoint": "hasの目的語はtwenty years of experienceという経験の長さです。nearlyはその20年に少し届かないことを示すため、場所の近さを表す語とは意味を分けて覚えましょう。"
   },
   {
     "id": "g178",
@@ -3957,7 +4135,8 @@ window.GRAMMAR_QUESTIONS = [
       "explains を修飾する副詞 clearly の比較級 more clearly を使います。much が比較の程度を強めています。"
     ],
     "phrase": "much more clearly",
-    "phraseMeaning": "はるかに明確に"
+    "phraseMeaning": "はるかに明確に",
+    "learningPoint": "the setup procedureまでがexplainsの目的語です。その後ろで説明の仕方を比べており、muchは比較の差を強めますが、動詞を修飾する語が必要なことは変わりません。"
   },
   {
     "id": "g179",
@@ -3979,7 +4158,8 @@ window.GRAMMAR_QUESTIONS = [
       "several は数えられる名詞の複数形に使い、very several information とはしません。"
     ],
     "phrase": "very little information",
-    "phraseMeaning": "ごくわずかな情報"
+    "phraseMeaning": "ごくわずかな情報",
+    "learningPoint": "informationはこの意味では数えない名詞です。件数を述べたければa piece of informationなどの形を使い、本文のvery littleは情報の量がごく少ないことを表します。"
   },
   {
     "id": "g180",
@@ -4001,7 +4181,8 @@ window.GRAMMAR_QUESTIONS = [
       "「まもなく・簡潔に」という副詞です。経路の長さを表す補語になりません。"
     ],
     "phrase": "the shortest route",
-    "phraseMeaning": "最短経路"
+    "phraseMeaning": "最短経路",
+    "learningPoint": "Of all the available routesで比較の範囲が先に示されています。theの後ろではrouteが文脈から省かれており、最短なのは海岸沿いの道だという結論を読み取ります。"
   },
   {
     "id": "g181",
@@ -4023,7 +4204,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞だけでは、この文の述語になりません。"
     ],
     "phrase": "start automatically",
-    "phraseMeaning": "自動的に始動する"
+    "phraseMeaning": "自動的に始動する",
+    "learningPoint": "whenever the power goes outが「停電するたびに」という繰り返しを示します。主語に近いbackupはgeneratorを説明する語なので、動詞と一致させる中心は単数のgeneratorです。"
   },
   {
     "id": "g182",
@@ -4045,7 +4227,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去に電話があった時点で進行中だった動作なので、過去進行形 was reviewing を使います。"
     ],
     "phrase": "review a manuscript",
-    "phraseMeaning": "原稿を確認する"
+    "phraseMeaning": "原稿を確認する",
+    "learningPoint": "when the author called yesterdayが過去の基準時を示します。その電話の瞬間に原稿を確認していたという関係を捉え、単にyesterdayがあるから過去形、と語尾だけで選ばないようにします。"
   },
   {
     "id": "g183",
@@ -4067,7 +4250,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在完了です。来年末という未来の基準時までの完了は表せません。"
     ],
     "phrase": "will have completed by ...",
-    "phraseMeaning": "…までには完了しているだろう"
+    "phraseMeaning": "…までには完了しているだろう",
+    "learningPoint": "By the end of next yearは将来の基準時です。その時点から振り返って研究が完了していることを述べる文なので、単なる予定か完了済みの状態かという視点も確認します。"
   },
   {
     "id": "g184",
@@ -4089,7 +4273,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在分詞だけでは文の述語になりません。"
     ],
     "phrase": "neither of the two rooms",
-    "phraseMeaning": "2つの部屋のどちらも〜ない"
+    "phraseMeaning": "2つの部屋のどちらも〜ない",
+    "learningPoint": "of the two storage roomsは2室という範囲を説明しています。主語の中心はNeitherであり、すぐ近くのroomsが複数でも、その語だけに引かれて動詞を選ばないようにします。"
   },
   {
     "id": "g185",
@@ -4111,7 +4296,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在完了の能動態です。商品が返品される意味にならず、yesterday とも合いません。"
     ],
     "phrase": "return damaged items",
-    "phraseMeaning": "破損した商品を返品する"
+    "phraseMeaning": "破損した商品を返品する",
+    "learningPoint": "主語のitemsは返品の対象で、to the warehouseは返送先です。返送した人は書かれていなくても受け身にできるため、by以下の行為者があるかどうかだけでは判断しません。"
   },
   {
     "id": "g186",
@@ -4133,7 +4319,8 @@ window.GRAMMAR_QUESTIONS = [
       "三人称単数形です。keep の目的語の後ろで施錠状態を説明できません。"
     ],
     "phrase": "keep the gate locked",
-    "phraseMeaning": "門を施錠したままにする"
+    "phraseMeaning": "門を施錠したままにする",
+    "learningPoint": "keepの目的語はthe side gateで、空欄は門をどの状態に保つかを表します。during the inspectionはその状態を保つ期間なので、門が自ら施錠する動作とは考えません。"
   },
   {
     "id": "g187",
@@ -4155,7 +4342,8 @@ window.GRAMMAR_QUESTIONS = [
       "過去形・過去分詞です。予定の内容を表す to open が必要です。"
     ],
     "phrase": "plan to open a center",
-    "phraseMeaning": "センターを開設する予定である"
+    "phraseMeaning": "センターを開設する予定である",
+    "learningPoint": "この文の述語動詞は、すでに主語に対応するplansです。空欄以下は計画の内容を補い、a repair centerはopenの目的語なので、文中の2つの動詞の役割を分けて捉えます。"
   },
   {
     "id": "g188",
@@ -4177,7 +4365,8 @@ window.GRAMMAR_QUESTIONS = [
       "be permitted to do で「〜することを許可される」です。to take を使います。"
     ],
     "phrase": "be permitted to take photographs",
-    "phraseMeaning": "写真を撮ることを許可される"
+    "phraseMeaning": "写真を撮ることを許可される",
+    "learningPoint": "Visitors are not permittedまでで「来訪者は許可されていない」という形です。空欄以下は許可されない行為を示し、photographsはtakeの目的語として続いています。"
   },
   {
     "id": "g189",
@@ -4199,7 +4388,8 @@ window.GRAMMAR_QUESTIONS = [
       "三人称単数現在形です。前置詞の目的語にはなりません。"
     ],
     "phrase": "prevent someone from doing",
-    "phraseMeaning": "人が〜するのを妨げる"
+    "phraseMeaning": "人が〜するのを妨げる",
+    "learningPoint": "妨げたものはThe construction noise、影響を受けた人はusです。from以下にその人ができなかった行為が続くため、hearingを名詞的な行為として読むと意味もつながります。"
   },
   {
     "id": "g190",
@@ -4221,7 +4411,8 @@ window.GRAMMAR_QUESTIONS = [
       "三人称単数現在形です。使役の had の後ろでは原形を使います。"
     ],
     "phrase": "have a courier deliver samples",
-    "phraseMeaning": "配送員に見本を届けさせる"
+    "phraseMeaning": "配送員に見本を届けさせる",
+    "learningPoint": "a courierは配達を実際に行う人、the samplesは届ける物です。hadの後ろに人が置かれていることを先に確認し、単に過去形のhadを見て完了形だと決めないようにします。"
   },
   {
     "id": "g191",
@@ -4243,7 +4434,8 @@ window.GRAMMAR_QUESTIONS = [
       "promise to do で「〜すると約束する」です。to send を選びます。"
     ],
     "phrase": "promise to send",
-    "phraseMeaning": "送ると約束する"
+    "phraseMeaning": "送ると約束する",
+    "learningPoint": "promisedが約束したことを表し、to send以下がその内容です。by express mailは「速達で」という手段であり、byを見て何でも期限と解釈しないようにしましょう。"
   },
   {
     "id": "g192",
@@ -4265,7 +4457,8 @@ window.GRAMMAR_QUESTIONS = [
       "has repairing という形では完了形にも進行形にもなりません。"
     ],
     "phrase": "be being repaired",
-    "phraseMeaning": "修理されているところである"
+    "phraseMeaning": "修理されているところである",
+    "learningPoint": "at presentと、階段を使うよう求める後半が、現在進行中の修理を示しています。エレベーターは修理を受ける側なので、進行中という時間と受け身という関係を別々に確認します。"
   },
   {
     "id": "g193",
@@ -4287,7 +4480,8 @@ window.GRAMMAR_QUESTIONS = [
       "助動詞 must の後ろには動詞の原形 remain を使います。remain confidential で「秘密の状態を保つ」です。"
     ],
     "phrase": "remain confidential",
-    "phraseMeaning": "秘密の状態を保つ"
+    "phraseMeaning": "秘密の状態を保つ",
+    "learningPoint": "remainの後ろのconfidentialは、パスワードが保つ状態を示します。until you change itがその状態の続く範囲で、remain自体は受け身を作るためのbe動詞ではありません。"
   },
   {
     "id": "g194",
@@ -4309,7 +4503,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在完了形です。未来の条件が成立した後の対応を表す形ではありません。"
     ],
     "phrase": "reschedule the installation",
-    "phraseMeaning": "設置の日程を変更する"
+    "phraseMeaning": "設置の日程を変更する",
+    "learningPoint": "Ifで始まる部分は遅配という条件、空欄のある部分はその場合の対応です。tomorrowという未来の内容でも条件節のarrivesは現在形なので、節ごとの役割を見て時制を判断します。"
   },
   {
     "id": "g195",
@@ -4331,7 +4526,8 @@ window.GRAMMAR_QUESTIONS = [
       "三人称単数現在形です。主語 you には confirm を使います。"
     ],
     "phrase": "confirm a reservation",
-    "phraseMeaning": "予約を確認する"
+    "phraseMeaning": "予約を確認する",
+    "learningPoint": "unlessは「確認しない限り」という条件をまとめて表します。後半のit will be canceledと合わせ、確認しなければ取り消されるという関係を捉え、条件節に余分なnotを足さないようにします。"
   },
   {
     "id": "g196",
@@ -4353,7 +4549,8 @@ window.GRAMMAR_QUESTIONS = [
       "原形です。この recommend の直後では動名詞を使います。"
     ],
     "phrase": "recommend choosing a supplier",
-    "phraseMeaning": "供給業者を選ぶことを勧める"
+    "phraseMeaning": "供給業者を選ぶことを勧める",
+    "learningPoint": "a second supplierはchoosingの目的語で、選ぶという行為全体がrecommendedの対象です。to reduce以下は推薦の内容ではなく、遅延リスクを減らすという目的を説明しています。"
   },
   {
     "id": "g197",
@@ -4375,7 +4572,8 @@ window.GRAMMAR_QUESTIONS = [
       "能動態の made＋人 の後ろでは、to を付けずに原形を続けます。"
     ],
     "phrase": "make someone repeat the calculations",
-    "phraseMeaning": "人に計算をやり直させる"
+    "phraseMeaning": "人に計算をやり直させる",
+    "learningPoint": "madeはすでに過去を表し、usの後ろはさせられた行為を述べる位置です。受け身のbe made to doとは形が変わるので、本文のように人がmadeの直後にあるかを確認します。"
   },
   {
     "id": "g198",
@@ -4397,7 +4595,8 @@ window.GRAMMAR_QUESTIONS = [
       "appreciate の直後で行為を述べるこの形では、to 不定詞ではなく動名詞を使います。"
     ],
     "phrase": "would appreciate hearing from you",
-    "phraseMeaning": "ご連絡いただけるとありがたい"
+    "phraseMeaning": "ご連絡いただけるとありがたい",
+    "learningPoint": "wouldはここでは丁寧な希望を表しています。hearing from youで返事をもらうことを示し、by Tuesdayはその期限なので、聞こえる音そのものを求めているとは読みません。"
   },
   {
     "id": "g199",
@@ -4419,7 +4618,8 @@ window.GRAMMAR_QUESTIONS = [
       "現在完了です。過去の到着より前に終えていたことには had を使います。"
     ],
     "phrase": "had already closed",
-    "phraseMeaning": "すでに閉めていた"
+    "phraseMeaning": "すでに閉めていた",
+    "learningPoint": "私が窓口に着いた時点より、店員が窓口を閉めた時点が前です。alreadyはhadとclosedの間に入っているだけなので、語順に惑わされずhad closedというまとまりを確認します。"
   },
   {
     "id": "g200",
@@ -4441,7 +4641,8 @@ window.GRAMMAR_QUESTIONS = [
       "報告書は配布される側で、過去の会議開始より前の出来事なので、過去完了の受け身を使います。"
     ],
     "phrase": "distribute a report",
-    "phraseMeaning": "報告書を配布する"
+    "phraseMeaning": "報告書を配布する",
+    "learningPoint": "会議を始めたのはdirectorですが、主節の主語はThe reportです。まず報告書が配布を受ける関係を確認し、次に配布が会議開始より前という時間の順序を重ねて判断します。"
   },
   {
     "id": "g201",
@@ -4463,7 +4664,8 @@ window.GRAMMAR_QUESTIONS = [
       "人である accountant を説明し、prepared の主語にもなる関係代名詞 who を使います。"
     ],
     "phrase": "the accountant who prepared the statement",
-    "phraseMeaning": "財務諸表を作成した会計士"
+    "phraseMeaning": "財務諸表を作成した会計士",
+    "learningPoint": "prepared the annual statementはaccountantを説明するまとまりです。その中にはpreparedの主語がないためwhoが補い、文全体の述語は後ろのwill answerだと切り分けます。"
   },
   {
     "id": "g202",
@@ -4485,7 +4687,8 @@ window.GRAMMAR_QUESTIONS = [
       "目的格です。delivery times を修飾する所有格が必要です。"
     ],
     "phrase": "a supplier whose delivery times are reliable",
-    "phraseMeaning": "納期が信頼できる供給業者"
+    "phraseMeaning": "納期が信頼できる供給業者",
+    "learningPoint": "空欄の直後にdelivery timesという名詞があり、その名詞がare reliableの主語になります。whoseは人だけでなく会社などにも使えるため、supplierの配達時間という所有関係を捉えます。"
   },
   {
     "id": "g203",
@@ -4507,7 +4710,8 @@ window.GRAMMAR_QUESTIONS = [
       "所有格です。was の前に直接置くのではなく、後ろに名詞が必要です。"
     ],
     "phrase": "still under warranty",
-    "phraseMeaning": "まだ保証期間内で"
+    "phraseMeaning": "まだ保証期間内で",
+    "learningPoint": "2つのカンマに挟まれた部分はprinterへの補足説明です。この形ではthatを使わずwhichを用い、補足を外してもThe printer is still under warrantyという主節が残ります。"
   },
   {
     "id": "g204",
@@ -4529,7 +4733,8 @@ window.GRAMMAR_QUESTIONS = [
       "which を使うなら at which のように場所を表す前置詞も必要です。"
     ],
     "phrase": "where I used to work",
-    "phraseMeaning": "私が以前勤めていた場所"
+    "phraseMeaning": "私が以前勤めていた場所",
+    "learningPoint": "I used to workは「私は以前働いていた」で、足りないのは働いた場所です。branchをworkの目的語と考えず、whereが場所の関係を補っていると読むと文の構造が見えます。"
   },
   {
     "id": "g205",
@@ -4551,7 +4756,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞句です。後ろには名詞句が必要です。"
     ],
     "phrase": "unless they include ...",
-    "phraseMeaning": "それらに…が含まれていない限り"
+    "phraseMeaning": "それらに…が含まれていない限り",
+    "learningPoint": "will not be acceptedとunlessを合わせ、同意書がなければ受理されないと読みます。署名済み同意書は必要条件として述べられており、添付さえすれば必ず受理されるとまでは述べていません。"
   },
   {
     "id": "g206",
@@ -4573,7 +4779,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞です。the new procedure is complicated という節をそのまま続けられません。"
     ],
     "phrase": "although the procedure is complicated",
-    "phraseMeaning": "手順は複雑だけれども"
+    "phraseMeaning": "手順は複雑だけれども",
+    "learningPoint": "前半のcomplicatedは手順の難しさ、後半のreduces processing errorsは利点です。文の形だけでなく、この不利な点と利点のつながりを読み、理由や結果の関係と取り違えないようにします。"
   },
   {
     "id": "g207",
@@ -4595,7 +4802,8 @@ window.GRAMMAR_QUESTIONS = [
       "返却までに許される期間の上限なので、within「〜以内に」を使います。"
     ],
     "phrase": "within five working days",
-    "phraseMeaning": "5営業日以内に"
+    "phraseMeaning": "5営業日以内に",
+    "learningPoint": "five working daysは返却のために認められた期間です。working daysは営業日を数える表現で、文は5日間ずっと返却を続ける動作ではなく、期限内に返すことを求めています。"
   },
   {
     "id": "g208",
@@ -4617,7 +4825,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞です。名詞句だけで有効期間の終点を表すことはできません。"
     ],
     "phrase": "valid until the end of June",
-    "phraseMeaning": "6月末まで有効な"
+    "phraseMeaning": "6月末まで有効な",
+    "learningPoint": "remains validが有効な状態の継続を表し、the end of Juneが終点です。ある時点までに手続きを終える話か、そこまで状態が続く話かを、空欄前の動詞と合わせて判断します。"
   },
   {
     "id": "g209",
@@ -4639,7 +4848,8 @@ window.GRAMMAR_QUESTIONS = [
       "at はこの文で増加した差額を示す前置詞にはなりません。"
     ],
     "phrase": "increase by ten dollars",
-    "phraseMeaning": "10ドル増える"
+    "phraseMeaning": "10ドル増える",
+    "learningPoint": "ten dollarsは値上げ後の総額ではなく、増えた差額です。has increasedの後ろでは、いくら増えたかと最終的にいくらになったかを区別し、本文に書かれた情報だけを読み取ります。"
   },
   {
     "id": "g210",
@@ -4661,7 +4871,8 @@ window.GRAMMAR_QUESTIONS = [
       "between A and B の形で、温度の下限と上限の間を示します。"
     ],
     "phrase": "between five and ten degrees",
-    "phraseMeaning": "5度から10度の間"
+    "phraseMeaning": "5度から10度の間",
+    "learningPoint": "空欄の後ろにfive and tenという2つの基準が並んでいます。andまで確認してbetween A and Bをまとめて読み、温度を5〜10度の範囲に保つという条件を捉えましょう。"
   },
   {
     "id": "g211",
@@ -4683,7 +4894,8 @@ window.GRAMMAR_QUESTIONS = [
       "接続詞です。後ろに理由を述べる節が必要です。"
     ],
     "phrase": "upon arrival",
-    "phraseMeaning": "到着したら"
+    "phraseMeaning": "到着したら",
+    "learningPoint": "Uponの直後はarrivalという名詞で、到着を表す節ではありません。到着時のまとまりと捉え、guests should collectがその後に続く指示だと切り分けます。"
   },
   {
     "id": "g212",
@@ -4705,7 +4917,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞句です。理由の名詞句が必要で、節を直接続けられません。"
     ],
     "phrase": "if smoke is detected",
-    "phraseMeaning": "煙が検知された場合"
+    "phraseMeaning": "煙が検知された場合",
+    "learningPoint": "smoke is detectedまでで「煙が検知される」という節が完成しています。ここでは警報が鳴る条件を述べており、煙がすでに検知されたという過去の報告ではありません。"
   },
   {
     "id": "g213",
@@ -4727,7 +4940,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞です。後ろには名詞句が必要です。"
     ],
     "phrase": "keep working until ...",
-    "phraseMeaning": "…するまで作業を続ける"
+    "phraseMeaning": "…するまで作業を続ける",
+    "learningPoint": "kept workingが作業の継続、the connection problem was solvedが区切りとなる出来事です。空欄の後ろに名詞だけでなく主語と動詞がそろうことを確認し、節全体をつなげます。"
   },
   {
     "id": "g214",
@@ -4749,7 +4963,8 @@ window.GRAMMAR_QUESTIONS = [
       "into は中への移動などを示し、署名する人は示せません。"
     ],
     "phrase": "be signed by the applicant",
-    "phraseMeaning": "応募者本人によって署名される"
+    "phraseMeaning": "応募者本人によって署名される",
+    "learningPoint": "must be signedで、用紙が署名を受ける形だと確認します。not by a family memberが同じ役割の語句を対照させているので、空欄後のthe applicantは署名する人です。"
   },
   {
     "id": "g215",
@@ -4771,7 +4986,8 @@ window.GRAMMAR_QUESTIONS = [
       "between を使うなら2つ以上の基準となる場所が必要です。この文には入口1つしかありません。"
     ],
     "phrase": "beside the entrance",
-    "phraseMeaning": "入口の横に"
+    "phraseMeaning": "入口の横に",
+    "learningPoint": "locatedが場所を述べ、the entranceが目印となる場所です。to the laboratoryはentranceの説明なので、空欄の語と結び付けて別の熟語を作らないようにします。"
   },
   {
     "id": "g216",
@@ -4793,7 +5009,8 @@ window.GRAMMAR_QUESTIONS = [
       "be attached to＋添付先で「〜に添付されている」です。"
     ],
     "phrase": "be attached to a notice",
-    "phraseMeaning": "お知らせに添付されている"
+    "phraseMeaning": "お知らせに添付されている",
+    "learningPoint": "this noticeは添付先で、for your convenienceは利用者の便宜という補足です。まず何が何に添付されているかをThe timetableとthis noticeの関係で確かめます。"
   },
   {
     "id": "g217",
@@ -4815,7 +5032,8 @@ window.GRAMMAR_QUESTIONS = [
       "fluent for では、どの言語に堪能かを示せません。"
     ],
     "phrase": "be fluent in a language",
-    "phraseMeaning": "ある言語に堪能である"
+    "phraseMeaning": "ある言語に堪能である",
+    "learningPoint": "both Spanish and Portugueseは2言語を並べたまとまりです。空欄後に両言語が続いても前置詞を増やさず、fluentがどの言語についての能力なのかを示す形で読みます。"
   },
   {
     "id": "g218",
@@ -4837,7 +5055,8 @@ window.GRAMMAR_QUESTIONS = [
       "per person で「1人につき」です。人数あたりの件数を示します。"
     ],
     "phrase": "one application per person",
-    "phraseMeaning": "1人につき1件の申請"
+    "phraseMeaning": "1人につき1件の申請",
+    "learningPoint": "one applicationが提出できる件数、personがその割り当ての単位です。数字と人の関係を「1人あたり1件」とまとめて捉えると、単なる提出先を表す語ではないと分かります。"
   },
   {
     "id": "g219",
@@ -4859,7 +5078,8 @@ window.GRAMMAR_QUESTIONS = [
       "「〜にもかかわらず」という意味です。話題の範囲を表す from A to B には合いません。"
     ],
     "phrase": "range from A to B",
-    "phraseMeaning": "AからBまでにわたる"
+    "phraseMeaning": "AからBまでにわたる",
+    "learningPoint": "ranging以下はtopicsの範囲を説明しています。budgetingとproject evaluationが両端の話題で、このtoは動詞の原形ではなく名詞を伴うため、不定詞のtoとは役割が異なります。"
   },
   {
     "id": "g220",
@@ -4881,7 +5101,8 @@ window.GRAMMAR_QUESTIONS = [
       "前置詞です。主語と動詞のある節をそのまま続けられません。"
     ],
     "phrase": "after we receive the item",
-    "phraseMeaning": "商品を受け取った後で"
+    "phraseMeaning": "商品を受け取った後で",
+    "learningPoint": "主節のwill be issuedは返金の予定を示し、we receive the returned itemがその前提となる出来事です。時間を表すafterの節では、未来の内容でもreceiveを現在形にします。"
   },
   {
     "id": "g221",
@@ -4903,7 +5124,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞の複数形です。この位置で「対象となる」という状態を示せません。"
     ],
     "phrase": "be eligible for an allowance",
-    "phraseMeaning": "手当の支給対象である"
+    "phraseMeaning": "手当の支給対象である",
+    "learningPoint": "after six months of serviceが資格を得る時期を示します。eligibleになったことは手当の対象になるという意味で、すでに支給されたという出来事とは区別して読みましょう。"
   },
   {
     "id": "g222",
@@ -4925,7 +5147,8 @@ window.GRAMMAR_QUESTIONS = [
       "「行動」という名詞です。on behavior of では「〜を代表して」になりません。"
     ],
     "phrase": "on behalf of the residents",
-    "phraseMeaning": "住民を代表して"
+    "phraseMeaning": "住民を代表して",
+    "learningPoint": "I am writingが実際に連絡している人、the residentsが代表される人たちです。to request以下は連絡の目的なので、誰のための連絡かと何を求める連絡かを分けて捉えます。"
   },
   {
     "id": "g223",
@@ -4947,7 +5170,8 @@ window.GRAMMAR_QUESTIONS = [
       "「それに応じて」という副詞です。in accordance with の名詞の位置には使いません。"
     ],
     "phrase": "in accordance with company policy",
-    "phraseMeaning": "社内規定に従って"
+    "phraseMeaning": "社内規定に従って",
+    "learningPoint": "updated company policyが申請時に従う基準です。accordanceを単語だけで暗記するより、inからwithまでを1つのまとまりとして読み、その後ろに基準となる名詞を続けます。"
   },
   {
     "id": "g224",
@@ -4969,7 +5193,8 @@ window.GRAMMAR_QUESTIONS = [
       "be responsible for doing で「〜する責任がある・〜を担当する」です。形容詞 responsible を使います。"
     ],
     "phrase": "be responsible for checking the figures",
-    "phraseMeaning": "数値の確認を担当する"
+    "phraseMeaning": "数値の確認を担当する",
+    "learningPoint": "for checkingのcheckingは確認という行為を表し、責任の内容になります。while the auditor is awayは担当が必要な期間を示すので、責任の内容と期間の説明を分けて読みましょう。"
   },
   {
     "id": "g225",
@@ -4991,7 +5216,8 @@ window.GRAMMAR_QUESTIONS = [
       "「会計士」という名詞です。考慮に入れるという表現にはなりません。"
     ],
     "phrase": "take costs into account",
-    "phraseMeaning": "費用を考慮に入れる"
+    "phraseMeaning": "費用を考慮に入れる",
+    "learningPoint": "takeの直後のdelivery costsが考慮する対象で、into accountまで離れて続きます。単語が隣り合っていなくても表現のまとまりを捉え、業者比較には配送費も含めるという意味を読みます。"
   },
   {
     "id": "g226",
@@ -5013,7 +5239,8 @@ window.GRAMMAR_QUESTIONS = [
       "during は期間を表します。連絡する相手の前には使いません。"
     ],
     "phrase": "get back to someone",
-    "phraseMeaning": "人に折り返し連絡する"
+    "phraseMeaning": "人に折り返し連絡する",
+    "learningPoint": "with a detailed quoteは連絡する内容、by Fridayは期限です。get backはこの文では物理的に戻る意味ではなく、youに見積もりを添えて返答するという仕事上の連絡を表します。"
   },
   {
     "id": "g227",
@@ -5035,7 +5262,8 @@ window.GRAMMAR_QUESTIONS = [
       "cut down on＋名詞で「〜を減らす」です。down を使います。"
     ],
     "phrase": "cut down on paper consumption",
-    "phraseMeaning": "紙の消費量を減らす"
+    "phraseMeaning": "紙の消費量を減らす",
+    "learningPoint": "onの後ろのpaper consumptionが減らす対象です。is intended toは目的を示しており、手順を導入した結果すでに紙の消費が減ったとまでは述べていないことも確認します。"
   },
   {
     "id": "g228",
@@ -5057,7 +5285,8 @@ window.GRAMMAR_QUESTIONS = [
       "ran above of という形では、部品を切らした意味になりません。"
     ],
     "phrase": "run out of parts",
-    "phraseMeaning": "部品を切らす"
+    "phraseMeaning": "部品を切らす",
+    "learningPoint": "The supplierは部品の在庫を切らした側で、of replacement partsが尽きた物を示します。ranは過去形なので、繁忙期に在庫が尽きたという意味で、現在も欠品中だとは限りません。"
   },
   {
     "id": "g229",
@@ -5079,7 +5308,8 @@ window.GRAMMAR_QUESTIONS = [
       "「保証する・安心させる」という動詞です。make assure that とはしません。"
     ],
     "phrase": "make sure that ...",
-    "phraseMeaning": "…であることを必ず確認する"
+    "phraseMeaning": "…であることを必ず確認する",
+    "learningPoint": "that以下が確認する内容で、the order numberが主語、appearsが動詞です。on every pageまで読むと、一部のページだけでなく全ページへの記載を確かめる指示だと分かります。"
   },
   {
     "id": "g230",
@@ -5101,7 +5331,8 @@ window.GRAMMAR_QUESTIONS = [
       "「何もない」という代名詞です。nothing later than ではこの返却期限の表現になりません。"
     ],
     "phrase": "no later than the final day",
-    "phraseMeaning": "遅くとも最終日までに"
+    "phraseMeaning": "遅くとも最終日までに",
+    "learningPoint": "later than the final dayの前をnoで打ち消し、最終日を超えてはいけないと読みます。最終日当日の返却も期限内に含み、必ず前日までに返すという意味ではありません。"
   },
   {
     "id": "g231",
@@ -5123,7 +5354,8 @@ window.GRAMMAR_QUESTIONS = [
       "between は複数の基準の間を示します。原因を調査する句動詞にはなりません。"
     ],
     "phrase": "look into the cause",
-    "phraseMeaning": "原因を調査する"
+    "phraseMeaning": "原因を調査する",
+    "learningPoint": "the cause of the equipment failureは調査の対象です。抽象的な原因が続くので、intoを物理的に中へ入る方向だけで捉えず、委員会が原因を調べる行為としてまとめて読みます。"
   },
   {
     "id": "g232",
@@ -5145,7 +5377,8 @@ window.GRAMMAR_QUESTIONS = [
       "carry out＋作業で「〜を実施する」です。受け身では be carried out になります。"
     ],
     "phrase": "carry out repairs",
-    "phraseMeaning": "修理を実施する"
+    "phraseMeaning": "修理を実施する",
+    "learningPoint": "by an independent contractorは修理を行った人、over the weekendは作業時期です。The repairsは実施される作業で、outを含む表現全体が受け身になります。"
   },
   {
     "id": "g233",
@@ -5167,7 +5400,8 @@ window.GRAMMAR_QUESTIONS = [
       "dispose of＋物で「〜を処分する」です。受け身になっても of を残します。"
     ],
     "phrase": "dispose of old computers",
-    "phraseMeaning": "古いコンピューターを処分する"
+    "phraseMeaning": "古いコンピューターを処分する",
+    "learningPoint": "through以下が業者を利用する経路です。主語old computersが処分の対象なので、disposed ofまでをまとめ、その後のthroughと別のまとまりに区切って読みます。"
   },
   {
     "id": "g234",
@@ -5189,7 +5423,8 @@ window.GRAMMAR_QUESTIONS = [
       "動名詞・現在分詞です。in order to の order を動名詞にはしません。"
     ],
     "phrase": "in order to receive a refund",
-    "phraseMeaning": "返金を受けるために"
+    "phraseMeaning": "返金を受けるために",
+    "learningPoint": "本文の中心はA valid receipt is requiredで、返金を受けるために必要な条件を述べています。in order to以下はその目的を補う部分なので、orderを注文の意味で読まないようにします。"
   },
   {
     "id": "g235",
@@ -5211,7 +5446,8 @@ window.GRAMMAR_QUESTIONS = [
       "subject into change という形にはなりません。"
     ],
     "phrase": "be subject to change",
-    "phraseMeaning": "変更される場合がある"
+    "phraseMeaning": "変更される場合がある",
+    "learningPoint": "subjectはここでは「主題」という名詞ではなく、ratesの状態を示す形容詞です。toの後ろのchangeは変更という名詞として読み、必ず値上げされるという決定とは区別します。"
   },
   {
     "id": "g236",
@@ -5233,7 +5469,8 @@ window.GRAMMAR_QUESTIONS = [
       "名詞の複数形です。この決まった距離の表現では単数形 distance を使います。"
     ],
     "phrase": "within walking distance of",
-    "phraseMeaning": "〜から徒歩圏内に"
+    "phraseMeaning": "〜から徒歩圏内に",
+    "learningPoint": "withinはある範囲の内側という意味で、ここでは徒歩で行ける距離を示します。of the convention centerが距離の基準なので、ホテルから実際に歩いたという過去の出来事ではありません。"
   },
   {
     "id": "g237",
@@ -5255,7 +5492,8 @@ window.GRAMMAR_QUESTIONS = [
       "at request とは通常言いません。on request または at the request of ... などの形を使います。"
     ],
     "phrase": "available on request",
-    "phraseMeaning": "請求に応じて提供される"
+    "phraseMeaning": "請求に応じて提供される",
+    "learningPoint": "availableは情報を提供できる状態、on requestは提供の条件です。求めれば詳しい情報を得られるという意味で、何もしなくても自動的に送られるという案内とは区別します。"
   },
   {
     "id": "g238",
@@ -5277,7 +5515,8 @@ window.GRAMMAR_QUESTIONS = [
       "meet expectations で「期待に応える」です。our の後ろに名詞 expectations を使います。"
     ],
     "phrase": "meet expectations",
-    "phraseMeaning": "期待に応える"
+    "phraseMeaning": "期待に応える",
+    "learningPoint": "metはmeetの過去形で、ここでは人に会う意味ではありません。前半のperformed wellと合わせ、all our expectationsという期待を満たすほど電池が良く作動したと読みます。"
   },
   {
     "id": "g239",
@@ -5299,7 +5538,8 @@ window.GRAMMAR_QUESTIONS = [
       "take arrangements ではなく、手配することは make arrangements と表します。"
     ],
     "phrase": "make arrangements for a shuttle",
-    "phraseMeaning": "送迎車を手配する"
+    "phraseMeaning": "送迎車を手配する",
+    "learningPoint": "for a shuttleが手配の対象、between the hotel and the venueが送迎区間です。have madeで完了しているのは手配で、送迎自体がすでに行われたとまでは読み取りません。"
   },
   {
     "id": "g240",
@@ -5321,12 +5561,933 @@ window.GRAMMAR_QUESTIONS = [
       "過去形・過去分詞です。ためらう行動を示す不定詞が必要です。"
     ],
     "phrase": "do not hesitate to contact us",
-    "phraseMeaning": "遠慮なくご連絡ください"
+    "phraseMeaning": "遠慮なくご連絡ください",
+    "learningPoint": "contactはこの意味ではusを直接目的語に取るので、contact to usとはしません。if以下は連絡してよい場合を示し、交換品にも破損があれば遠慮なく知らせてほしいという案内です。"
+  },
+  {
+    "id": "g241",
+    "category": "品詞",
+    "sentence": "The customer service desk is ___ staffed during peak hours.",
+    "options": [
+      "adequately",
+      "adequate",
+      "adequacy",
+      "inadequacy"
+    ],
+    "answer": 0,
+    "translation": "混雑する時間帯には、顧客サービス窓口に十分な人員が配置されています。",
+    "explanation": "staffed「人員が配置された」を修飾する副詞 adequately「十分に」を使います。",
+    "distractors": [
+      "staffed「人員が配置された」を修飾する副詞 adequately「十分に」を使います。",
+      "形容詞です。後ろの staffed を修飾するには副詞が必要です。",
+      "「十分であること」という名詞です。staffed を修飾できません。",
+      "「不十分であること」という名詞です。staffed を修飾できません。"
+    ],
+    "phrase": "adequately staffed",
+    "phraseMeaning": "十分な人員が配置された",
+    "learningPoint": "is の直後でも、後ろに staffed があるのでそこで判断を止めません。空欄は配置の十分さを説明し、during peak hours は時を足す部分だと切り分けます。"
+  },
+  {
+    "id": "g242",
+    "category": "品詞",
+    "sentence": "The panel found the candidate's technical knowledge ___.",
+    "options": [
+      "impress",
+      "impressive",
+      "impressively",
+      "impression"
+    ],
+    "answer": 1,
+    "translation": "審査団は、その候補者の専門知識が見事だと評価しました。",
+    "explanation": "find＋目的語＋形容詞で「目的語を〜だと思う」です。knowledge を説明する impressive を選びます。",
+    "distractors": [
+      "動詞の原形です。found＋目的語の後ろにそのまま続けられません。",
+      "find＋目的語＋形容詞で「目的語を〜だと思う」です。knowledge を説明する impressive を選びます。",
+      "副詞です。knowledge の性質を表す補語には形容詞が必要です。",
+      "「印象」という名詞です。この文では知識がどういうものかを示す形容詞を使います。"
+    ],
+    "phrase": "find something impressive",
+    "phraseMeaning": "何かを見事だと思う",
+    "learningPoint": "found の目的語は technical knowledge です。「知識が見事だ」という関係を作る位置なので、found の動作の仕方を説明する副詞とは分けます。"
+  },
+  {
+    "id": "g243",
+    "category": "品詞",
+    "sentence": "Please return the portable charger to ___ assigned storage box.",
+    "options": [
+      "itself",
+      "theirs",
+      "its",
+      "it"
+    ],
+    "answer": 2,
+    "translation": "携帯用充電器を、指定された保管箱に戻してください。",
+    "explanation": "assigned storage box という名詞句の前に、単数の charger に対応する所有格 its を使います。",
+    "distractors": [
+      "再帰代名詞です。名詞句の前に置く所有格が必要です。",
+      "所有代名詞です。後ろに assigned storage box という名詞句は続けられません。",
+      "assigned storage box という名詞句の前に、単数の charger に対応する所有格 its を使います。",
+      "主格・目的格です。後ろの名詞句に所有関係を示すことはできません。"
+    ],
+    "phrase": "an assigned storage box",
+    "phraseMeaning": "指定された保管箱",
+    "learningPoint": "assigned は box を説明する過去分詞です。空欄のすぐ後ろが名詞でなくても、storage box 全体に「その充電器の」を加える位置だと確かめましょう。"
+  },
+  {
+    "id": "g244",
+    "category": "品詞",
+    "sentence": "The new brochure contains ___ the information visitors need.",
+    "options": [
+      "every",
+      "each",
+      "either",
+      "all"
+    ],
+    "answer": 3,
+    "translation": "新しいパンフレットには、来訪者に必要な情報がすべて載っています。",
+    "explanation": "all the information で「その情報のすべて」です。all は the の付いた名詞句の前に置けます。",
+    "distractors": [
+      "every の直後に the information は置けません。information はここでは数えられない名詞です。",
+      "each の直後に the information という名詞句は置けません。",
+      "either A or Bという形はありますが、この文には対応するorがなく、情報のすべてを表す形でもありません。",
+      "all the information で「その情報のすべて」です。all は the の付いた名詞句の前に置けます。"
+    ],
+    "phrase": "all the information",
+    "phraseMeaning": "すべての情報",
+    "learningPoint": "the information で名詞句が始まり、visitors need はその情報を後ろから説明します。選択肢の後ろに the がそのまま置けるかを確かめるのが近道です。"
+  },
+  {
+    "id": "g245",
+    "category": "品詞",
+    "sentence": "The revised form is much ___ to complete than the old version.",
+    "options": [
+      "easier",
+      "easiest",
+      "easily",
+      "ease"
+    ],
+    "answer": 0,
+    "translation": "改訂された用紙は旧版よりずっと記入しやすくなっています。",
+    "explanation": "than があるので比較級 easier を使います。much は比較級を強めて「ずっと」とします。",
+    "distractors": [
+      "than があるので比較級 easier を使います。much は比較級を強めて「ずっと」とします。",
+      "最上級です。than を使う比較には比較級が必要です。",
+      "副詞です。form の記入しやすさを表す形容詞が必要です。",
+      "名詞・動詞です。is の後ろで比較を表す形容詞にはなりません。"
+    ],
+    "phrase": "easier to complete",
+    "phraseMeaning": "記入しやすい",
+    "learningPoint": "than が比較を示し、much はその差を強めています。to complete は記入する行為を補うので、form の性質を説明する形容詞が必要です。"
+  },
+  {
+    "id": "g246",
+    "category": "動詞",
+    "sentence": "The service contract needs ___ before the equipment is installed.",
+    "options": [
+      "have signed",
+      "to be signed",
+      "sign",
+      "signs"
+    ],
+    "answer": 1,
+    "translation": "機器を設置する前に、保守契約書に署名する必要があります。",
+    "explanation": "contract は署名される側です。need to be＋過去分詞で「〜される必要がある」を表します。",
+    "distractors": [
+      "needs の直後に have signed は続けられません。契約書が署名される受け身も必要です。",
+      "contract は署名される側です。need to be＋過去分詞で「〜される必要がある」を表します。",
+      "原形です。needs の後ろにこのまま続けて受け身は作れません。",
+      "動詞の三人称単数現在形です。needs の後ろには置けません。"
+    ],
+    "phrase": "need to be signed",
+    "phraseMeaning": "署名される必要がある",
+    "learningPoint": "contract が署名する側か、される側かを先に確認します。to の後ろの原形 be と、その後ろで受け身を作る signed を別々の役割として見ると整理できます。"
+  },
+  {
+    "id": "g247",
+    "category": "動詞",
+    "sentence": "The renovation work ___ by a local firm at the moment.",
+    "options": [
+      "has carried out",
+      "will carry out",
+      "is being carried out",
+      "carries out"
+    ],
+    "answer": 2,
+    "translation": "改装工事は現在、地元の会社によって行われています。",
+    "explanation": "work は実施される側です。at the moment に合わせ、現在進行形の受け身 is being carried out を使います。",
+    "distractors": [
+      "現在完了の能動態です。work が何かを実施するという意味になってしまいます。",
+      "未来の能動態です。work は実施される側で、at the moment とも合いません。",
+      "work は実施される側です。at the moment に合わせ、現在進行形の受け身 is being carried out を使います。",
+      "能動態です。work は作業を実施される側で、by 以下は行為者です。"
+    ],
+    "phrase": "carry out renovation work",
+    "phraseMeaning": "改装工事を実施する",
+    "learningPoint": "carry out はまとまって「実施する」です。by 以下に行為者があるので、work を主語にした能動形を先に外し、残る形で進行中の状態を表せるか確かめます。"
+  },
+  {
+    "id": "g248",
+    "category": "動詞",
+    "sentence": "Please remind the visitors ___ their safety glasses before entering the workshop.",
+    "options": [
+      "putting on",
+      "put on",
+      "puts on",
+      "to put on"
+    ],
+    "answer": 3,
+    "translation": "作業場に入る前に安全眼鏡を着用するよう、来訪者に念を押してください。",
+    "explanation": "remind＋人＋to do で「人に〜するよう念を押す」です。to put on を選びます。",
+    "distractors": [
+      "remind＋人の後ろに行動を続けるときは to 不定詞を使います。",
+      "原形だけでは remind＋人＋to do の形になりません。",
+      "三人称単数現在形です。remind の目的語の後ろにこのまま続けられません。",
+      "remind＋人＋to do で「人に〜するよう念を押す」です。to put on を選びます。"
+    ],
+    "phrase": "remind someone to do",
+    "phraseMeaning": "人に〜するよう念を押す",
+    "learningPoint": "visitors は念を押される人で、glasses はその人が身に着ける物です。remind の後ろに人があることを確かめてから、行動を続ける語順を選びます。"
+  },
+  {
+    "id": "g249",
+    "category": "動詞",
+    "sentence": "The new software enables us ___ inventory levels in real time.",
+    "options": [
+      "to monitor",
+      "monitor",
+      "monitoring",
+      "monitored"
+    ],
+    "answer": 0,
+    "translation": "新しいソフトウェアにより、私たちは在庫量をリアルタイムで確認できます。",
+    "explanation": "enable＋人＋to do で「人が〜できるようにする」です。to monitor を選びます。",
+    "distractors": [
+      "enable＋人＋to do で「人が〜できるようにする」です。to monitor を選びます。",
+      "enable＋人の後ろに行動を続けるときは to が必要です。",
+      "現在分詞・動名詞です。enable＋人＋to do の形には合いません。",
+      "過去形・過去分詞です。私たちが確認するという行動は to monitor で表します。"
+    ],
+    "phrase": "enable someone to do",
+    "phraseMeaning": "人が〜できるようにする",
+    "learningPoint": "us は在庫を確認する人、inventory levels は確認する対象です。enable の直後に動詞を足すのではなく、人とその行動を結ぶまとまりとして読みます。"
+  },
+  {
+    "id": "g250",
+    "category": "動詞",
+    "sentence": "Only one of the replacement filters ___ compatible with this machine.",
+    "options": [
+      "being",
+      "is",
+      "are",
+      "have"
+    ],
+    "answer": 1,
+    "translation": "交換用フィルターのうち、この機械と互換性があるのは1つだけです。",
+    "explanation": "主語の中心は単数の one です。of the replacement filters を外して one is と考えます。",
+    "distractors": [
+      "being compatible だけでは文の述語を作れません。",
+      "主語の中心は単数の one です。of the replacement filters を外して one is と考えます。",
+      "主語の中心は単数の one です。filters の複数形に合わせません。",
+      "have compatible という形にはなりません。単数の one との数も合いません。"
+    ],
+    "phrase": "one of the replacement filters",
+    "phraseMeaning": "交換用フィルターのうちの1つ",
+    "learningPoint": "Only は限定する副詞で、one の数は変えません。of 以下には複数の候補を置けますが、空欄はその中の1つがどんな状態かを述べています。"
+  },
+  {
+    "id": "g251",
+    "category": "前置詞・接続詞",
+    "sentence": "___ the weather conditions, the indoor workshop will proceed as scheduled.",
+    "options": [
+      "Even though",
+      "Unless",
+      "Regardless of",
+      "Although"
+    ],
+    "answer": 2,
+    "translation": "天候にかかわらず、屋内の講習会は予定どおり実施されます。",
+    "explanation": "後ろは名詞句 the weather conditions です。Regardless of で「〜にかかわらず」を表します。",
+    "distractors": [
+      "接続詞句なので、後ろには主語と動詞のある節が必要です。",
+      "接続詞なので、後ろの名詞句だけをつなぐことはできません。",
+      "後ろは名詞句 the weather conditions です。Regardless of で「〜にかかわらず」を表します。",
+      "接続詞なので、the weather conditions という名詞句だけは続けられません。"
+    ],
+    "phrase": "regardless of the weather conditions",
+    "phraseMeaning": "天候にかかわらず",
+    "learningPoint": "weather conditions の中に主語と動詞はなく、全体で名詞句です。悪天候かどうかを問わず実施するという意味と、後ろに続く形の両方を確認します。"
+  },
+  {
+    "id": "g252",
+    "category": "前置詞・接続詞",
+    "sentence": "In addition ___ the base salary, the position includes a travel allowance.",
+    "options": [
+      "for",
+      "of",
+      "with",
+      "to"
+    ],
+    "answer": 3,
+    "translation": "その職には基本給に加えて、出張手当が含まれています。",
+    "explanation": "in addition to で「〜に加えて」です。後ろに追加の基準となる名詞句を続けます。",
+    "distractors": [
+      "in addition for では「〜に加えて」という表現になりません。",
+      "in addition of という形にはなりません。",
+      "in addition with という形にはなりません。",
+      "in addition to で「〜に加えて」です。後ろに追加の基準となる名詞句を続けます。"
+    ],
+    "phrase": "in addition to the base salary",
+    "phraseMeaning": "基本給に加えて",
+    "learningPoint": "the base salary は名詞句で、主節は the position includes から始まります。文頭の句を先に完成させ、給与に何かを加える情報のつながりを確かめます。"
+  },
+  {
+    "id": "g253",
+    "category": "前置詞・接続詞",
+    "sentence": "The technician ___ we spoke with yesterday will inspect the machine.",
+    "options": [
+      "whom",
+      "whose",
+      "which",
+      "where"
+    ],
+    "answer": 0,
+    "translation": "昨日私たちが話した技術者が、その機械を検査します。",
+    "explanation": "先行詞 technician は人で、空欄は spoke with の目的語です。目的格の関係代名詞 whom を使います。",
+    "distractors": [
+      "先行詞 technician は人で、空欄は spoke with の目的語です。目的格の関係代名詞 whom を使います。",
+      "所有格なので、直後には所有される名詞が必要です。",
+      "通常は物を指す関係代名詞です。人である technician には合いません。",
+      "場所を表す関係副詞で、spoke with の目的語にはなりません。"
+    ],
+    "phrase": "speak with a technician",
+    "phraseMeaning": "技術者と話す",
+    "learningPoint": "we spoke with の with に対応する目的語が空欄です。技術者を説明する節と will inspect から始まる主な述語を分けると、主格の空欄ではないと分かります。"
+  },
+  {
+    "id": "g254",
+    "category": "前置詞・接続詞",
+    "sentence": "The trainer explained ___ the emergency exit was located.",
+    "options": [
+      "whom",
+      "where",
+      "which",
+      "whose"
+    ],
+    "answer": 1,
+    "translation": "講師は非常口がどこにあるかを説明しました。",
+    "explanation": "where で場所を尋ねる内容を導きます。explained の後ろの間接疑問では、主語＋動詞の語順にします。",
+    "distractors": [
+      "人を表す目的格です。出口の場所を導く語にはなりません。",
+      "where で場所を尋ねる内容を導きます。explained の後ろの間接疑問では、主語＋動詞の語順にします。",
+      "場所を問う副詞の役割はできず、この節を完成させられません。",
+      "所有格なので後ろに名詞が必要です。whose the emergency exit という形にはなりません。"
+    ],
+    "phrase": "where the exit is located",
+    "phraseMeaning": "出口がどこにあるか",
+    "learningPoint": "exit が主語、was located が受け身の述語なので、人や物の代名詞を入れる場所は残っていません。場所の情報だけが欠けていると判断します。"
+  },
+  {
+    "id": "g255",
+    "category": "前置詞・接続詞",
+    "sentence": "___ the permit has not yet been issued, construction cannot begin.",
+    "options": [
+      "During",
+      "Because of",
+      "Since",
+      "Despite"
+    ],
+    "answer": 2,
+    "translation": "許可証がまだ発行されていないため、工事を開始できません。",
+    "explanation": "後ろは節です。接続詞 Since はここでは「〜なので」という理由を表します。",
+    "distractors": [
+      "前置詞なので、後ろには名詞句を置きます。",
+      "前置詞句なので、the permit has not yet been issued という節を直接続けられません。",
+      "後ろは節です。接続詞 Since はここでは「〜なので」という理由を表します。",
+      "前置詞なので、主語と動詞のある節を直接続けられません。"
+    ],
+    "phrase": "since",
+    "phraseMeaning": "〜なので",
+    "learningPoint": "has not been issued を一つの述語と見て、未発行という事実が工事を始められない理由かを確かめます。since を常に「〜以来」と訳さないのが大切です。"
+  },
+  {
+    "id": "g256",
+    "category": "頻出表現",
+    "sentence": "The contract will come ___ force on January 1.",
+    "options": [
+      "for",
+      "with",
+      "of",
+      "into"
+    ],
+    "answer": 3,
+    "translation": "その契約は1月1日に発効します。",
+    "explanation": "come into force で「発効する・施行される」です。come と force を結ぶ into を選びます。",
+    "distractors": [
+      "come for force という形では契約が発効する意味になりません。",
+      "come with force では、この文で契約の発効を表せません。",
+      "come of force という形にはなりません。",
+      "come into force で「発効する・施行される」です。come と force を結ぶ into を選びます。"
+    ],
+    "phrase": "come into force",
+    "phraseMeaning": "発効する・施行される",
+    "learningPoint": "force はここでは物理的な力ではなく、規則の効力です。come と force の間をつなぐ表現を完成させ、on January 1 は開始日を足す部分として読みます。"
+  },
+  {
+    "id": "g257",
+    "category": "頻出表現",
+    "sentence": "Please bring any concerns to the manager's ___.",
+    "options": [
+      "attention",
+      "attentive",
+      "attentively",
+      "attend"
+    ],
+    "answer": 0,
+    "translation": "懸念があれば、部長に伝えて注意を促してください。",
+    "explanation": "bring A to someone's attention で「Aに人の注意を向ける・Aを知らせる」です。名詞 attention を選びます。",
+    "distractors": [
+      "bring A to someone's attention で「Aに人の注意を向ける・Aを知らせる」です。名詞 attention を選びます。",
+      "形容詞です。manager's の後ろには中心となる名詞が必要です。",
+      "副詞です。所有格の後ろに置く名詞にはなりません。",
+      "動詞の原形です。所有格の後ろの名詞にはなりません。"
+    ],
+    "phrase": "bring something to someone's attention",
+    "phraseMeaning": "何かを人に知らせる・注意を促す",
+    "learningPoint": "concerns は注意を向ける話題です。the manager's の後ろに名詞を置き、bring A to B's attention で「AにBの注意を向ける」と覚えましょう。"
+  },
+  {
+    "id": "g258",
+    "category": "頻出表現",
+    "sentence": "We would like to place an ___ for 200 office chairs.",
+    "options": [
+      "orders",
+      "order",
+      "ordering",
+      "ordered"
+    ],
+    "answer": 1,
+    "translation": "事務用椅子200脚を発注したいと思います。",
+    "explanation": "place an order for で「〜を発注する」です。an の後ろに単数名詞 order を置きます。",
+    "distractors": [
+      "複数名詞です。an と一致しません。",
+      "place an order for で「〜を発注する」です。an の後ろに単数名詞 order を置きます。",
+      "動名詞・現在分詞です。an の後ろで発注を表す単数名詞は order です。",
+      "過去形・過去分詞です。an の後ろに置く名詞にはなりません。"
+    ],
+    "phrase": "place an order for",
+    "phraseMeaning": "〜を発注する",
+    "learningPoint": "place を「置く」だけで考えず、後ろの an と for 200 office chairs を見ます。必要な数の商品を発注する場面なので、注文を表す単数名詞を選びましょう。"
+  },
+  {
+    "id": "g259",
+    "category": "頻出表現",
+    "sentence": "The supplier offered a discount in ___ for a larger order.",
+    "options": [
+      "exchanged",
+      "exchanges",
+      "exchange",
+      "exchanging"
+    ],
+    "answer": 2,
+    "translation": "供給業者は、より大きな注文と引き換えに割引を申し出ました。",
+    "explanation": "in exchange for で「〜と引き換えに」です。exchange を選びます。",
+    "distractors": [
+      "過去形・過去分詞です。in exchange for という句にはなりません。",
+      "複数名詞です。この決まった表現では単数形 exchange を使います。",
+      "in exchange for で「〜と引き換えに」です。exchange を選びます。",
+      "動名詞・現在分詞です。この表現では名詞 exchange を使います。"
+    ],
+    "phrase": "in exchange for",
+    "phraseMeaning": "〜と引き換えに",
+    "learningPoint": "for a larger order が割引と引き換えになる条件を示しています。in と for の間を一語で完成させ、名詞の単数形のまま使う決まった句として覚えます。"
+  },
+  {
+    "id": "g260",
+    "category": "頻出表現",
+    "sentence": "The technical team will bring the database up to ___ before the next audit.",
+    "options": [
+      "dated",
+      "dating",
+      "dates",
+      "date"
+    ],
+    "answer": 3,
+    "translation": "技術チームは次の監査までにデータベースを最新の状態にします。",
+    "explanation": "bring something up to date で「何かを最新の状態にする」です。date を選びます。",
+    "distractors": [
+      "過去形・過去分詞です。up to date という決まった表現にはなりません。",
+      "動名詞・現在分詞です。この表現では date の形を使います。",
+      "複数名詞・三人称単数形です。up to dates という形にはなりません。",
+      "bring something up to date で「何かを最新の状態にする」です。date を選びます。"
+    ],
+    "phrase": "bring something up to date",
+    "phraseMeaning": "何かを最新の状態にする",
+    "learningPoint": "bring の目的語は database で、その状態を最新にする表現です。日付を特定する語を探すのではなく、up to date 全体で「最新の」とまとまりになるか確認します。"
+  },
+  {
+    "id": "g261",
+    "category": "品詞",
+    "sentence": "The purchase agreement becomes legally ___ once both parties sign it.",
+    "options": [
+      "binds",
+      "bindingly",
+      "binding",
+      "bind"
+    ],
+    "answer": 2,
+    "translation": "売買契約は、両当事者が署名すると法的な拘束力を持ちます。",
+    "explanation": "become の後ろで agreement の状態を表す形容詞 binding を使います。legally binding で「法的拘束力のある」です。",
+    "distractors": [
+      "三人称単数形です。becomes に続いて契約の状態を説明する形にはなりません。",
+      "副詞です。ここで契約の状態を示す補語には形容詞が必要です。",
+      "become の後ろで agreement の状態を表す形容詞 binding を使います。legally binding で「法的拘束力のある」です。",
+      "動詞の原形です。becomes の後ろに別の述語の原形を続ける形にはしません。"
+    ],
+    "phrase": "legally binding",
+    "phraseMeaning": "法的拘束力のある",
+    "learningPoint": "legally は直後の語を修飾しますが、それだけで品詞を決めず becomes に戻ります。契約自体が何かを縛る動作ではなく、署名後の効力を述べる文です。"
+  },
+  {
+    "id": "g262",
+    "category": "品詞",
+    "sentence": "Before the launch, the team tested the software's ___ under heavy traffic.",
+    "options": [
+      "reliability",
+      "reliably",
+      "reliable",
+      "rely"
+    ],
+    "answer": 0,
+    "translation": "公開前に、チームはアクセス集中時のソフトウェアの信頼性を検証しました。",
+    "explanation": "所有格 software's に続き、tested の目的語となる名詞 reliability「信頼性」を使います。",
+    "distractors": [
+      "所有格 software's に続き、tested の目的語となる名詞 reliability「信頼性」を使います。",
+      "副詞です。検証した対象となる名詞が必要です。",
+      "形容詞です。software's の後ろで対象を表す名詞が欠けます。",
+      "動詞の原形です。tested の目的語となる名詞にはなりません。"
+    ],
+    "phrase": "test software reliability",
+    "phraseMeaning": "ソフトウェアの信頼性を検証する",
+    "learningPoint": "software's は所有を表し、その後ろに何を検証したかが続きます。traffic はここでは道路交通ではなくアクセス量であり、文の場面も合わせて確認します。"
+  },
+  {
+    "id": "g263",
+    "category": "品詞",
+    "sentence": "Employees must report accidents ___, even if nobody is injured.",
+    "options": [
+      "prompt",
+      "prompting",
+      "promptness",
+      "promptly"
+    ],
+    "answer": 3,
+    "translation": "けが人がいない場合でも、従業員は事故を速やかに報告しなければなりません。",
+    "explanation": "report という動作を修飾する副詞 promptly「速やかに」を使います。",
+    "distractors": [
+      "形容詞・動詞です。この文で報告の仕方を述べるには副詞を使います。",
+      "現在分詞・動名詞です。report の仕方を表す副詞の位置には合いません。",
+      "「迅速さ」という名詞です。report accidents の後ろで動作を修飾できません。",
+      "report という動作を修飾する副詞 promptly「速やかに」を使います。"
+    ],
+    "phrase": "report accidents promptly",
+    "phraseMeaning": "事故を速やかに報告する",
+    "learningPoint": "report の目的語はすでに accidents で埋まっています。空欄では報告する際の速さを補い、even if 以下は報告が必要となる状況を説明しています。"
+  },
+  {
+    "id": "g264",
+    "category": "品詞",
+    "sentence": "The new loading area is ___ than the one used last year.",
+    "options": [
+      "enlarge",
+      "larger",
+      "largest",
+      "largely"
+    ],
+    "answer": 1,
+    "translation": "新しい積み降ろし場は、昨年使用していた場所より広くなっています。",
+    "explanation": "than が2つの積み降ろし場の比較を示すので、large の比較級 larger を使います。",
+    "distractors": [
+      "「広げる」という動詞です。is の後ろで広さを表す形容詞にはなりません。",
+      "than が2つの積み降ろし場の比較を示すので、large の比較級 larger を使います。",
+      "最上級です。than で2つを比べる形には比較級を使います。",
+      "「主として」という副詞です。場所の広さを表す補語にはなりません。"
+    ],
+    "phrase": "a larger loading area",
+    "phraseMeaning": "より広い積み降ろし場",
+    "learningPoint": "the one は昨年の loading area の代わりです。比較対象が何かを確認してから、than に対応する形を選び、large と largely の意味の違いにも注意します。"
+  },
+  {
+    "id": "g265",
+    "category": "品詞",
+    "sentence": "The company will cover ___ of the cost; participants must pay the rest.",
+    "options": [
+      "partially",
+      "part",
+      "partly",
+      "partial"
+    ],
+    "answer": 1,
+    "translation": "会社は費用の一部を負担し、参加者は残額を支払う必要があります。",
+    "explanation": "cover の目的語となる名詞 part を使います。part of the cost で「費用の一部」です。",
+    "distractors": [
+      "副詞です。cover を修飾することはできますが、この語順で of the cost とはつながりません。",
+      "cover の目的語となる名詞 part を使います。part of the cost で「費用の一部」です。",
+      "副詞です。partly of the cost という名詞のまとまりは作れません。",
+      "形容詞です。of の前で費用の一部を示す名詞が必要です。"
+    ],
+    "phrase": "cover part of the cost",
+    "phraseMeaning": "費用の一部を負担する",
+    "learningPoint": "後ろの the rest から、費用を会社と参加者で分ける場面だと分かります。cover はここでは物を覆うことではなく、費用を負担するという意味です。"
+  },
+  {
+    "id": "g266",
+    "category": "動詞",
+    "sentence": "The number of online applications ___ doubled since last year.",
+    "options": [
+      "have",
+      "are",
+      "being",
+      "has"
+    ],
+    "answer": 3,
+    "translation": "オンライン申請の件数は、昨年から2倍に増えました。",
+    "explanation": "主語の中心は単数の The number です。since last year に合わせ、現在完了 has doubled を使います。",
+    "distractors": [
+      "applications が複数でも、主語の中心 The number は単数なので has を使います。",
+      "are doubled では現在の受け身になり、昨年から件数が増えた実績を表す形には合いません。",
+      "being だけでは、この文の述語になりません。",
+      "主語の中心は単数の The number です。since last year に合わせ、現在完了 has doubled を使います。"
+    ],
+    "phrase": "the number of applications has doubled",
+    "phraseMeaning": "申請件数が2倍になった",
+    "learningPoint": "of online applications を一度外すと、件数そのものが主語だと分かります。The number of と、多数の人や物を示す A number of は単複の扱いが異なります。"
+  },
+  {
+    "id": "g267",
+    "category": "動詞",
+    "sentence": "If I ___ about the road closure earlier, I would have taken another route.",
+    "options": [
+      "had known",
+      "have known",
+      "know",
+      "will know"
+    ],
+    "answer": 0,
+    "translation": "道路の通行止めをもっと早く知っていたら、別の道を通っていたでしょう。",
+    "explanation": "would have taken と対応して、過去に実現しなかった条件を If＋過去完了 had known で表します。",
+    "distractors": [
+      "would have taken と対応して、過去に実現しなかった条件を If＋過去完了 had known で表します。",
+      "現在完了です。過去の事実に反する条件を表すこの形には過去完了を使います。",
+      "現在形です。過去に知っていれば別の道を通ったという仮定には合いません。",
+      "未来形です。すでに選んだ経路について振り返る過去の仮定には使いません。"
+    ],
+    "phrase": "if I had known earlier",
+    "phraseMeaning": "もっと早く知っていたら",
+    "learningPoint": "主節の would have taken が、過去を振り返る仮定の手掛かりです。知っていた事実を述べるのではなく、実際には早く知れなかったという含みがあります。"
+  },
+  {
+    "id": "g268",
+    "category": "動詞",
+    "sentence": "The warehouse staff have finished ___ the returned items.",
+    "options": [
+      "sort",
+      "sorted",
+      "sorting",
+      "to sort"
+    ],
+    "answer": 2,
+    "translation": "倉庫の従業員は、返品された商品の仕分けを終えました。",
+    "explanation": "finish の後ろで終えた行為を述べるときは、動名詞 sorting を使います。",
+    "distractors": [
+      "動詞の原形です。finished の後ろで終えた行為を目的語にするには sorting が必要です。",
+      "過去形・過去分詞です。終了した作業内容を表す動名詞が必要です。",
+      "finish の後ろで終えた行為を述べるときは、動名詞 sorting を使います。",
+      "finish の直後で行為を述べるこの形では、to 不定詞ではなく動名詞を使います。"
+    ],
+    "phrase": "finish sorting returned items",
+    "phraseMeaning": "返品された商品の仕分けを終える",
+    "learningPoint": "have finished ですでに文の時制は決まっています。空欄は別の時制を作る位置ではなく、何を終えたのかという作業内容を続ける位置です。"
+  },
+  {
+    "id": "g269",
+    "category": "動詞",
+    "sentence": "The documents need to ___ before the auditor arrives.",
+    "options": [
+      "sign",
+      "be signing",
+      "signed",
+      "be signed"
+    ],
+    "answer": 3,
+    "translation": "監査担当者が来る前に、その書類に署名しておく必要があります。",
+    "explanation": "書類は署名される側なので、need to の後ろに受け身の原形 be signed を使います。",
+    "distractors": [
+      "能動態の原形です。書類が署名する側になってしまいます。",
+      "進行形の能動態です。書類が署名しているという意味になってしまいます。",
+      "過去分詞です。to の直後に置くには、受け身を作る be が必要です。",
+      "書類は署名される側なので、need to の後ろに受け身の原形 be signed を使います。"
+    ],
+    "phrase": "documents need to be signed",
+    "phraseMeaning": "書類に署名する必要がある",
+    "learningPoint": "need to の後ろに必要な原形は be で、その後ろに signed を続けます。to の後ろは原形という規則と、書類は署名される側という判断を組み合わせます。"
+  },
+  {
+    "id": "g270",
+    "category": "動詞",
+    "sentence": "Would you mind ___ the revised layout to our clients?",
+    "options": [
+      "shown",
+      "showing",
+      "show",
+      "to show"
+    ],
+    "answer": 1,
+    "translation": "修正した配置図を顧客に見せていただけますか。",
+    "explanation": "Would you mind doing ...? は丁寧な依頼です。mind の後ろには動名詞 showing を置きます。",
+    "distractors": [
+      "過去分詞です。依頼する行為を表す動名詞が必要です。",
+      "Would you mind doing ...? は丁寧な依頼です。mind の後ろには動名詞 showing を置きます。",
+      "動詞の原形です。mind の目的語として行為を述べるには動名詞を使います。",
+      "mind の直後に to 不定詞を続ける形にはしません。"
+    ],
+    "phrase": "Would you mind showing ...?",
+    "phraseMeaning": "…を見せていただけますか",
+    "learningPoint": "Would の直後は you、さらに mind と続いているので、空欄は助動詞の直後ではありません。「Would があるから原形」と距離を飛ばして判断しないようにします。"
+  },
+  {
+    "id": "g271",
+    "category": "前置詞・接続詞",
+    "sentence": "The old parking area will remain closed ___ further notice.",
+    "options": [
+      "although",
+      "because",
+      "until",
+      "while"
+    ],
+    "answer": 2,
+    "translation": "旧駐車場は、追ってお知らせするまで閉鎖されたままとなります。",
+    "explanation": "until further notice は「追って通知があるまで」という決まった表現です。名詞句 further notice の前に前置詞 until を置きます。",
+    "distractors": [
+      "接続詞です。名詞句だけで閉鎖期間の終点を示すことはできません。",
+      "接続詞です。後ろに理由を述べる節が必要です。",
+      "until further notice は「追って通知があるまで」という決まった表現です。名詞句 further notice の前に前置詞 until を置きます。",
+      "接続詞です。further notice という名詞句だけを直接続けられません。"
+    ],
+    "phrase": "until further notice",
+    "phraseMeaning": "追って通知があるまで",
+    "learningPoint": "further notice は次の通知という名詞のまとまりです。閉鎖を続ける終点を示しており、without notice が表す予告なしという意味とは区別します。"
+  },
+  {
+    "id": "g272",
+    "category": "前置詞・接続詞",
+    "sentence": "The survey results differ ___ those published last year.",
+    "options": [
+      "from",
+      "than",
+      "as",
+      "of"
+    ],
+    "answer": 0,
+    "translation": "その調査結果は、昨年公表された結果とは異なります。",
+    "explanation": "differ from＋比較対象で「〜と異なる」です。from を使います。",
+    "distractors": [
+      "differ from＋比較対象で「〜と異なる」です。from を使います。",
+      "than は比較級と組み合わせます。動詞 differ には from を続けます。",
+      "as はこの文で differ の比較対象を示す形にはなりません。",
+      "differ of という形で比較対象を示すことはできません。"
+    ],
+    "phrase": "differ from previous results",
+    "phraseMeaning": "以前の結果と異なる",
+    "learningPoint": "those は前に出た results の代わりで、published が後ろから説明しています。違いを述べる文でも、形容詞の比較級と動詞 differ では続く語が異なります。"
+  },
+  {
+    "id": "g273",
+    "category": "前置詞・接続詞",
+    "sentence": "The booklet explains everything ___ you need to install the device.",
+    "options": [
+      "that",
+      "what",
+      "whose",
+      "where"
+    ],
+    "answer": 0,
+    "translation": "その小冊子には、機器の設置に必要なことがすべて説明されています。",
+    "explanation": "先行詞 everything を受け、need の目的語になる関係代名詞 that を使います。",
+    "distractors": [
+      "先行詞 everything を受け、need の目的語になる関係代名詞 that を使います。",
+      "what 自体が先行詞を含むので、everything what の形にはしません。",
+      "所有格です。直後に名詞がなく、この位置では使えません。",
+      "場所を表す関係副詞です。need の目的語の代わりにはなりません。"
+    ],
+    "phrase": "everything that you need",
+    "phraseMeaning": "必要なもの・ことのすべて",
+    "learningPoint": "you need の後ろには、必要とする対象が欠けています。先行詞はすでに everything にあるので、必要なものという意味を1語で含む what を重ねません。"
+  },
+  {
+    "id": "g274",
+    "category": "前置詞・接続詞",
+    "sentence": "___ the package was small, it weighed more than twenty kilograms.",
+    "options": [
+      "Because of",
+      "During",
+      "Although",
+      "Despite"
+    ],
+    "answer": 2,
+    "translation": "その荷物は小さいものの、重さは20キログラムを超えていました。",
+    "explanation": "後ろは the package was small という節です。大きさと重さの意外な関係を Although「〜だけれども」でつなぎます。",
+    "distractors": [
+      "前置詞句です。理由となる名詞句が必要で、後ろの節は直接続けられません。",
+      "前置詞です。後ろに節を直接続ける形にはできません。",
+      "後ろは the package was small という節です。大きさと重さの意外な関係を Although「〜だけれども」でつなぎます。",
+      "前置詞です。主語と動詞のある節をそのまま続けられません。"
+    ],
+    "phrase": "although the package was small",
+    "phraseMeaning": "荷物は小さかったけれども",
+    "learningPoint": "was まであるため、空欄の後ろを名詞句と見間違えないようにします。small と重さの説明の関係を読んで、原因ではなく意外さを示すつながりだと確認します。"
+  },
+  {
+    "id": "g275",
+    "category": "前置詞・接続詞",
+    "sentence": "Please check ___ the invoice total includes delivery charges.",
+    "options": [
+      "because of",
+      "whether",
+      "despite",
+      "during"
+    ],
+    "answer": 1,
+    "translation": "請求書の合計額に配送費が含まれているかどうか確認してください。",
+    "explanation": "whether＋節は「〜かどうか」という名詞節を作ります。check の確認内容を whether でつなぎます。",
+    "distractors": [
+      "前置詞句です。後ろには名詞句が必要です。",
+      "whether＋節は「〜かどうか」という名詞節を作ります。check の確認内容を whether でつなぎます。",
+      "前置詞です。the invoice total includes という節をそのまま続けられません。",
+      "前置詞です。後ろの節を直接つなげません。"
+    ],
+    "phrase": "check whether charges are included",
+    "phraseMeaning": "料金が含まれているか確認する",
+    "learningPoint": "the invoice total が主語、includes が動詞なので、空欄の後ろには文があります。確認する内容を示す節であり、料金が含まれる場合だけ確認するという条件ではありません。"
+  },
+  {
+    "id": "g276",
+    "category": "頻出表現",
+    "sentence": "Your order is now ready ___ collection at our main store.",
+    "options": [
+      "of",
+      "into",
+      "among",
+      "for"
+    ],
+    "answer": 3,
+    "translation": "ご注文の商品は、本店でお受け取りいただけるよう準備ができています。",
+    "explanation": "ready for＋名詞で「〜の準備ができた」です。collection は商品の受け取りを表す名詞です。",
+    "distractors": [
+      "ready of collection という形では受け取りの準備ができたことを表せません。",
+      "into は中への移動などを表します。この準備の表現では for を使います。",
+      "among は集団の中を示します。ready と受け取りをつなぐ形にはなりません。",
+      "ready for＋名詞で「〜の準備ができた」です。collection は商品の受け取りを表す名詞です。"
+    ],
+    "phrase": "ready for collection",
+    "phraseMeaning": "受け取りの準備ができた",
+    "learningPoint": "collection はここでは収集品ではなく、注文品を受け取ることです。後ろが名詞なので ready for を使い、動詞を続ける ready to collect とは形を分けます。"
+  },
+  {
+    "id": "g277",
+    "category": "頻出表現",
+    "sentence": "We can supply these parts in ___ if your order exceeds one thousand units.",
+    "options": [
+      "bulked",
+      "bulking",
+      "bulk",
+      "bulky"
+    ],
+    "answer": 2,
+    "translation": "ご注文が1,000個を超える場合、これらの部品を大量に供給できます。",
+    "explanation": "in bulk で「大量に・まとめて」です。bulk をこの形のまま使います。",
+    "distractors": [
+      "過去形・過去分詞です。in bulk の bulk をこの形にはしません。",
+      "現在分詞・動名詞です。この決まった大量供給の表現には使いません。",
+      "in bulk で「大量に・まとめて」です。bulk をこの形のまま使います。",
+      "「かさばる」という形容詞です。大量にという in bulk の名詞の位置には使いません。"
+    ],
+    "phrase": "supply parts in bulk",
+    "phraseMeaning": "部品を大量に供給する",
+    "learningPoint": "後ろの one thousand units が数量の大きさを示しています。bulk はこの表現で大量という意味になり、bulky が示す物自体のかさばりとは異なります。"
+  },
+  {
+    "id": "g278",
+    "category": "頻出表現",
+    "sentence": "All expense claims are subject to ___ by the finance department.",
+    "options": [
+      "approve",
+      "approved",
+      "approvable",
+      "approval"
+    ],
+    "answer": 3,
+    "translation": "すべての経費精算申請は、財務部門の承認を受ける必要があります。",
+    "explanation": "be subject to approval で「承認を必要とする・承認の対象である」です。to の後ろに名詞 approval を使います。",
+    "distractors": [
+      "動詞の原形です。この to は前置詞なので、承認を表す名詞が必要です。",
+      "過去形・過去分詞です。to の後ろで承認という名詞にはなりません。",
+      "「承認できる」という形容詞です。subject to の対象を示す名詞が必要です。",
+      "be subject to approval で「承認を必要とする・承認の対象である」です。to の後ろに名詞 approval を使います。"
+    ],
+    "phrase": "be subject to approval",
+    "phraseMeaning": "承認を必要とする",
+    "learningPoint": "by the finance department は承認する部署を示しています。承認の対象であることを述べており、この時点ですでに申請が承認済みだとは限りません。"
+  },
+  {
+    "id": "g279",
+    "category": "頻出表現",
+    "sentence": "The new cancellation policy will come into ___ on July 1.",
+    "options": [
+      "effect",
+      "effective",
+      "effectively",
+      "effects"
+    ],
+    "answer": 0,
+    "translation": "新しいキャンセル規定は7月1日に施行されます。",
+    "explanation": "come into effect で「施行される・効力を生じる」です。名詞 effect を使います。",
+    "distractors": [
+      "come into effect で「施行される・効力を生じる」です。名詞 effect を使います。",
+      "形容詞です。come into effect の名詞の位置には使いません。",
+      "副詞です。前置詞 into の後ろで効力を表す名詞にはなりません。",
+      "複数形です。この施行の表現では effect を単数形のまま使います。"
+    ],
+    "phrase": "come into effect",
+    "phraseMeaning": "施行される・効力を生じる",
+    "learningPoint": "will の直後はすでに原形 come なので、空欄まで原形動詞の条件を広げません。into effect までで効力を生じるという表現を作り、日付と結び付けます。"
+  },
+  {
+    "id": "g280",
+    "category": "頻出表現",
+    "sentence": "We would like to draw your ___ to the revised cancellation policy.",
+    "options": [
+      "attentively",
+      "attention",
+      "attend",
+      "attentive"
+    ],
+    "answer": 1,
+    "translation": "改定したキャンセル規定について、ご注意いただきたいと存じます。",
+    "explanation": "draw someone's attention to ... で「人の注意を〜に向ける」です。名詞 attention を使います。",
+    "distractors": [
+      "副詞です。draw の目的語となる名詞にはなりません。",
+      "draw someone's attention to ... で「人の注意を〜に向ける」です。名詞 attention を使います。",
+      "動詞の原形です。your に続く目的語の名詞にはなりません。",
+      "形容詞です。your の後ろで注意そのものを示す名詞が必要です。"
+    ],
+    "phrase": "draw attention to a policy",
+    "phraseMeaning": "規定に注意を向ける",
+    "learningPoint": "draw はここでは絵を描くことではなく、注意を引き付ける意味です。your attention が目的語で、その後ろの to は注意を向ける対象を示しています。"
   }
 ];
 
 ;
-// Original practice exercises inspired by publicly available TOEIC formats.
+// Original English practice exercises.
 window.LISTENING_QUESTIONS = [
   {
     "id": "l001",
@@ -8923,6 +10084,606 @@ window.LISTENING_QUESTIONS = [
     "phrase": "bring up an issue",
     "phraseMeaning": "問題・話題を取り上げる",
     "tip": "bring it upは話題に出す意味です。at the next meetingが提案されたタイミングです。"
+  },
+  {
+    "id": "l121",
+    "category": "予定・会議",
+    "text": "Individual consultations are scheduled before lunch, and the panel discussion will follow lunch. Please check your assigned consultation time.",
+    "prompt": "昼食前に行われる予定なのはどれですか？",
+    "options": [
+      "個別相談",
+      "パネル討論",
+      "開会のあいさつ"
+    ],
+    "answer": 0,
+    "translation": "個別相談は昼食前、パネル討論は昼食後に行う予定です。指定された相談時刻を確認してください。",
+    "chunks": [
+      {
+        "en": "Individual consultations are scheduled before lunch,",
+        "ja": "個別相談は昼食前の予定です"
+      },
+      {
+        "en": "and the panel discussion will follow lunch.",
+        "ja": "またパネル討論は昼食後に行います。"
+      },
+      {
+        "en": "Please check your assigned consultation time.",
+        "ja": "指定された相談時刻を確認してください。"
+      }
+    ],
+    "phrase": "follow lunch",
+    "phraseMeaning": "昼食後に続く",
+    "tip": "before lunchとfollow lunchで活動の前後関係を区別します。followはここでは後に続くという意味です。"
+  },
+  {
+    "id": "l122",
+    "category": "予定・会議",
+    "text": "We have combined the two afternoon sessions into one longer workshop, so participants no longer need to choose between them.",
+    "prompt": "午後のプログラムはどう変更されましたか？",
+    "options": [
+      "同じ講習を午前と午後に1回ずつ行う",
+      "2つの回を1つの長い講習にまとめた",
+      "2つの回を別々の日に分けた"
+    ],
+    "answer": 1,
+    "translation": "午後の2つの回を1つの長めの講習にまとめたため、参加者はどちらかを選ぶ必要がなくなりました。",
+    "chunks": [
+      {
+        "en": "We have combined the two afternoon sessions",
+        "ja": "午後の2つの回をまとめました"
+      },
+      {
+        "en": "into one longer workshop,",
+        "ja": "1つの長めの講習に"
+      },
+      {
+        "en": "so participants no longer need to choose between them.",
+        "ja": "そのため参加者はどちらかを選ぶ必要がなくなりました。"
+      }
+    ],
+    "phrase": "combine A into B",
+    "phraseMeaning": "AをまとめてBにする",
+    "tip": "combinedから変更前、into以下から変更後を捉えます。no longerは以前と違って、もう必要がないことを示します。"
+  },
+  {
+    "id": "l123",
+    "category": "予定・会議",
+    "text": "Only the opening remarks will be broadcast online. To hear the remaining presentations, you must attend the conference in person.",
+    "prompt": "オンラインで聞けるのはどの部分ですか？",
+    "options": [
+      "すべての発表",
+      "開会のあいさつを除く残りの発表",
+      "開会のあいさつだけ"
+    ],
+    "answer": 2,
+    "translation": "開会のあいさつだけがオンラインで配信されます。残りの発表を聞くには、会議に対面で参加する必要があります。",
+    "chunks": [
+      {
+        "en": "Only the opening remarks will be broadcast online.",
+        "ja": "開会のあいさつだけがオンラインで配信されます。"
+      },
+      {
+        "en": "To hear the remaining presentations,",
+        "ja": "残りの発表を聞くには、"
+      },
+      {
+        "en": "you must attend the conference in person.",
+        "ja": "会議に対面で参加する必要があります。"
+      }
+    ],
+    "phrase": "attend in person",
+    "phraseMeaning": "対面で出席する",
+    "tip": "Onlyの直後が配信の対象です。the remainingはそのほかに残った部分で、参加方法が異なります。"
+  },
+  {
+    "id": "l124",
+    "category": "予定・会議",
+    "text": "Your appointment is confirmed for Thursday, but the reminder message incorrectly says Tuesday. Please follow the date in this confirmation.",
+    "prompt": "正しい予約日は何曜日ですか？",
+    "options": [
+      "木曜日",
+      "火曜日",
+      "水曜日"
+    ],
+    "answer": 0,
+    "translation": "ご予約は木曜日で確定していますが、リマインドメッセージには誤って火曜日と記載されています。今回の確定連絡の日付に従ってください。",
+    "chunks": [
+      {
+        "en": "Your appointment is confirmed for Thursday,",
+        "ja": "ご予約は木曜日で確定していますが、"
+      },
+      {
+        "en": "but the reminder message incorrectly says Tuesday.",
+        "ja": "リマインドメッセージには誤って火曜日と記載されています。"
+      },
+      {
+        "en": "Please follow the date in this confirmation.",
+        "ja": "今回の確定連絡の日付に従ってください。"
+      }
+    ],
+    "phrase": "be confirmed for ...",
+    "phraseMeaning": "…の日程で確定している",
+    "tip": "曜日が2つ出ても、incorrectlyが付く情報は誤りです。confirmed forと結び付く正しい曜日を選びます。"
+  },
+  {
+    "id": "l125",
+    "category": "予定・会議",
+    "text": "The final rehearsal is open to performers only. Family members are welcome at the evening performance, which starts at seven.",
+    "prompt": "家族が来場できるのはどれですか？",
+    "options": [
+      "昼の練習見学",
+      "7時からの夜の公演",
+      "最終リハーサル"
+    ],
+    "answer": 1,
+    "translation": "最終リハーサルに入れるのは出演者だけです。ご家族は7時に始まる夜の公演にお越しいただけます。",
+    "chunks": [
+      {
+        "en": "The final rehearsal is open to performers only.",
+        "ja": "最終リハーサルに入れるのは出演者だけです。"
+      },
+      {
+        "en": "Family members are welcome at the evening performance,",
+        "ja": "ご家族は夜の公演にお越しいただけます"
+      },
+      {
+        "en": "which starts at seven.",
+        "ja": "7時に始まる公演です。"
+      }
+    ],
+    "phrase": "be open to ...",
+    "phraseMeaning": "…に参加・入場を認めている",
+    "tip": "performers onlyでリハーサルの対象を限定しています。Family membersの後で家族が参加できる機会を確認します。"
+  },
+  {
+    "id": "l126",
+    "category": "依頼・連絡",
+    "text": "Please send separate invoices for equipment and training, as the two costs must be approved by different departments.",
+    "prompt": "請求書について何を求めていますか？",
+    "options": [
+      "機器代と研修費を1枚にまとめる",
+      "研修費だけを先に割り引く",
+      "機器代と研修費を別々の請求書にする"
+    ],
+    "answer": 2,
+    "translation": "機器と研修について、請求書を分けて送ってください。2つの費用はそれぞれ別の部署が承認する必要があるためです。",
+    "chunks": [
+      {
+        "en": "Please send separate invoices",
+        "ja": "請求書を分けて送ってください"
+      },
+      {
+        "en": "for equipment and training,",
+        "ja": "機器と研修について"
+      },
+      {
+        "en": "as the two costs must be approved by different departments.",
+        "ja": "2つの費用はそれぞれ別の部署が承認する必要があるためです。"
+      }
+    ],
+    "phrase": "separate invoices",
+    "phraseMeaning": "別々の請求書",
+    "tip": "separateが依頼の中心です。as以下は、費用の承認部署が異なるという理由を説明しています。"
+  },
+  {
+    "id": "l127",
+    "category": "依頼・連絡",
+    "text": "I have already checked the totals in your report. Could you verify the customer names before I forward it?",
+    "prompt": "相手に確認してほしい項目は何ですか？",
+    "options": [
+      "顧客名",
+      "合計額",
+      "顧客の住所"
+    ],
+    "answer": 0,
+    "translation": "報告書の合計額はすでに確認しました。私が転送する前に、顧客名を確認してもらえますか。",
+    "chunks": [
+      {
+        "en": "I have already checked the totals in your report.",
+        "ja": "報告書の合計額はすでに確認しました。"
+      },
+      {
+        "en": "Could you verify the customer names",
+        "ja": "顧客名を確認してもらえますか"
+      },
+      {
+        "en": "before I forward it?",
+        "ja": "私が転送する前に。"
+      }
+    ],
+    "phrase": "verify customer names",
+    "phraseMeaning": "顧客名を確認する",
+    "tip": "already checkedは完了済みの確認です。依頼のCould you verifyの後に、これから確認してほしい項目が続きます。"
+  },
+  {
+    "id": "l128",
+    "category": "依頼・連絡",
+    "text": "The replacement badges will arrive tomorrow. Until then, please show your employee number to security rather than borrowing a colleague’s badge.",
+    "prompt": "交換用の入館証が届くまで、どうすればよいですか？",
+    "options": [
+      "その場で新しい入館証を受け取る",
+      "警備担当者に社員番号を示す",
+      "同僚の入館証を借りて入る"
+    ],
+    "answer": 1,
+    "translation": "交換用の入館証は明日届きます。それまでは、同僚の入館証を借りずに警備担当者へ社員番号を示してください。",
+    "chunks": [
+      {
+        "en": "The replacement badges will arrive tomorrow.",
+        "ja": "交換用の入館証は明日届きます。"
+      },
+      {
+        "en": "Until then, please show your employee number to security",
+        "ja": "それまでは警備担当者に社員番号を示してください"
+      },
+      {
+        "en": "rather than borrowing a colleague’s badge.",
+        "ja": "同僚の入館証を借りるのではなく。"
+      }
+    ],
+    "phrase": "until then",
+    "phraseMeaning": "それまでは",
+    "tip": "Until thenは明日届く時点までを指します。rather thanの後は今回行わない方法です。"
+  },
+  {
+    "id": "l129",
+    "category": "依頼・連絡",
+    "text": "There is no need to reply if the proposed time suits you. Please contact me only if you need a different appointment.",
+    "prompt": "提案された時刻で都合がよい場合、どうしますか？",
+    "options": [
+      "出席できると返信する必要がある",
+      "別の時刻をフォームで申請する",
+      "返信しなくてよい"
+    ],
+    "answer": 2,
+    "translation": "提案した時刻で都合がよければ返信は不要です。別の予約日時が必要な場合だけご連絡ください。",
+    "chunks": [
+      {
+        "en": "There is no need to reply",
+        "ja": "返信する必要はありません"
+      },
+      {
+        "en": "if the proposed time suits you.",
+        "ja": "提案した時刻で都合がよければ。"
+      },
+      {
+        "en": "Please contact me only if you need a different appointment.",
+        "ja": "別の予約日時が必要な場合だけご連絡ください。"
+      }
+    ],
+    "phrase": "the time suits you",
+    "phraseMeaning": "その時刻で都合がよい",
+    "tip": "no needとonly ifを捉えます。都合がよい場合と変更が必要な場合で、連絡の要否が異なります。"
+  },
+  {
+    "id": "l130",
+    "category": "依頼・連絡",
+    "text": "Please update the contact details on our internal directory first. I will use that information to revise the printed staff list later.",
+    "prompt": "最初に相手へ依頼している作業は何ですか？",
+    "options": [
+      "社内名簿の連絡先情報を更新する",
+      "印刷版の職員名簿を修正する",
+      "職員全員に印刷版を配布する"
+    ],
+    "answer": 0,
+    "translation": "まず社内名簿の連絡先情報を更新してください。後でその情報を使って印刷版の職員名簿を修正します。",
+    "chunks": [
+      {
+        "en": "Please update the contact details",
+        "ja": "連絡先情報を更新してください"
+      },
+      {
+        "en": "on our internal directory first.",
+        "ja": "まず社内の名簿で。"
+      },
+      {
+        "en": "I will use that information to revise the printed staff list later.",
+        "ja": "後でその情報を使って印刷版の職員名簿を修正します。"
+      }
+    ],
+    "phrase": "update contact details",
+    "phraseMeaning": "連絡先情報を更新する",
+    "tip": "firstとlaterで作業の順番を確認します。I will以下は話し手が後で行う作業です。"
+  },
+  {
+    "id": "l131",
+    "category": "買い物・移動",
+    "text": "This pass allows unlimited bus travel for one day, but it is not valid on trains or the airport express.",
+    "prompt": "この乗車券で利用できるものはどれですか？",
+    "options": [
+      "空港急行への乗車",
+      "1日間のバス乗車",
+      "1日間の列車乗車"
+    ],
+    "answer": 1,
+    "translation": "この乗車券は1日間、バスで何度でも利用できますが、列車や空港急行では使えません。",
+    "chunks": [
+      {
+        "en": "This pass allows unlimited bus travel",
+        "ja": "この乗車券でバスを何度でも利用できます"
+      },
+      {
+        "en": "for one day,",
+        "ja": "1日間"
+      },
+      {
+        "en": "but it is not valid on trains or the airport express.",
+        "ja": "ただし列車や空港急行では使えません。"
+      }
+    ],
+    "phrase": "unlimited travel",
+    "phraseMeaning": "回数制限のない乗車・移動",
+    "tip": "allows以下が利用できる範囲、not valid以下が対象外です。交通機関と有効期間を組にして聞きます。"
+  },
+  {
+    "id": "l132",
+    "category": "買い物・移動",
+    "text": "We can repair the handle while you wait, but replacing the wheels takes three working days because parts must be ordered.",
+    "prompt": "待っている間にできる修理はどれですか？",
+    "options": [
+      "車輪の交換",
+      "持ち手と車輪の両方の修理",
+      "持ち手の修理"
+    ],
+    "answer": 2,
+    "translation": "お待ちの間に持ち手は修理できますが、車輪の交換は部品の取り寄せが必要なため3営業日かかります。",
+    "chunks": [
+      {
+        "en": "We can repair the handle while you wait,",
+        "ja": "お待ちの間に持ち手は修理できますが、"
+      },
+      {
+        "en": "but replacing the wheels takes three working days",
+        "ja": "車輪の交換には3営業日かかります"
+      },
+      {
+        "en": "because parts must be ordered.",
+        "ja": "部品の取り寄せが必要なためです。"
+      }
+    ],
+    "phrase": "while you wait",
+    "phraseMeaning": "その場で待っている間に",
+    "tip": "handleとwheelsで所要時間が異なります。butの前後にある対象と時間の組を取り違えないようにします。"
+  },
+  {
+    "id": "l133",
+    "category": "買い物・移動",
+    "text": "The direct train has no seats left, but the service with one transfer still has reserved seats available.",
+    "prompt": "指定席に空きがあるのはどの便ですか？",
+    "options": [
+      "乗り換えが1回ある便",
+      "直通の便",
+      "乗り換えが2回ある便"
+    ],
+    "answer": 0,
+    "translation": "直通列車には空席がありませんが、乗り換えが1回ある便にはまだ指定席の空きがあります。",
+    "chunks": [
+      {
+        "en": "The direct train has no seats left,",
+        "ja": "直通列車には空席がありませんが、"
+      },
+      {
+        "en": "but the service with one transfer",
+        "ja": "乗り換えが1回ある便には"
+      },
+      {
+        "en": "still has reserved seats available.",
+        "ja": "まだ指定席の空きがあります。"
+      }
+    ],
+    "phrase": "reserved seats available",
+    "phraseMeaning": "予約できる指定席がある",
+    "tip": "no seats leftとstill ... availableが対照です。with one transferが空席のある便を説明しています。"
+  },
+  {
+    "id": "l134",
+    "category": "買い物・移動",
+    "text": "You may collect your order from any branch, provided you select the location before completing payment on our website.",
+    "prompt": "受取店舗はいつ選ぶ必要がありますか？",
+    "options": [
+      "受け取り当日に来店してから",
+      "サイトで支払いを完了する前",
+      "サイトで支払いを完了した後"
+    ],
+    "answer": 1,
+    "translation": "当社サイトで支払いを完了する前に受取店舗を選べば、注文商品はどの支店でも受け取れます。",
+    "chunks": [
+      {
+        "en": "You may collect your order from any branch,",
+        "ja": "注文商品はどの支店でも受け取れますが、"
+      },
+      {
+        "en": "provided you select the location",
+        "ja": "受け取る店舗を選ぶことが条件です"
+      },
+      {
+        "en": "before completing payment on our website.",
+        "ja": "当社サイトで支払いを完了する前に。"
+      }
+    ],
+    "phrase": "provided ...",
+    "phraseMeaning": "…という条件で",
+    "tip": "providedの後がサービス利用の条件です。before completing paymentまでを聞き、店舗選択と支払いの順序を捉えます。"
+  },
+  {
+    "id": "l135",
+    "category": "買い物・移動",
+    "text": "The displayed price includes tax, but gift wrapping costs extra. We will add the wrapping fee only if you request it.",
+    "prompt": "追加料金がかかると説明されているものは何ですか？",
+    "options": [
+      "税金",
+      "商品の店頭受け取り",
+      "ギフト包装"
+    ],
+    "answer": 2,
+    "translation": "表示価格には税金が含まれていますが、ギフト包装は別料金です。ご希望の場合のみ包装料金を追加します。",
+    "chunks": [
+      {
+        "en": "The displayed price includes tax,",
+        "ja": "表示価格には税金が含まれていますが、"
+      },
+      {
+        "en": "but gift wrapping costs extra.",
+        "ja": "ギフト包装は別料金です。"
+      },
+      {
+        "en": "We will add the wrapping fee only if you request it.",
+        "ja": "ご希望の場合のみ包装料金を追加します。"
+      }
+    ],
+    "phrase": "cost extra",
+    "phraseMeaning": "追加料金がかかる",
+    "tip": "includes taxとcosts extraで、含まれる費用と追加される費用を分けて捉えます。"
+  },
+  {
+    "id": "l136",
+    "category": "仕事の表現",
+    "text": "We can extend the deadline, provided the first draft reaches us by Friday. The completed report may then be submitted next Wednesday.",
+    "prompt": "締め切りを延長してもらう条件は何ですか？",
+    "options": [
+      "最初の原稿を金曜日までに届ける",
+      "完成版を金曜日までに提出する",
+      "最初の原稿を来週水曜日に届ける"
+    ],
+    "answer": 0,
+    "translation": "最初の原稿が金曜日までに届けば、締め切りを延長できます。その場合、完成版の報告書は来週水曜日に提出できます。",
+    "chunks": [
+      {
+        "en": "We can extend the deadline,",
+        "ja": "締め切りは延長できます"
+      },
+      {
+        "en": "provided the first draft reaches us by Friday.",
+        "ja": "最初の原稿が金曜日までに届くことを条件に。"
+      },
+      {
+        "en": "The completed report may then be submitted next Wednesday.",
+        "ja": "その場合、完成版の報告書は来週水曜日に提出できます。"
+      }
+    ],
+    "phrase": "extend a deadline",
+    "phraseMeaning": "締め切りを延長する",
+    "tip": "first draftとcompleted reportは別の段階です。金曜日と来週水曜日を、それぞれの提出物に結び付けます。"
+  },
+  {
+    "id": "l137",
+    "category": "仕事の表現",
+    "text": "The design has been approved in principle, but production cannot start until the legal team signs off on the licensing agreement.",
+    "prompt": "生産開始前にまだ必要な承認は何ですか？",
+    "options": [
+      "営業チームによる販売価格の承認",
+      "法務チームによるライセンス契約の最終承認",
+      "設計案への原則的な承認"
+    ],
+    "answer": 1,
+    "translation": "設計案は原則として承認されましたが、法務チームがライセンス契約を最終承認するまでは生産を始められません。",
+    "chunks": [
+      {
+        "en": "The design has been approved in principle,",
+        "ja": "設計案は原則として承認されましたが、"
+      },
+      {
+        "en": "but production cannot start",
+        "ja": "生産は始められません"
+      },
+      {
+        "en": "until the legal team signs off on the licensing agreement.",
+        "ja": "法務チームがライセンス契約を最終承認するまでは。"
+      }
+    ],
+    "phrase": "sign off on ...",
+    "phraseMeaning": "…を最終承認する",
+    "tip": "approved in principleは原則としての承認です。cannot start untilの後で、まだ満たしていない条件を確認します。"
+  },
+  {
+    "id": "l138",
+    "category": "仕事の表現",
+    "text": "Demand has remained steady, but rising transport costs have reduced our profit margin. We are reviewing delivery routes rather than increasing prices.",
+    "prompt": "会社が現在行っている対応は何ですか？",
+    "options": [
+      "販売価格の引き上げ",
+      "生産数量の削減",
+      "配送経路の見直し"
+    ],
+    "answer": 2,
+    "translation": "需要は安定したままですが、輸送費の上昇で利益率が下がっています。値上げするのではなく配送経路を見直しています。",
+    "chunks": [
+      {
+        "en": "Demand has remained steady,",
+        "ja": "需要は安定したままですが、"
+      },
+      {
+        "en": "but rising transport costs have reduced our profit margin.",
+        "ja": "輸送費の上昇で利益率が下がっています。"
+      },
+      {
+        "en": "We are reviewing delivery routes rather than increasing prices.",
+        "ja": "値上げするのではなく配送経路を見直しています。"
+      }
+    ],
+    "phrase": "rather than doing ...",
+    "phraseMeaning": "…するのではなく",
+    "tip": "利益率の低下と需要の低下を混同しないようにします。実施中の対応はreviewing delivery routesです。"
+  },
+  {
+    "id": "l139",
+    "category": "仕事の表現",
+    "text": "As a precaution, we are backing up all customer records before the system update. No data has been lost.",
+    "prompt": "バックアップの目的は何ですか？",
+    "options": [
+      "システム更新に備えてデータを保護するため",
+      "失われたデータを復元するため",
+      "不要な顧客データを削除するため"
+    ],
+    "answer": 0,
+    "translation": "予防措置として、システム更新前にすべての顧客データをバックアップしています。失われたデータはありません。",
+    "chunks": [
+      {
+        "en": "As a precaution,",
+        "ja": "予防措置として、"
+      },
+      {
+        "en": "we are backing up all customer records before the system update.",
+        "ja": "システム更新の前に全顧客データをバックアップしています。"
+      },
+      {
+        "en": "No data has been lost.",
+        "ja": "失われたデータはありません。"
+      }
+    ],
+    "phrase": "as a precaution",
+    "phraseMeaning": "予防措置として・念のため",
+    "tip": "As a precautionが目的を示します。No data has been lostから、すでに起きた損失への対応ではないと分かります。"
+  },
+  {
+    "id": "l140",
+    "category": "仕事の表現",
+    "text": "The candidate meets our technical requirements but is available only part-time. We need to confirm whether the position can be shared.",
+    "prompt": "これから確認する必要があることは何ですか？",
+    "options": [
+      "候補者がフルタイム勤務できるか",
+      "その職務を複数人で分担できるか",
+      "候補者が技術要件を満たすか"
+    ],
+    "answer": 1,
+    "translation": "その候補者は当社の技術要件を満たしていますが、パートタイム勤務しかできません。その職務を複数人で分担できるか確認する必要があります。",
+    "chunks": [
+      {
+        "en": "The candidate meets our technical requirements",
+        "ja": "その候補者は当社の技術要件を満たしていますが、"
+      },
+      {
+        "en": "but is available only part-time.",
+        "ja": "パートタイム勤務しかできません。"
+      },
+      {
+        "en": "We need to confirm whether the position can be shared.",
+        "ja": "その職務を複数人で分担できるか確認する必要があります。"
+      }
+    ],
+    "phrase": "confirm whether ...",
+    "phraseMeaning": "…かどうかを確認する",
+    "tip": "技術力と勤務可能時間はすでに説明されています。need to confirmの後が、まだ確認できていない事項です。"
   }
 ];
 
@@ -8949,7 +10710,32 @@ window.LISTENING_QUESTIONS = [
   function reviewQuestions(entries, results) {
     return entries.filter((entry, i) => results[i] && (!results[i].correct || results[i].marked)).map(entry => entry.question);
   }
-  window.RepeatCore = { shuffle, chooseSet, completedSentence, reviewQuestions };
+  const noveltyVoice = /^(Bad News|Good News|Bahh|Boing|Bubbles|Cellos|Zarvox|Trinoids|Whisper|Bells|Pipe Organ|Jester|Wobble|Hysterical|Fred|Ralph|Albert|Junior|Kathy|Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley|ささやき声|オルガン|スーパースター|トリノイド|ベル|道化|震え)$/i;
+  const voiceKey = voice => voice.voiceURI || `${voice.name}|${voice.lang}`;
+  function voiceQuality(voice) {
+    const metadata = `${voice.name} ${voice.voiceURI || ''}`;
+    if (/premium|高品質/i.test(metadata)) return 3;
+    if (/enhanced|拡張/i.test(metadata)) return 2;
+    return 0;
+  }
+  function rankEnglishVoices(voices) {
+    const seen = new Set();
+    const score = voice => voiceQuality(voice) * 100 + (voice.default ? 40 : 0)
+      + (/neural|natural|siri/i.test(`${voice.name} ${voice.voiceURI || ''}`) ? 30 : 0)
+      + (/^en[-_]US$/i.test(voice.lang) ? 8 : 0) + (voice.localService ? 2 : 0)
+      - (/compact/i.test(voice.voiceURI || '') ? 20 : 0);
+    return voices.filter(voice => {
+      const key = voiceKey(voice);
+      const baseName = voice.name.split(/[（(]/)[0].trim();
+      if (!/^en(?:-|_|$)/i.test(voice.lang) || noveltyVoice.test(baseName) || seen.has(key)) return false;
+      seen.add(key); return true;
+    }).sort((a, b) => score(b) - score(a));
+  }
+  function selectVoice(voices, selectedKey) {
+    const ranked = rankEnglishVoices(voices);
+    return ranked.find(voice => voiceKey(voice) === selectedKey) || ranked[0];
+  }
+  window.RepeatCore = { shuffle, chooseSet, completedSentence, reviewQuestions, rankEnglishVoices, selectVoice, voiceKey };
 
   const root = document.getElementById('main');
   if (!root) return;
@@ -8984,8 +10770,29 @@ window.LISTENING_QUESTIONS = [
   const announce = message => { document.getElementById('announcer').textContent = message; };
   const moveTop = () => { window.scrollTo({ top: 0, behavior: 'instant' }); root.focus({ preventScroll: true }); };
   const canSpeak = () => 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
-  const noveltyVoice = /^(Bad News|Good News|Bahh|Boing|Bubbles|Cellos|Zarvox|Trinoids|Whisper|Bells|Pipe Organ|Jester|Wobble|Hysterical|ささやき声|オルガン|スーパースター|トリノイド|ベル|道化|震え)$/i;
-  const englishVoices = () => canSpeak() ? window.speechSynthesis.getVoices().filter(v => /^en(?:-|_|$)/i.test(v.lang) && !noveltyVoice.test(v.name)) : [];
+  const englishVoices = () => canSpeak() ? rankEnglishVoices(window.speechSynthesis.getVoices()) : [];
+  const speechRates = [.75, .9, 1, 1.1];
+  const sampleText = 'Your meeting begins at nine. Please arrive a few minutes early.';
+  const voiceLabel = voice => `${voice.name} · ${voice.lang}${voiceQuality(voice) === 3 ? ' · 高品質' : voiceQuality(voice) === 2 ? ' · 拡張' : ''}`;
+
+  function refreshVoiceControls() {
+    const voices = englishVoices();
+    if (voices.length && state.voiceURI && !voices.some(voice => voiceKey(voice) === state.voiceURI)) state.voiceURI = '';
+    root.querySelectorAll('[data-setting="voice"]').forEach(select => { select.innerHTML = voiceOptions(); });
+    const selected = selectVoice(voices, state.voiceURI);
+    root.querySelectorAll('[data-voice-summary]').forEach(node => {
+      node.textContent = selected ? `今の声：${voiceLabel(selected)}` : '再生時に端末の英語音声を使います。';
+    });
+  }
+
+  function syncSpeechRate() {
+    root.querySelectorAll('[data-setting="speed"]').forEach(select => { select.value = String(state.speed); });
+    root.querySelectorAll('[data-action="speed"]').forEach(button => {
+      const selected = Number(button.dataset.rate) === state.speed;
+      button.classList.toggle('selected', selected);
+      button.setAttribute('aria-pressed', String(selected));
+    });
+  }
 
   function stopSpeech() {
     state.speechToken++;
@@ -9012,14 +10819,13 @@ window.LISTENING_QUESTIONS = [
     stopSpeech();
     const token = state.speechToken;
     const utterance = new SpeechSynthesisUtterance(text);
-    const voices = englishVoices();
-    const voice = voices.find(v => v.voiceURI === state.voiceURI)
-      || voices.find(v => /^(Samantha|Google US English|Microsoft (?:Aria|Jenny|Ava).*)$/i.test(v.name))
-      || voices.find(v => v.lang === 'en-US' && v.localService)
-      || voices.find(v => v.lang === 'en-US') || voices[0];
+    const voice = selectVoice(englishVoices(), state.voiceURI);
     if (voice) utterance.voice = voice;
     utterance.lang = voice ? voice.lang : 'en-US';
     utterance.rate = state.speed;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+    refreshVoiceControls();
     state.utterance = utterance;
     state.playing = true;
     updateAudioUI('再生しています…');
@@ -9040,14 +10846,19 @@ window.LISTENING_QUESTIONS = [
   }
 
   function audioSettings() {
-    return `<details class="audio-settings"><summary>音声の設定・再生できないとき</summary>
-      <div class="audio-fields"><label class="select-label">読む速さ<select data-setting="speed" aria-label="読む速さ">${[.75,1,1.1].map(rate => `<option value="${rate}" ${state.speed === rate ? 'selected' : ''}>${rate}倍${rate === 1 ? '（標準）' : ''}</option>`).join('')}</select></label>
+    const voice = selectVoice(englishVoices(), state.voiceURI);
+    return `<details class="audio-settings"><summary>声を選ぶ・音声設定</summary>
+      <div class="audio-fields"><label class="select-label">読む速さ<select data-setting="speed" aria-label="読む速さ">${speechRates.map(rate => `<option value="${rate}" ${state.speed === rate ? 'selected' : ''}>${rate}倍${rate === 1 ? '（標準）' : ''}</option>`).join('')}</select></label>
       <label class="select-label">英語の音声<select data-setting="voice" aria-label="英語の音声">${voiceOptions()}</select></label></div>
-      <p class="audio-note">端末の英語読み上げ音声を使います。声質は端末によって異なります。音が出ないときは音量・イヤホンと端末の英語音声を確認してください。自動再生はしません。</p></details>`;
+      <div class="voice-preview-row"><button class="small-button" data-action="preview-voice">${icons.speaker} この声を試聴</button><button class="small-button" data-action="stop-speech">停止</button></div>
+      <p class="voice-summary" data-voice-summary>${voice ? `今の声：${escape(voiceLabel(voice))}` : '再生時に端末の英語音声を使います。'}</p>
+      ${state.page === 'setup' ? '<p class="inline-status" data-audio-status role="status"></p>' : ''}
+      <p class="audio-note">拡張・高品質と分かる候補があれば優先します。声は端末によって異なるため、試聴して聞きやすいものを選んでください。</p>
+      <p class="audio-note">iPhoneで声を追加する場合は「設定 → アクセシビリティ → リーダーと読み上げ（読み上げコンテンツ）→ 声」で英語を確認し、Safariを再読み込みしてください。Safariが利用できる声だけが候補に出ます。<a href="https://support.apple.com/ja-jp/111798" target="_blank" rel="noopener noreferrer">Appleの案内</a></p></details>`;
   }
 
   function voiceOptions() {
-    return '<option value="">おまかせ（英語）</option>' + englishVoices().map(v => `<option value="${escape(v.voiceURI)}" ${v.voiceURI === state.voiceURI ? 'selected' : ''}>${escape(v.name)} · ${escape(v.lang)}</option>`).join('');
+    return '<option value="">おまかせ（候補から選択）</option>' + englishVoices().map(voice => `<option value="${escape(voiceKey(voice))}" ${voiceKey(voice) === state.voiceURI ? 'selected' : ''}>${escape(voiceLabel(voice))}</option>`).join('');
   }
 
   function renderHome() {
@@ -9109,14 +10920,14 @@ window.LISTENING_QUESTIONS = [
       ${state.exitPrompt ? '<div class="exit-panel" role="alert"><p>このセットを終了してメニューに戻りますか？ 今回の解答は保存されません。</p><div><button class="button secondary" data-action="cancel-exit">練習を続ける</button><button class="button" data-action="home">メニューに戻る</button></div></div>' : ''}
       <div class="quiz-meta"><span class="tag">${escape(question.category)}</span><span class="question-kind">${state.reviewRound ? 'もう一度のセット' : isListening ? 'LISTEN & REPEAT' : 'PART 5 PRACTICE'}</span></div>
       <article class="question-card" aria-label="問題 ${state.index + 1}">
-      ${isListening ? `<div class="listen-stage"><p class="listen-prompt">英文を見ずに、聞いてみよう。</p><button class="play-main" data-action="play-main" data-audio-main aria-label="英文を再生">${icons.play}</button><p class="listen-status" data-audio-status role="status">再生ボタンをタップして始めます。</p><div class="speed-row" aria-label="再生速度">${[.75,1,1.1].map(rate => `<button class="${state.speed === rate ? 'selected' : ''}" data-action="speed" data-rate="${rate}" aria-pressed="${state.speed === rate}">${rate}倍</button>`).join('')}</div></div><h1 class="listening-question">${escape(question.prompt)}</h1>` : `<h1 class="sr-only">空欄に入る最も適切なものを選んでください</h1><p class="english-sentence" lang="en">${sentenceHTML(question, answered)}</p>`}
+      ${isListening ? `<div class="listen-stage"><p class="listen-prompt">英文を見ずに、聞いてみよう。</p><button class="play-main" data-action="play-main" data-audio-main aria-label="英文を再生">${icons.play}</button><p class="listen-status" data-audio-status role="status">再生ボタンをタップして始めます。</p><div class="speed-row" aria-label="再生速度">${speechRates.map(rate => `<button class="${state.speed === rate ? 'selected' : ''}" data-action="speed" data-rate="${rate}" aria-pressed="${state.speed === rate}">${rate}倍</button>`).join('')}</div></div><h1 class="listening-question">${escape(question.prompt)}</h1>` : `<h1 class="sr-only">空欄に入る最も適切なものを選んでください</h1><p class="english-sentence" lang="en">${sentenceHTML(question, answered)}</p>`}
       <div class="answer-list ${isListening ? 'listening-options' : ''}" aria-label="選択肢">${entry.choices.map((choice, i) => {
         const correct = answered && choice.originalIndex === question.answer;
         const wrong = answered && result.choice === choice.originalIndex && !correct;
         return `<button class="answer-button ${correct ? 'correct' : ''} ${wrong ? 'wrong' : ''}" data-action="answer" data-choice="${choice.originalIndex}" ${answered ? 'disabled' : ''}><span class="answer-letter" aria-hidden="true">${String.fromCharCode(65 + i)}</span><span ${isListening ? '' : 'lang="en"'}>${escape(choice.text)}</span>${correct || wrong ? `<span class="answer-result-icon" aria-label="${correct ? '正解' : 'あなたの解答・不正解'}">${correct ? '✓' : '×'}</span>` : ''}</button>`;
       }).join('')}</div>
       ${answered ? renderFeedback(question, result, isListening) : `<p class="question-help">${isListening ? '何度聞いてもOK。分からないときも、まず選んでみよう。' : '空欄の前後を見て、最も適切なものを選ぼう。'}</p>${isListening ? `<details class="text-fallback"><summary>音が出ないときは、英文で学ぶ</summary><p lang="en">${escape(question.text)}</p><small>端末の英語音声・音量・イヤホンも確認してください。</small></details>` : ''}`}
-      ${isListening ? '' : answered ? audioSettings() : ''}</article>
+      ${isListening || answered ? audioSettings() : ''}</article>
       ${answered ? `<div class="next-row"><label class="mark-button"><input type="checkbox" data-setting="mark" ${result.marked ? 'checked' : ''}> ${isListening ? 'もう一度聞きたい' : '正解したけれど、まだ迷う'}</label><button class="button" data-action="next">${state.index + 1 === state.entries.length ? 'このセットの結果へ' : '次の問題へ'} ${icons.arrow}</button></div><p class="review-hint">間違えた問題とチェックした問題は、セットの最後に解き直せます。</p>` : ''}</section>`;
     if (state.playing) updateAudioUI();
   }
@@ -9124,7 +10935,7 @@ window.LISTENING_QUESTIONS = [
   function renderFeedback(question, result, isListening) {
     const correctOption = state.entries[state.index].choices.findIndex(c => c.originalIndex === question.answer);
     return `<div class="answer-feedback ${result.correct ? '' : 'incorrect'}">${result.correct ? '✓ 正解です' : `↻ もう一度で、覚えよう。正解は ${String.fromCharCode(65 + correctOption)}`}</div>
-      ${isListening ? `<section class="transcript"><div class="transcript-controls"><h3>英文と意味を確かめる</h3><button class="small-button" data-action="reveal">${state.reveal ? '英文を隠す' : '英文を表示'}</button></div><div id="transcript-text" ${state.reveal ? '' : 'hidden'}><p class="english-sentence" lang="en">${escape(question.text)}</p><p class="translation">${escape(question.translation)}</p><div class="chunk-list">${question.chunks.map((chunk, i) => `<button class="chunk-button" data-action="chunk" data-chunk="${i}" aria-label="${escape(chunk.en)} を再生"><span><span lang="en">${escape(chunk.en)}</span><small>${escape(chunk.ja)}</small></span>${icons.speaker}</button>`).join('')}</div><p class="tip">${escape(question.tip)}</p></div></section>` : `<div class="explanation"><h3>ここを見ると解ける</h3><p>${escape(question.explanation)}</p><h3>完成した英文の意味</h3><p class="translation">${escape(question.translation)}</p><details><summary>ほかの選択肢が合わない理由</summary><ul class="distractor-list">${state.entries[state.index].choices.map(choice => `<li><strong lang="en">${escape(choice.text)}</strong> — ${escape(question.distractors[choice.originalIndex])}</li>`).join('')}</ul></details></div>`}
+      ${isListening ? `<section class="transcript"><div class="transcript-controls"><h3>英文と意味を確かめる</h3><button class="small-button" data-action="reveal">${state.reveal ? '英文を隠す' : '英文を表示'}</button></div><div id="transcript-text" ${state.reveal ? '' : 'hidden'}><p class="english-sentence" lang="en">${escape(question.text)}</p><p class="translation">${escape(question.translation)}</p><div class="chunk-list">${question.chunks.map((chunk, i) => `<button class="chunk-button" data-action="chunk" data-chunk="${i}" aria-label="${escape(chunk.en)} を再生"><span><span lang="en">${escape(chunk.en)}</span><small>${escape(chunk.ja)}</small></span>${icons.speaker}</button>`).join('')}</div><p class="tip">${escape(question.tip)}</p></div></section>` : `<div class="explanation"><h3>ここを見ると解ける</h3><p>${escape(question.explanation)}</p>${question.learningPoint ? `<p class="learning-point">${escape(question.learningPoint)}</p>` : ''}<h3>完成した英文の意味</h3><p class="translation">${escape(question.translation)}</p><section class="choice-explanations" aria-label="ほかの選択肢が合わない理由"><h3>ほかの選択肢が合わない理由</h3><ul class="distractor-list">${state.entries[state.index].choices.map((choice, index) => choice.originalIndex === question.answer ? '' : `<li><span class="reason-letter" aria-hidden="true">${String.fromCharCode(65 + index)}</span><div><strong lang="en">${escape(choice.text)}</strong><p>${escape(question.distractors[choice.originalIndex])}</p></div></li>`).join('')}</ul></section></div>`}
       <div class="phrase-card" ${isListening && !state.reveal ? 'hidden' : ''} id="phrase-card"><strong lang="en">${escape(question.phrase)}</strong><span>${escape(question.phraseMeaning)}</span></div>
       <div class="post-answer-actions"><button class="button secondary" data-action="speak-sentence">${icons.speaker} ${isListening ? '全文をもう一度聞く' : '完成した英文を聞く'}</button>${isListening ? '' : '<button class="button secondary" data-action="repeat-question">この問題をもう一度</button>'}<button class="button ghost" data-action="stop-speech">停止</button></div>
       ${isListening ? '' : '<p class="inline-status" data-audio-status role="status"></p>'}`;
@@ -9208,12 +11019,11 @@ window.LISTENING_QUESTIONS = [
       speak(state.entries[state.index].question.chunks[Number(button.dataset.chunk)].en);
     } else if (action === 'stop-speech') {
       stopSpeech(); updateAudioUI('再生を停止しました。');
+    } else if (action === 'preview-voice') {
+      speak(sampleText);
     } else if (action === 'speed') {
       state.speed = Number(button.dataset.rate); stopSpeech();
-      root.querySelectorAll('[data-action="speed"]').forEach(b => {
-        const selected = Number(b.dataset.rate) === state.speed;
-        b.classList.toggle('selected', selected); b.setAttribute('aria-pressed', String(selected));
-      });
+      syncSpeechRate();
       updateAudioUI('速度を変えました。再生ボタンをタップしてください。');
     } else if (action === 'reveal') {
       state.reveal = !state.reveal;
@@ -9228,13 +11038,11 @@ window.LISTENING_QUESTIONS = [
 
   root.addEventListener('change', event => {
     const setting = event.target.dataset.setting;
-    if (setting === 'speed') { state.speed = Number(event.target.value); stopSpeech(); }
-    if (setting === 'voice') { state.voiceURI = event.target.value; stopSpeech(); }
+    if (setting === 'speed') { state.speed = Number(event.target.value); stopSpeech(); syncSpeechRate(); }
+    if (setting === 'voice') { state.voiceURI = event.target.value; stopSpeech(); refreshVoiceControls(); }
     if (setting === 'mark' && state.results[state.index]) state.results[state.index].marked = event.target.checked;
   });
-  if (canSpeak()) window.speechSynthesis.addEventListener('voiceschanged', () => {
-    root.querySelectorAll('[data-setting="voice"]').forEach(select => { select.innerHTML = voiceOptions(); });
-  });
+  if (canSpeak()) window.speechSynthesis.addEventListener('voiceschanged', refreshVoiceControls);
   window.addEventListener('pagehide', stopSpeech);
   document.addEventListener('visibilitychange', () => { if (document.hidden) { stopSpeech(); updateAudioUI('再生を停止しました。もう一度聞くには再生ボタンをタップ。'); } });
   renderHome();
